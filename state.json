@@ -1,0 +1,144 @@
+{
+  "last_checked": null,
+  "last_updated": null,
+  "counties": {
+    "Albany": {
+      "source_url": "https://www.albanycountywy.gov/176/Results-of-Election",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Big Horn": {
+      "source_url": "https://www.bighorncountywy.gov/departments/clerk/elections",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Campbell": {
+      "source_url": "https://www.campbellcountywy.gov/2077/Election-Results",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Carbon": {
+      "source_url": "https://www.carboncountywy.gov/997/Election-Results",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Converse": {
+      "source_url": "https://www.conversecountywy.gov/187/Elections",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Crook": {
+      "source_url": "https://www.crookcounty.wy.gov/elected_officials/clerk/election/election_results.php",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Fremont": {
+      "source_url": "https://fremontcountywy.gov/government/elections___voting.php",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Goshen": {
+      "source_url": "https://www.goshencountywy.gov/198/Voter-Information",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Hot Springs": {
+      "source_url": "https://hscounty.com/component/edocman/election-results-archives/elections-2026?Itemid=100",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Johnson": {
+      "source_url": "https://www.johnsoncowy.gov/departments/elections",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Laramie": {
+      "source_url": "https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections/Election-Results",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Lincoln": {
+      "source_url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Natrona": {
+      "source_url": "https://www.natronacounty-wy.gov/128/Elections",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Niobrara": {
+      "source_url": "https://www.niobraracounty.org/_departments/_county_clerk/ElectionResults.asp",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Park": {
+      "source_url": "https://parkcounty-wy.gov/county-elections/results/",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Platte": {
+      "source_url": "https://www.plattecountywyoming.com/departments/Elections/ResultsofElection",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Sheridan": {
+      "source_url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Sublette": {
+      "source_url": "https://www.sublettecountywy.gov/110/Election-Information",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Sweetwater": {
+      "source_url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Teton": {
+      "source_url": "https://www.tetoncountywy.gov/271/Election-Results",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Uinta": {
+      "source_url": "https://uintacountywy.gov/DocumentCenter/View/8645/2026-Primary-Results-UNOFFICIAL",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Washakie": {
+      "source_url": "https://www.washakiecountywy.gov/196/Elections",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    },
+    "Weston": {
+      "source_url": "https://www.westongov.com/county-clerk/elections/election-results/",
+      "result_url": null,
+      "status": "Waiting for election-night results",
+      "votes": {}
+    }
+  }
+}
