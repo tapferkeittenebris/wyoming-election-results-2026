@@ -1,5 +1,8 @@
 {
   "cleanUrls": true,
+  "rewrites": [
+    {"source": "/", "destination": "/monetized.html"}
+  ],
   "headers": [
     {"source": "/(.*)", "headers": [{"key": "Cache-Control", "value": "no-store, max-age=0"}]}
   ]
