@@ -1,7 +1,9 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    {"source": "/", "destination": "/monetized.html"}
+    {"source": "/", "destination": "/index-v2.html"},
+    {"source": "/advertise", "destination": "/advertise.html"},
+    {"source": "/privacy", "destination": "/privacy.html"}
   ],
   "headers": [
     {"source": "/(.*)", "headers": [{"key": "Cache-Control", "value": "no-store, max-age=0"}]}
