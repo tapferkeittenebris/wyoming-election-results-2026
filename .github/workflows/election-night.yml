@@ -1,0 +1,44 @@
+name: Wyoming election-night updater
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 7:00 PM MDT Aug 18 = 01:00 UTC Aug 19; 2:00 AM MDT = 08:00 UTC.
+    # The Python guard additionally requires calendar year 2026.
+    - cron: '*/10 1-8 19 8 *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: election-night-results
+  cancel-in-progress: false
+
+jobs:
+  update-results:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install scraper dependencies
+        run: pip install -r requirements.txt
+      - name: Check official county results and rebuild feed
+        run: python github_updater.py
+      - name: Commit changed state and results
+        run: |
+          if [ -z "$(git status --porcelain -- state.json results.json)" ]; then
+            echo "No result changes to commit."
+            exit 0
+          fi
+          git config user.name "wyoming-election-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state.json results.json
+          git commit -m "Update unofficial election results"
+          git pull --rebase
+          git push
