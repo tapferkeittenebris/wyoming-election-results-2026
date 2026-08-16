@@ -2,11 +2,9 @@ name: Wyoming election-night updater
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
   schedule:
     # 7:00 PM MDT Aug 18 = 01:00 UTC Aug 19; 2:00 AM MDT = 08:00 UTC.
-    # The Python guard additionally requires calendar year 2026.
+    # Scheduled every 10 minutes; Python additionally enforces the exact 2026 window.
     - cron: '*/10 1-8 19 8 *'
 
 permissions:
