@@ -1,0 +1,163 @@
+chamber,district,party,candidate
+Senate,1,Republican,Chip Neiman
+Senate,1,Republican,Ogden Driskill
+Senate,3,Republican,Cheri E Steinmetz
+Senate,5,Republican,Ben Hornok
+Senate,5,Republican,Lauren Schoenfeld
+Senate,5,Republican,Meagan Herrington
+Senate,5,Republican,Ronald D. McCleary
+Senate,5,Democratic,Ted Hanlon
+Senate,6,Republican,Roy Birt
+Senate,6,Republican,Taft Love
+Senate,7,Republican,Mark Rinne
+Senate,7,Democratic,Jim Lee
+Senate,9,Democratic,Chris Rothfuss
+Senate,11,Republican,Bob Davis
+Senate,11,Democratic,Jim Wilson
+Senate,13,Republican,Stacy Jones
+Senate,15,Republican,Chris Katzl
+Senate,15,Republican,Jen Hegeman
+Senate,15,Republican,Tina Johnson
+Senate,15,Republican,Wendy Davis Schuler
+Senate,17,Democratic,Mike Gierau
+Senate,19,Republican,Paul Hoeft
+Senate,19,Republican,R. J. Kost
+Senate,21,Republican,Ken Pendergraft
+Senate,21,Republican,Melissa Butcher
+Senate,23,Republican,Abby Angelos
+Senate,23,Republican,Dwayne Dillinger
+Senate,25,Republican,Cale Case
+Senate,25,Republican,Lisa Wilson
+Senate,27,Republican,Jim Corkery
+Senate,27,Republican,Kevin Helling
+Senate,27,Republican,Marcia Neumiller
+Senate,29,Republican,Bob Ide
+Senate,29,Republican,Lisa Engebretsen
+Senate,31,Republican,Daniel J. Singh
+Senate,31,Republican,Evie Brennan
+Senate,31,Democratic,Shifa Hamid
+House,1,Republican,Troy Claycomb
+House,1,Republican,Zeta Nuckolls Anderson
+House,2,Republican,JD Williams
+House,3,Republican,Anne Ziegenhorn
+House,3,Republican,Earl Collier
+House,4,Republican,Jeremy Haroldson
+House,5,Republican,Joe Speckner
+House,5,Republican,Karen Weber
+House,6,Republican,Jim Willox
+House,6,Republican,Tomi Strock
+House,7,Republican,Bob Nicholas
+House,7,Republican,Deb Mutter Shamley
+House,7,Democratic,Gavin Lobmeyer
+House,8,Republican,Luke Reiner
+House,8,Republican,Steve Johnson
+House,8,Democratic,Brenda J Lyttle
+House,9,Republican,Boyd O. Wiggam
+House,9,Republican,"Exie R. Brown, Jr."
+House,9,Democratic,Stephen D. Latham
+House,10,Republican,Justin Fornstrom
+House,11,Republican,Dan McIntosh
+House,11,Republican,Paul Wing
+House,11,Democratic,Britney Tennant
+House,12,Republican,Clarence Styvar
+House,13,Republican,Shane Swett
+House,13,Democratic,Ken Chestek
+House,14,Republican,Emily Study
+House,14,Democratic,Trey Sherwood
+House,15,Republican,Pamela Thayer
+House,16,Democratic,Mike Yin
+House,17,Republican,Elizabeth Bingham
+House,17,Democratic,Rah Reinholz
+House,18,Republican,Kenneth D Roberts
+House,18,Republican,Scott Heiner
+House,19,Republican,Chad Stephens
+House,19,Republican,Joe Webb
+House,20,Republican,Albert Sommers
+House,20,Republican,Bill Winney
+House,20,Republican,Matt McGinnis
+House,21,Republican,McKay L. Erickson
+House,22,Republican,Andrew Byron
+House,23,Republican,Shannon A. Brennan
+House,23,Democratic,Liz Storer
+House,24,Republican,Nina Webber
+House,24,Republican,Quin Blair
+House,25,Republican,John Wetzel
+House,25,Republican,Matthew R Legler
+House,26,Republican,Dalton Banks
+House,26,Republican,J. Addison Aagard
+House,27,Republican,Martha Lawley
+House,27,Democratic,Theresa Livingston
+House,28,Republican,Allen Hogg
+House,28,Republican,Carlin Jones
+House,28,Republican,Marshall Keller
+House,28,Republican,Roland Luehne
+House,29,Republican,James Temple
+House,29,Republican,Myca Sturtevant
+House,29,Republican,Noll Roberts
+House,30,Republican,Mark Jennings
+House,30,Republican,Ryan Koltiska
+House,31,Republican,Douglas Moore
+House,31,Republican,John W. Bear
+House,32,Republican,Ken Clouston
+House,33,Democratic,Ivan D. Posey
+House,34,Republican,Pepper L Ottman
+House,35,Republican,Christopher Dresang
+House,35,Republican,Tony Locke
+House,36,Republican,Art Washut
+House,36,Democratic,Stewart McAdoo
+House,37,Republican,Brian Costello
+House,37,Republican,Donna Rice
+House,37,Republican,Ross Schriftman
+House,37,Democratic,Betsy Erickson
+House,38,Republican,Jayme Lien
+House,38,Republican,Robert L. Hendry
+House,38,Democratic,Catherine McQueen
+House,39,Republican,Cody Wylie
+House,40,Republican,Marilyn Connolly
+House,40,Republican,Mark Jones
+House,41,Republican,Erin Edwards
+House,41,Republican,Gary Brown
+House,41,Democratic,Stacy Becker
+House,42,Republican,Rob Geringer
+House,42,Democratic,Jim VanDyke
+House,43,Republican,Ann Lucas
+House,43,Republican,Jessica Crowder
+House,44,Republican,Lee Filer
+House,45,Republican,Ross Davenport
+House,45,Democratic,Karlee Provenza
+House,46,Republican,Cam Wright
+House,46,Republican,Ocean Andrew
+House,46,Democratic,Gary Wilken
+House,47,Republican,Eamon O'Toole
+House,48,Republican,Darin McCann
+House,48,Republican,James Wamsley
+House,49,Republican,David Walton
+House,49,Republican,Robert Wharff
+House,50,Republican,David Hill
+House,50,Republican,Levi Asay
+House,51,Republican,Laurie Bratten
+House,51,Republican,Susan Bigelow
+House,52,Republican,Bill Fortner
+House,52,Republican,Ronda Boller
+House,53,Republican,Christopher R Knapp
+House,53,Republican,Greg Schreurs
+House,54,Republican,Jeff Martin
+House,54,Republican,Lloyd Charles Larsen
+House,55,Republican,Carl Manning
+House,56,Republican,Elissa Campbell
+House,56,Republican,Pete Fox
+House,57,Republican,Jeanette Ward
+House,57,Republican,Julie Jarvis
+House,57,Democratic,Luc Colgrove
+House,58,Republican,Bill Allemand
+House,58,Republican,Peter Boyer
+House,58,Democratic,Keenan Morgan
+House,59,Republican,J.R. Riggins
+House,59,Republican,Neil Jeske
+House,59,Democratic,Laurie Longtine
+House,60,Republican,Marlene Brady
+House,60,Republican,Tony Niemiec
+House,61,Republican,Andrew Server
+House,61,Republican,Seth Bard
+House,62,Republican,Edis Allen
+House,62,Republican,Kevin J. Campbell
