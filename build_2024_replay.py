@@ -7,13 +7,10 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
-ROOT=Path(__file__).resolve().parent
-UA={'User-Agent':'Mozilla/5.0 WyomingElectionDashboardReplay/1.0'}
-CANDIDATE_CSV='https://sos.wyo.gov/Elections/Docs/2024/2024_WY_Primary_Election_Candidates.csv'
-SOS_RESULTS='https://sos.wyo.gov/Elections/Docs/2024/2024PrimaryResults.aspx'
+ROOT=Path(__file__).resolve().parent; UA={'User-Agent':'Mozilla/5.0 WyomingElectionDashboardReplay/1.0'}
+CANDIDATE_CSV='https://sos.wyo.gov/Elections/Docs/2024/2024_WY_Primary_Election_Candidates.csv'; SOS_RESULTS='https://sos.wyo.gov/Elections/Docs/2024/2024PrimaryResults.aspx'
 def norm(s):return re.sub(r'\s+',' ',re.sub(r'[^a-z0-9 ]+',' ',str(s).lower().replace('&',' and '))).strip()
-def get(s,u):
- r=s.get(u,headers=UA,timeout=25,allow_redirects=True);r.raise_for_status();return r
+def get(s,u):r=s.get(u,headers=UA,timeout=25,allow_redirects=True);r.raise_for_status();return r
 def pdf_text(b):
  try:return '\n'.join((p.extract_text() or '') for p in PdfReader(io.BytesIO(b)).pages)
  except Exception:return ''
@@ -22,19 +19,19 @@ def aliases(name):
  if len(p)>=2:o|={p[0]+' '+p[-1],p[-1]+' '+p[0]}
  return sorted(o,key=len,reverse=True)
 def candidate_rows():
- r=get(requests.Session(),CANDIDATE_CSV);rows=list(csv.DictReader(io.StringIO(r.content.decode('utf-8-sig',errors='replace'))));out=[]
+ rows=list(csv.DictReader(io.StringIO(get(requests.Session(),CANDIDATE_CSV).content.decode('utf-8-sig',errors='replace'))));out=[]
  for row in rows:
-  low={norm(k):str(v or '').strip() for k,v in row.items()};office=low.get('office sought','') or low.get('office','');party=low.get('party affiliation','') or low.get('party','');cand=low.get('ballot name','') or low.get('candidate name','') or low.get('candidate','')
-  if not cand:cand=' '.join(x for x in [low.get('candidate first name',''),low.get('candidate middle name',''),low.get('candidate last name','')] if x)
-  blob=norm(' '.join(str(v or '') for v in row.values()));o=norm(office);chamber='Senate' if ('senate district' in o or 'state senator' in o) else 'House' if ('house district' in o or 'state representative' in o) else None
+  low={norm(k):str(v or '').strip() for k,v in row.items()};office=low.get('office sought','');party=low.get('party affiliation','');cand=low.get('ballot name','') or ' '.join(x for x in [low.get('candidate first name',''),low.get('candidate middle name',''),low.get('candidate last name','')] if x);o=norm(office)
+  chamber='Senate' if 'senate' in o else 'House' if ('house' in o or 'representative' in o) else None
   if not chamber or not cand:continue
-  m=re.search(r'\b(?:district|dist)\s*(\d{1,2})\b',o+' '+blob)
+  m=re.search(r'(\d{1,2})',o)
   if not m:continue
-  d=int(m.group(1));p='Republican' if 'republican' in norm(party) else 'Democratic' if 'democrat' in norm(party) else ''
-  if p:out.append({'chamber':chamber,'district':d,'party':p,'candidate':cand})
- if not out:raise RuntimeError('No legislative candidates parsed; columns='+repr(list(rows[0].keys()) if rows else []))
- print('Parsed',len(out),'2024 legislative candidate rows')
- return out
+  p='Republican' if 'republican' in norm(party) else 'Democratic' if 'democrat' in norm(party) else ''
+  if p:out.append({'chamber':chamber,'district':int(m.group(1)),'party':p,'candidate':cand})
+ if not out:
+  print('Example offices:',[(r.get('Office Sought'),r.get('Party Affiliation'),r.get('Ballot Name')) for r in rows[:20]])
+  raise RuntimeError('No legislative candidates parsed')
+ print('Parsed',len(out),'2024 legislative candidate rows');return out
 def load_sources():return json.loads((ROOT/'sources.json').read_text())
 def score_link(t,u):
  s=norm(t+' '+u);sc=(14 if '2024' in s else 0)+(10 if 'primary' in s else 0)+(8 if ('result' in s or 'return' in s) else 0)+(3 if ('unofficial' in s or 'official' in s) else 0)+(2 if 'summary' in s else 0)+(2 if u.lower().endswith('.pdf') else 0)
@@ -51,9 +48,9 @@ def discover(s,landing):
    try:rr=get(s,u);out.append((sc,rr.url,rr.content,rr.headers.get('content-type','').lower()))
    except Exception:pass
  return sorted(out,key=lambda x:x[0],reverse=True)
-def parse_votes(text,candidates):
+def parse_votes(text,cands):
  clean='\n'.join(x.strip() for x in text.splitlines() if x.strip());out={}
- for c in candidates:
+ for c in cands:
   best=None
   for alias in aliases(c['candidate']):
    ap='\\s+'.join(map(re.escape,alias.split()))
