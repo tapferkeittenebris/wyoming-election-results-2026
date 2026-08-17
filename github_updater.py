@@ -18,6 +18,9 @@ class Candidate: chamber:str; district:int; party:str; candidate:str
 def norm(s): return re.sub(r'\s+',' ',re.sub(r'[^a-z0-9 ]+',' ',str(s).lower().replace('&',' and '))).strip()
 def load_candidates():
     with open(ROOT/'candidates.csv',newline='',encoding='utf-8') as f:return [Candidate(r['chamber'],int(r['district']),r['party'],r['candidate']) for r in csv.DictReader(f)]
+def load_statewide():
+    with open(ROOT/'statewide_candidates.csv',newline='',encoding='utf-8') as f:return list(csv.DictReader(f))
+def statewide_parse_candidates(rows):return [Candidate('Statewide',0,r['party'],r['candidate']) for r in rows]
 def load_sources():return json.loads((ROOT/'sources.json').read_text())
 def fc_names():
     with open(ROOT/'freedom_caucus_candidates.csv',newline='',encoding='utf-8') as f:return {norm(r['candidate']) for r in csv.DictReader(f)}
@@ -36,14 +39,12 @@ def _legislator_dicts(obj):
     found=[]
     def walk(x):
         if isinstance(x,dict):
-            kl={str(k).lower():k for k in x}
-            has_d=('district' in kl or 'currentdistrict' in kl)
-            has_n=('name' in kl or 'firstname' in kl or 'lastname' in kl)
-            if has_d and has_n: found.append(x)
+            kl={str(k).lower():k for k in x};has_d=('district' in kl or 'currentdistrict' in kl);has_n=('name' in kl or 'firstname' in kl or 'lastname' in kl)
+            if has_d and has_n:found.append(x)
             else:
-                for v in x.values(): walk(v)
+                for v in x.values():walk(v)
         elif isinstance(x,list):
-            for v in x: walk(v)
+            for v in x:walk(v)
     walk(obj);return found
 def _pick(row,*names):
     lower={str(k).lower():v for k,v in row.items()}
@@ -56,13 +57,12 @@ def refresh_incumbents():
     try:
         s=requests.Session()
         for chamber,code in [('House','H'),('Senate','S')]:
-            r=get(s,LEG_API.format(chamber=code));payload=r.json();rows=_legislator_dicts(payload)
+            r=get(s,LEG_API.format(chamber=code));rows=_legislator_dicts(r.json())
             for row in rows:
                 district=_pick(row,'currentDistrict','district');name=_pick(row,'name') or ' '.join(filter(None,[str(_pick(row,'firstName')).strip(),str(_pick(row,'lastName')).strip()]));party=_pick(row,'party')
                 try:d=str(int(str(district).strip()))
                 except Exception:continue
                 if name:out[chamber][d]={'name':str(name).strip(),'party':str(party).strip(),'is_fc':norm(name) in fc}
-            print(f'Wyoming Legislature roster {chamber}: {len(out[chamber])} districts')
         if out['House'] or out['Senate']:(ROOT/'incumbents.json').write_text(json.dumps(out,indent=2),encoding='utf-8')
     except Exception as e:print('Incumbent refresh failed:',repr(e))
     p=ROOT/'incumbents.json'
@@ -128,22 +128,35 @@ def aggregate(state,candidates):
         for c in contests[key]:d=totals[key][norm(c.candidate)];rows.append({'candidate':c.candidate,'votes':d['votes'],'counties':sorted(d['counties']),'is_fc':norm(c.candidate) in fc})
         races.append({'chamber':chamber,'district':district,'party':party,'candidates':rows})
     return races
-def export(state,candidates,incumbents):
-    statuses=[{'county':county,'status':info.get('status','Waiting for election-night results'),'url':info.get('result_url') or info.get('source_url') or '#','reporting':bool(info.get('votes'))} for county,info in sorted(state['counties'].items())];payload={'last_checked':state.get('last_checked'),'last_updated':state.get('last_updated'),'reporting_counties':sum(x['reporting'] for x in statuses),'county_status':statuses,'incumbents':incumbents,'races':aggregate(state,candidates)};(ROOT/'results.json').write_text(json.dumps(payload,indent=2),encoding='utf-8')
+def aggregate_statewide(state,rows):
+    order=['United States Senator','United States Representative','Governor','Secretary of State','State Auditor','State Treasurer','Superintendent of Public Instruction'];totals=defaultdict(lambda:{'votes':0,'counties':[]});contests=defaultdict(list)
+    for r in rows:contests[(r['office'],r['party'])].append(r)
+    for county,info in state['counties'].items():
+        for name,v in info.get('votes',{}).items():
+            if any(norm(r['candidate'])==name for r in rows):totals[name]['votes']+=int(v);totals[name]['counties'].append(county)
+    races=[]
+    for key in sorted(contests,key=lambda k:(order.index(k[0]) if k[0] in order else 99,0 if k[1]=='Republican' else 1,k[1])):
+        office,party=key;cs=[]
+        for r in contests[key]:
+            d=totals[norm(r['candidate'])];cs.append({'candidate':r['candidate'],'votes':d['votes'],'counties':sorted(set(d['counties'])),'is_fc':str(r.get('is_fc','')).lower()=='true'})
+        races.append({'office':office,'party':party,'candidates':cs})
+    return races
+def export(state,candidates,incumbents,statewide):
+    statuses=[{'county':county,'status':info.get('status','Waiting for election-night results'),'url':info.get('result_url') or info.get('source_url') or '#','reporting':bool(info.get('votes'))} for county,info in sorted(state['counties'].items())];payload={'last_checked':state.get('last_checked'),'last_updated':state.get('last_updated'),'reporting_counties':sum(x['reporting'] for x in statuses),'county_status':statuses,'incumbents':incumbents,'races':aggregate(state,candidates),'statewide_races':aggregate_statewide(state,statewide)};(ROOT/'results.json').write_text(json.dumps(payload,indent=2),encoding='utf-8')
 def main():
-    candidates=load_candidates();sources=load_sources();state=load_state(sources);incumbents=refresh_incumbents();now=datetime.now(TZ)
+    candidates=load_candidates();statewide=load_statewide();parse_candidates=candidates+statewide_parse_candidates(statewide);sources=load_sources();state=load_state(sources);incumbents=refresh_incumbents();now=datetime.now(TZ)
     if not (START<=now<=END):
-        export(state,candidates,incumbents)
+        export(state,candidates,incumbents,statewide)
         if not (ROOT/'state.json').exists():(ROOT/'state.json').write_text(json.dumps(state,indent=2),encoding='utf-8')
-        print('Outside election-night window; incumbent roster/feed refreshed only.');return
+        print('Outside election-night window; dashboard feeds refreshed only.');return
     state['last_checked']=now.isoformat(timespec='seconds');changed=False
     with ThreadPoolExecutor(max_workers=8) as pool:
-        futures=[pool.submit(check_county,s,candidates) for s in sources]
+        futures=[pool.submit(check_county,s,parse_candidates) for s in sources]
         for f in as_completed(futures):
             county,status,url,votes,digest=f.result();info=state['counties'][county];prev=info.get('votes',{})
             if votes:info.update({'status':status,'result_url':url,'votes':votes,'result_hash':digest,'last_success':state['last_checked']});changed|=(votes!=prev)
             elif prev:info['status']='Reporting (last good snapshot; current check unavailable)'
             else:info['status']=status
     if changed:state['last_updated']=state['last_checked']
-    (ROOT/'state.json').write_text(json.dumps(state,indent=2),encoding='utf-8');export(state,candidates,incumbents);print('Updated results.json',state['last_checked'])
+    (ROOT/'state.json').write_text(json.dumps(state,indent=2),encoding='utf-8');export(state,candidates,incumbents,statewide);print('Updated results.json',state['last_checked'])
 if __name__=='__main__':main()
