@@ -12,9 +12,10 @@ import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
 ROOT=Path(__file__).resolve().parent; TZ=ZoneInfo('America/Denver'); START=datetime(2026,8,18,19,0,tzinfo=TZ); END=datetime(2026,8,19,2,0,tzinfo=TZ); UA={'User-Agent':'Mozilla/5.0 WyomingElectionDashboard/1.0'}; BAD=('2024','2022','2020','sample ballot','public test','testing','expected result','audit','recount','canvass')
+LEG_API='https://web.wyoleg.gov/LsoService/api/legislator/2026/{chamber}'
 @dataclass(frozen=True)
 class Candidate: chamber:str; district:int; party:str; candidate:str
-def norm(s): return re.sub(r'\s+',' ',re.sub(r'[^a-z0-9 ]+',' ',s.lower().replace('&',' and '))).strip()
+def norm(s): return re.sub(r'\s+',' ',re.sub(r'[^a-z0-9 ]+',' ',str(s).lower().replace('&',' and '))).strip()
 def load_candidates():
     with open(ROOT/'candidates.csv',newline='',encoding='utf-8') as f:return [Candidate(r['chamber'],int(r['district']),r['party'],r['candidate']) for r in csv.DictReader(f)]
 def load_sources():return json.loads((ROOT/'sources.json').read_text())
@@ -31,6 +32,33 @@ def load_state(sources):
         except Exception:pass
     return blank_state(sources)
 def get(session,url):r=session.get(url,headers=UA,timeout=15,allow_redirects=True);r.raise_for_status();return r
+def _rows_from_leg_api(payload):
+    if isinstance(payload,list): return payload
+    if isinstance(payload,dict):
+        for k in ('data','result','results','legislators','items'):
+            if isinstance(payload.get(k),list): return payload[k]
+    return []
+def refresh_incumbents():
+    fc=fc_names(); out={'House':{},'Senate':{}}
+    try:
+        s=requests.Session()
+        for chamber,code in [('House','H'),('Senate','S')]:
+            r=get(s,LEG_API.format(chamber=code)); rows=_rows_from_leg_api(r.json())
+            for row in rows:
+                district=row.get('currentDistrict') or row.get('district') or row.get('District') or row.get('CurrentDistrict')
+                name=row.get('name') or row.get('Name') or ' '.join(filter(None,[row.get('firstName') or row.get('FirstName'),row.get('lastName') or row.get('LastName')]))
+                party=row.get('party') or row.get('Party') or ''
+                try:d=str(int(str(district).strip()))
+                except Exception:continue
+                if name:out[chamber][d]={'name':str(name).strip(),'party':str(party).strip(),'is_fc':norm(name) in fc}
+        if len(out['House'])>=50 and len(out['Senate'])>=25:
+            (ROOT/'incumbents.json').write_text(json.dumps(out,indent=2),encoding='utf-8');return out
+    except Exception as e:print('Incumbent refresh failed:',e)
+    p=ROOT/'incumbents.json'
+    if p.exists():
+        try:return json.loads(p.read_text())
+        except Exception:pass
+    return out
 def pdf_text(content):
     try:return '\n'.join((p.extract_text() or '') for p in PdfReader(io.BytesIO(content)).pages)
     except Exception:return ''
@@ -89,14 +117,14 @@ def aggregate(state,candidates):
         for c in contests[key]:d=totals[key][norm(c.candidate)];rows.append({'candidate':c.candidate,'votes':d['votes'],'counties':sorted(d['counties']),'is_fc':norm(c.candidate) in fc})
         races.append({'chamber':chamber,'district':district,'party':party,'candidates':rows})
     return races
-def export(state,candidates):
-    statuses=[{'county':county,'status':info.get('status','Waiting for election-night results'),'url':info.get('result_url') or info.get('source_url') or '#','reporting':bool(info.get('votes'))} for county,info in sorted(state['counties'].items())];payload={'last_checked':state.get('last_checked'),'last_updated':state.get('last_updated'),'reporting_counties':sum(x['reporting'] for x in statuses),'county_status':statuses,'races':aggregate(state,candidates)};(ROOT/'results.json').write_text(json.dumps(payload,indent=2),encoding='utf-8')
+def export(state,candidates,incumbents):
+    statuses=[{'county':county,'status':info.get('status','Waiting for election-night results'),'url':info.get('result_url') or info.get('source_url') or '#','reporting':bool(info.get('votes'))} for county,info in sorted(state['counties'].items())];payload={'last_checked':state.get('last_checked'),'last_updated':state.get('last_updated'),'reporting_counties':sum(x['reporting'] for x in statuses),'county_status':statuses,'incumbents':incumbents,'races':aggregate(state,candidates)};(ROOT/'results.json').write_text(json.dumps(payload,indent=2),encoding='utf-8')
 def main():
-    candidates=load_candidates();sources=load_sources();state=load_state(sources);now=datetime.now(TZ)
+    candidates=load_candidates();sources=load_sources();state=load_state(sources);incumbents=refresh_incumbents();now=datetime.now(TZ)
     if not (START<=now<=END):
-        export(state,candidates)
+        export(state,candidates,incumbents)
         if not (ROOT/'state.json').exists():(ROOT/'state.json').write_text(json.dumps(state,indent=2),encoding='utf-8')
-        print('Outside election-night window; feed initialized only.');return
+        print('Outside election-night window; incumbent roster/feed refreshed only.');return
     state['last_checked']=now.isoformat(timespec='seconds');changed=False
     with ThreadPoolExecutor(max_workers=8) as pool:
         futures=[pool.submit(check_county,s,candidates) for s in sources]
@@ -106,5 +134,5 @@ def main():
             elif prev:info['status']='Reporting (last good snapshot; current check unavailable)'
             else:info['status']=status
     if changed:state['last_updated']=state['last_checked']
-    (ROOT/'state.json').write_text(json.dumps(state,indent=2),encoding='utf-8');export(state,candidates);print('Updated results.json',state['last_checked'])
+    (ROOT/'state.json').write_text(json.dumps(state,indent=2),encoding='utf-8');export(state,candidates,incumbents);print('Updated results.json',state['last_checked'])
 if __name__=='__main__':main()
