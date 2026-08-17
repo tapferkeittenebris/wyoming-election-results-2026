@@ -7,141 +7,171 @@
       "county": "Albany",
       "status": "Waiting for election-night results",
       "url": "https://www.albanycountywy.gov/176/Results-of-Election",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Big Horn",
       "status": "Waiting for election-night results",
       "url": "https://www.bighorncountywy.gov/departments/clerk/elections",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Campbell",
       "status": "Waiting for election-night results",
       "url": "https://www.campbellcountywy.gov/2077/Election-Results",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Carbon",
       "status": "Waiting for election-night results",
       "url": "https://www.carboncountywy.gov/997/Election-Results",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Converse",
       "status": "Waiting for election-night results",
       "url": "https://www.conversecountywy.gov/187/Elections",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Crook",
       "status": "Waiting for election-night results",
       "url": "https://www.crookcounty.wy.gov/elected_officials/clerk/election/election_results.php",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Fremont",
       "status": "Waiting for election-night results",
       "url": "https://fremontcountywy.gov/government/elections___voting.php",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Goshen",
       "status": "Waiting for election-night results",
       "url": "https://www.goshencountywy.gov/198/Voter-Information",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Hot Springs",
       "status": "Waiting for election-night results",
       "url": "https://hscounty.com/component/edocman/election-results-archives/elections-2026?Itemid=100",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Johnson",
       "status": "Waiting for election-night results",
       "url": "https://www.johnsoncowy.gov/departments/elections",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Laramie",
       "status": "Waiting for election-night results",
       "url": "https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections/Election-Results",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Lincoln",
       "status": "Waiting for election-night results",
       "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Natrona",
       "status": "Waiting for election-night results",
       "url": "https://www.natronacounty-wy.gov/128/Elections",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Niobrara",
       "status": "Waiting for election-night results",
       "url": "https://www.niobraracounty.org/_departments/_county_clerk/ElectionResults.asp",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Park",
       "status": "Waiting for election-night results",
       "url": "https://parkcounty-wy.gov/county-elections/results/",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Platte",
       "status": "Waiting for election-night results",
       "url": "https://www.plattecountywyoming.com/departments/Elections/ResultsofElection",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Sheridan",
       "status": "Waiting for election-night results",
       "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Sublette",
       "status": "Waiting for election-night results",
       "url": "https://www.sublettecountywy.gov/110/Election-Information",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Sweetwater",
       "status": "Waiting for election-night results",
       "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Teton",
       "status": "Waiting for election-night results",
       "url": "https://www.tetoncountywy.gov/271/Election-Results",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Uinta",
       "status": "Waiting for election-night results",
       "url": "https://uintacountywy.gov/DocumentCenter/View/8645/2026-Primary-Results-UNOFFICIAL",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Washakie",
       "status": "Waiting for election-night results",
       "url": "https://www.washakiecountywy.gov/196/Elections",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     },
     {
       "county": "Weston",
       "status": "Waiting for election-night results",
       "url": "https://www.westongov.com/county-clerk/elections/election-results/",
-      "reporting": false
+      "reporting": false,
+      "errors": []
     }
   ],
+  "sos_validation": {
+    "available": false,
+    "page": "https://sos.wyo.gov/Elections/Docs/2026/2026PrimaryResults.aspx",
+    "summaries": [],
+    "candidate_matches": 0,
+    "status": "2026 SOS primary results page not yet published"
+  },
   "incumbents": {
     "House": {
       "1": {
