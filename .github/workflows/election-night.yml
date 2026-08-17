@@ -2,6 +2,11 @@ name: Wyoming election-night updater
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'github_updater.py'
+      - 'freedom_caucus_candidates.csv'
+      - '.github/workflows/election-night.yml'
   schedule:
     # 7:00 PM MDT Aug 18 = 01:00 UTC Aug 19; 2:00 AM MDT = 08:00 UTC.
     # Scheduled every 10 minutes; Python additionally enforces the exact 2026 window.
@@ -28,17 +33,17 @@ jobs:
           cache: pip
       - name: Install scraper dependencies
         run: pip install -r requirements.txt
-      - name: Check official county results and rebuild feed
+      - name: Refresh official incumbents and check election results when in window
         run: python github_updater.py
-      - name: Commit changed state and results
+      - name: Commit changed state, incumbents, and results
         run: |
-          if [ -z "$(git status --porcelain -- state.json results.json)" ]; then
-            echo "No result changes to commit."
+          if [ -z "$(git status --porcelain -- state.json incumbents.json results.json)" ]; then
+            echo "No feed changes to commit."
             exit 0
           fi
           git config user.name "wyoming-election-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add state.json results.json
-          git commit -m "Update unofficial election results"
+          git add state.json incumbents.json results.json
+          git commit -m "Refresh election dashboard data"
           git pull --rebase
           git push
