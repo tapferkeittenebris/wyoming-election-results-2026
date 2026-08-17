@@ -1,0 +1,45 @@
+name: Historical county-results regression
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'github_updater.py'
+      - 'sources.json'
+      - 'tests/replay_2024.py'
+      - '.github/workflows/historical-regression.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: historical-results-regression
+  cancel-in-progress: true
+
+jobs:
+  replay-2024:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install scraper dependencies
+        run: pip install -r requirements.txt
+      - name: Replay archived 2024 county publishing patterns
+        run: python tests/replay_2024.py
+      - name: Production feed dry run
+        run: python github_updater.py
+      - name: Assert dry run did not ingest historical votes
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('results.json'))
+          assert d.get('reporting_counties',0)==0, 'Pre-election production feed unexpectedly contains county votes'
+          assert len(d.get('races',[]))>0, 'Legislative race feed is empty'
+          assert len(d.get('statewide_races',[]))>0, 'Statewide race feed is empty'
+          assert len(d.get('county_status',[]))==23, 'County status list must contain all 23 counties'
+          print('Production dry-run feed shape passed.')
+          PY
