@@ -35,15 +35,17 @@ jobs:
         run: pip install -r requirements.txt
       - name: Refresh official incumbents and check election results when in window
         run: python github_updater.py
-      - name: Commit changed state, incumbents, and results
+      - name: Commit changed dashboard data
         run: |
-          if [ -z "$(git status --porcelain -- state.json incumbents.json results.json)" ]; then
+          CHANGED="$(git status --porcelain -- state.json results.json incumbents.json)"
+          if [ -z "$CHANGED" ]; then
             echo "No feed changes to commit."
             exit 0
           fi
           git config user.name "wyoming-election-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add state.json incumbents.json results.json
+          git add state.json results.json
+          if [ -f incumbents.json ]; then git add incumbents.json; fi
           git commit -m "Refresh election dashboard data"
           git pull --rebase
           git push
