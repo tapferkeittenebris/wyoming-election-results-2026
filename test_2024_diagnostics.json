@@ -2,25 +2,24 @@
   "counties": [
     {
       "county": "Albany",
-      "status": "No parseable 2024 county archive found",
-      "url": "https://www.albanycountywy.gov/176/Results-of-Election",
-      "votes": {},
-      "matches": 0,
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.albanycountywy.gov/DocumentCenter/View/6819/OFFICIAL-RESULTS---2024-Primary-Election-",
+      "votes": {
+        "mike selmer": 295,
+        "shane swett": 484,
+        "joe giustozzi": 992,
+        "trey sherwood": 26,
+        "paul crouch": 189,
+        "karlee provenza": 565,
+        "chris lowry": 275
+      },
+      "matches": 7,
+      "hash": "8dc1a1198f10e2c5",
       "attempts": [
         {
-          "url": "https://www.albanycountywy.gov/177/Previous-Election-Results",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.albanycountywy.gov/177/Previous-Election-Results",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.albanycountywy.gov/177/Previous-Election-Results",
-          "score": 8,
-          "matches": 0
+          "url": "https://www.albanycountywy.gov/DocumentCenter/View/6819/OFFICIAL-RESULTS---2024-Primary-Election-",
+          "score": 35,
+          "matches": 7
         }
       ]
     },
@@ -53,13 +52,8 @@
       "hash": "bff054cb7a8beb54",
       "attempts": [
         {
-          "url": "https://www.campbellcountywy.gov/DocumentCenter/View/23728/2024-Primary-Precinct-Summary",
-          "score": 26,
-          "matches": 0
-        },
-        {
           "url": "https://www.campbellcountywy.gov/DocumentCenter/View/23726/2024-Primary-Election",
-          "score": 24,
+          "score": 42,
           "matches": 5
         }
       ]
@@ -80,7 +74,7 @@
       "attempts": [
         {
           "url": "https://www.carboncountywy.gov/DocumentCenter/View/8100/2024-Primary-Official-Election-Summary",
-          "score": 29,
+          "score": 42,
           "matches": 5
         }
       ]
@@ -98,28 +92,8 @@
       "hash": "fa955b47f0def8f1",
       "attempts": [
         {
-          "url": "https://www.conversecountywy.gov/538/2024-Election-Results",
-          "score": 22,
-          "matches": 0
-        },
-        {
-          "url": "https://www.conversecountywy.gov/187/Elections",
-          "score": 10,
-          "matches": 0
-        },
-        {
-          "url": "https://www.conversecountywy.gov/188/Historical-Election-Results",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.conversecountywy.gov/537/2024-Primary-Election-Sample-Ballots",
-          "score": 6,
-          "matches": 0
-        },
-        {
           "url": "https://www.conversecountywy.gov/DocumentCenter/View/5627/2024-OFFICAL-RESULTS-ELECTION-SUMMARY-REPORT",
-          "score": 24,
+          "score": 34,
           "matches": 3
         }
       ]
@@ -143,6 +117,11 @@
           "url": "https://fremontcountywy.gov/government/elections___voting.php",
           "score": 10,
           "matches": 0
+        },
+        {
+          "url": "https://fremontcountywy.gov/government/elections___voting.php#main",
+          "score": 10,
+          "matches": 0
         }
       ]
     },
@@ -161,17 +140,32 @@
       "attempts": [
         {
           "url": "https://www.goshencountywy.gov/384/Unofficial-Election-Results",
-          "score": 11,
+          "score": 19,
+          "matches": 0
+        },
+        {
+          "url": "https://www.goshencountywy.gov/384/Unofficial-Election-Results#cc5f8c90dc-b4cb-431b-90ee-10648f8df655",
+          "score": 19,
           "matches": 0
         },
         {
           "url": "https://www.goshencountywy.gov/191/Election-Results",
-          "score": 8,
+          "score": 17,
+          "matches": 0
+        },
+        {
+          "url": "https://www.goshencountywy.gov/191/Election-Results#cc5f8c90dc-b4cb-431b-90ee-10648f8df655",
+          "score": 17,
+          "matches": 0
+        },
+        {
+          "url": "https://www.goshencountywy.gov/Archive.aspx?AMID=37",
+          "score": 17,
           "matches": 0
         },
         {
           "url": "https://www.goshencountywy.gov/ArchiveCenter/ViewFile/Item/136",
-          "score": 32,
+          "score": 42,
           "matches": 4
         }
       ]
@@ -184,18 +178,28 @@
       "matches": 0,
       "attempts": [
         {
+          "url": "https://hscounty.com/component/edocman/2024-hot-springs-co-primary-election-official-results-2/download?Itemid=100",
+          "score": 35,
+          "matches": 0
+        },
+        {
+          "url": "https://hscounty.com/component/edocman/2024-hot-springs-co-primary-election-official-results-2/viewdocument/1082?Itemid=100",
+          "score": 35,
+          "matches": 0
+        },
+        {
+          "url": "https://hscounty.com/component/edocman/election-results-archives/election-2024/2024-hot-springs-co-primary-election-official-results-2?tmpl=component&Itemid=100",
+          "score": 35,
+          "matches": 0
+        },
+        {
           "url": "https://hscounty.com/component/edocman/election-results-archives/election-2024?Itemid=100",
-          "score": 22,
+          "score": 17,
           "matches": 0
         },
         {
           "url": "https://hscounty.com/elections",
           "score": 10,
-          "matches": 0
-        },
-        {
-          "url": "https://hscounty.com/elections",
-          "score": 8,
           "matches": 0
         }
       ]
@@ -214,16 +218,7 @@
       "url": "https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections/Election-Results",
       "votes": {},
       "matches": 0,
-      "attempts": [
-        {
-          "url": "https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections/Election-Results",
-          "error": "HTTPError('403 Client Error: Forbidden for url: https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections/Election-Results')"
-        },
-        {
-          "url": "https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections",
-          "error": "HTTPError('403 Client Error: Forbidden for url: https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections')"
-        }
-      ]
+      "attempts": []
     },
     {
       "county": "Lincoln",
@@ -235,61 +230,6 @@
         {
           "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
           "score": 10,
-          "matches": 0
-        },
-        {
-          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
-          "score": 8,
           "matches": 0
         }
       ]
@@ -322,28 +262,26 @@
       "hash": "f4c8b11c5504ea86",
       "attempts": [
         {
-          "url": "https://www.natronacounty-wy.gov/659/Results-Archive",
-          "score": 8,
-          "matches": 0
-        },
-        {
           "url": "https://www.natronacounty-wy.gov/DocumentCenter/View/9954/2024-Primary-Election-Summary-PDF?bidId=",
-          "score": 26,
+          "score": 34,
           "matches": 18
         }
       ]
     },
     {
       "county": "Niobrara",
-      "status": "No parseable 2024 county archive found",
-      "url": "https://www.niobraracounty.org/_departments/_county_clerk/ElectionResults.asp",
-      "votes": {},
-      "matches": 0,
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.niobraracounty.org/_departments/_county_clerk/_pdfs/2024/Official%20Primary%20Election%20Summary.pdf",
+      "votes": {
+        "jd williams": 600
+      },
+      "matches": 1,
+      "hash": "99cbc9d2cf9387e6",
       "attempts": [
         {
-          "url": "https://www.niobraracounty.org/_departments/_county_clerk/Pastelectionresults.asp",
-          "score": 8,
-          "matches": 0
+          "url": "https://www.niobraracounty.org/_departments/_county_clerk/_pdfs/2024/Official%20Primary%20Election%20Summary.pdf",
+          "score": 34,
+          "matches": 1
         }
       ]
     },
@@ -368,7 +306,7 @@
       "attempts": [
         {
           "url": "https://parkcounty-wy.gov/wp-content/uploads/2024/08/Official-County-Election-Summary-Park-County-Primary-2024.pdf",
-          "score": 39,
+          "score": 42,
           "matches": 10
         }
       ]
@@ -395,57 +333,7 @@
         },
         {
           "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php#main",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
-          "score": 8,
+          "score": 10,
           "matches": 0
         },
         {
@@ -471,7 +359,7 @@
       "attempts": [
         {
           "url": "https://www.sublettecountywy.gov/DocumentCenter/View/5746/Election-Summary-un-8-20-24",
-          "score": 37,
+          "score": 42,
           "matches": 5
         }
       ]
@@ -485,62 +373,17 @@
       "attempts": [
         {
           "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
-          "score": 10,
+          "score": 19,
           "matches": 0
         },
         {
           "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php#main",
-          "score": 8,
+          "score": 19,
           "matches": 0
         },
         {
-          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
-          "score": 8,
-          "matches": 0
-        },
-        {
-          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
-          "score": 8,
+          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/",
+          "score": 19,
           "matches": 0
         }
       ]
@@ -559,7 +402,7 @@
       "attempts": [
         {
           "url": "https://www.tetoncountywy.gov/DocumentCenter/View/30864/2024-Primary-Election-Official-Precinct-Results",
-          "score": 35,
+          "score": 42,
           "matches": 3
         }
       ]
@@ -575,7 +418,7 @@
     {
       "county": "Washakie",
       "status": "Parsed archived 2024 county results",
-      "url": "https://www.washakiecountywy.gov/DocumentCenter/View/386/2024-Official-Results",
+      "url": "https://www.washakiecountywy.gov/DocumentCenter/View/314/2024-Primary-PDF",
       "votes": {
         "ed cooper": 422,
         "tom olmstead": 223,
@@ -586,8 +429,8 @@
       "hash": "8adc26a23381aeea",
       "attempts": [
         {
-          "url": "https://www.washakiecountywy.gov/DocumentCenter/View/386/2024-Official-Results",
-          "score": 25,
+          "url": "https://www.washakiecountywy.gov/DocumentCenter/View/314/2024-Primary-PDF",
+          "score": 42,
           "matches": 4
         }
       ]
@@ -606,7 +449,7 @@
       "attempts": [
         {
           "url": "https://www.westongov.com/wp-content/uploads/2024/08/Weston-County-Primary-Election-Summary-2024-Official-Results.pdf",
-          "score": 39,
+          "score": 42,
           "matches": 3
         }
       ]

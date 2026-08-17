@@ -1,16 +1,16 @@
 {
   "replay_year": 2024,
   "test_mode": true,
-  "source_note": "Archived 2024 county election pages; candidate roster from Wyoming Secretary of State",
+  "source_note": "Archived 2024 county election pages; recursive same-domain discovery; candidate roster from Wyoming Secretary of State",
   "sos_validation_url": "https://sos.wyo.gov/Elections/Docs/2024/2024PrimaryResults.aspx",
-  "reporting_counties": 10,
+  "reporting_counties": 12,
   "county_status": [
     {
       "county": "Albany",
-      "status": "No parseable 2024 county archive found",
-      "url": "https://www.albanycountywy.gov/176/Results-of-Election",
-      "reporting": false,
-      "matches": 0
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.albanycountywy.gov/DocumentCenter/View/6819/OFFICIAL-RESULTS---2024-Primary-Election-",
+      "reporting": true,
+      "matches": 7
     },
     {
       "county": "Big Horn",
@@ -98,10 +98,10 @@
     },
     {
       "county": "Niobrara",
-      "status": "No parseable 2024 county archive found",
-      "url": "https://www.niobraracounty.org/_departments/_county_clerk/ElectionResults.asp",
-      "reporting": false,
-      "matches": 0
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.niobraracounty.org/_departments/_county_clerk/_pdfs/2024/Official%20Primary%20Election%20Summary.pdf",
+      "reporting": true,
+      "matches": 1
     },
     {
       "county": "Park",
@@ -155,7 +155,7 @@
     {
       "county": "Washakie",
       "status": "Parsed archived 2024 county results",
-      "url": "https://www.washakiecountywy.gov/DocumentCenter/View/386/2024-Official-Results",
+      "url": "https://www.washakiecountywy.gov/DocumentCenter/View/314/2024-Primary-PDF",
       "reporting": true,
       "matches": 4
     },
@@ -203,9 +203,10 @@
         },
         {
           "candidate": "JD Williams",
-          "votes": 928,
+          "votes": 1528,
           "counties": [
             "Goshen",
+            "Niobrara",
             "Weston"
           ],
           "is_fc": false
@@ -458,8 +459,10 @@
       "candidates": [
         {
           "candidate": "Shane Swett",
-          "votes": 0,
-          "counties": [],
+          "votes": 484,
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -484,8 +487,10 @@
       "candidates": [
         {
           "candidate": "Joe Giustozzi",
-          "votes": 0,
-          "counties": [],
+          "votes": 992,
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -497,8 +502,10 @@
       "candidates": [
         {
           "candidate": "Trey Sherwood",
-          "votes": 0,
-          "counties": [],
+          "votes": 26,
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -1135,8 +1142,10 @@
       "candidates": [
         {
           "candidate": "Paul Crouch",
-          "votes": 0,
-          "counties": [],
+          "votes": 189,
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -1148,8 +1157,10 @@
       "candidates": [
         {
           "candidate": "Karlee Provenza",
-          "votes": 0,
-          "counties": [],
+          "votes": 565,
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -1174,8 +1185,10 @@
       "candidates": [
         {
           "candidate": "Chris Lowry",
-          "votes": 0,
-          "counties": [],
+          "votes": 275,
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -1623,8 +1636,10 @@
       "candidates": [
         {
           "candidate": "Mike Selmer",
-          "votes": 0,
-          "counties": [],
+          "votes": 295,
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
