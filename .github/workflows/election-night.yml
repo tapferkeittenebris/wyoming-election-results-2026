@@ -6,6 +6,7 @@ on:
     paths:
       - 'github_updater.py'
       - 'freedom_caucus_candidates.csv'
+      - 'incumbents.json'
       - '.github/workflows/election-night.yml'
   schedule:
     # 7:00 PM MDT Aug 18 = 01:00 UTC Aug 19; 2:00 AM MDT = 08:00 UTC.
@@ -33,7 +34,7 @@ jobs:
           cache: pip
       - name: Install scraper dependencies
         run: pip install -r requirements.txt
-      - name: Refresh official incumbents and check election results when in window
+      - name: Refresh incumbent layer and check election results when in window
         run: python github_updater.py
       - name: Commit changed dashboard data
         run: |
