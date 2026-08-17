@@ -142,6 +142,10 @@
       "reporting": false
     }
   ],
+  "incumbents": {
+    "House": {},
+    "Senate": {}
+  },
   "races": [
     {
       "chamber": "Senate",
