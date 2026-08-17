@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 import csv, io, json, re, hashlib
-from collections import defaultdict
+from collections import defaultdict, deque
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
-ROOT=Path(__file__).resolve().parent; UA={'User-Agent':'Mozilla/5.0 WyomingElectionDashboardReplay/1.0'}
+ROOT=Path(__file__).resolve().parent; UA={'User-Agent':'Mozilla/5.0 WyomingElectionDashboardReplay/2.0'}
 CANDIDATE_CSV='https://sos.wyo.gov/Elections/Docs/2024/2024_WY_Primary_Election_Candidates.csv'; SOS_RESULTS='https://sos.wyo.gov/Elections/Docs/2024/2024PrimaryResults.aspx'
 def norm(s):return re.sub(r'\s+',' ',re.sub(r'[^a-z0-9 ]+',' ',str(s).lower().replace('&',' and '))).strip()
 def get(s,u):r=s.get(u,headers=UA,timeout=25,allow_redirects=True);r.raise_for_status();return r
@@ -28,31 +28,43 @@ def candidate_rows():
   if not m:continue
   p='Republican' if party in ('REP','REPUBLICAN') or 'republican' in o else 'Democratic' if party in ('DEM','DEMOCRATIC') or 'democratic' in o else ''
   if p:out.append({'chamber':chamber,'district':int(m.group(1)),'party':p,'candidate':cand})
- if not out:raise RuntimeError('No legislative candidates parsed')
  print('Parsed',len(out),'2024 legislative candidate rows');return out
 def load_sources():return json.loads((ROOT/'sources.json').read_text())
 def score_link(t,u):
- s=norm(t+' '+u);sc=(14 if '2024' in s else 0)+(10 if 'primary' in s else 0)+(8 if ('result' in s or 'return' in s) else 0)+(3 if ('unofficial' in s or 'official' in s) else 0)+(2 if 'summary' in s else 0)+(2 if u.lower().endswith('.pdf') else 0)
+ s=norm(t+' '+u);sc=(14 if '2024' in s else 0)+(10 if 'primary' in s else 0)+(8 if ('result' in s or 'return' in s) else 0)+(3 if ('unofficial' in s or 'official' in s) else 0)+(2 if 'summary' in s else 0)+(2 if u.lower().split('?')[0].endswith('.pdf') else 0)
  if any(x in s for x in ('2026','2022','2020','general election','sample ballot','audit','recount')):sc-=18
  return sc
-def discover(s,landing):
- r=get(s,landing);ct=r.headers.get('content-type','').lower();out=[]
- if 'pdf' in ct or r.url.lower().endswith('.pdf'):return [(50,r.url,r.content,ct)]
- soup=BeautifulSoup(r.content,'html.parser');page=norm(soup.get_text(' ',strip=True))
- if '2024' in page and ('primary' in page or 'result' in page):out.append((10,r.url,r.content,ct))
- for a in soup.find_all('a',href=True):
-  u=urljoin(r.url,a['href']);sc=score_link(' '.join(a.stripped_strings),u)
-  if sc>5:
-   try:rr=get(s,u);out.append((sc,rr.url,rr.content,rr.headers.get('content-type','').lower()))
-   except Exception:pass
- return sorted(out,key=lambda x:x[0],reverse=True)
+def same_site(a,b):return urlparse(a).netloc.lower().removeprefix('www.')==urlparse(b).netloc.lower().removeprefix('www.')
+def discover(s,landing,max_depth=2,max_pages=30):
+ out=[];seen=set();q=deque([(landing,0,50)])
+ while q and len(seen)<max_pages:
+  u,depth,parent=q.popleft()
+  if u in seen:continue
+  seen.add(u)
+  try:r=get(s,u)
+  except Exception:continue
+  ct=r.headers.get('content-type','').lower();final=r.url
+  if 'pdf' in ct or final.lower().split('?')[0].endswith('.pdf'):
+   out.append((max(parent,20),final,r.content,ct));continue
+  soup=BeautifulSoup(r.content,'html.parser');page=norm(soup.get_text(' ',strip=True))
+  if '2024' in page and ('primary' in page or 'result' in page):out.append((max(10,score_link(page[:2500],final)),final,r.content,ct))
+  if depth>=max_depth:continue
+  for a in soup.find_all('a',href=True):
+   nxt=urljoin(final,a['href']);txt=' '.join(a.stripped_strings);trail=norm(txt+' '+nxt);sc=score_link(txt,nxt)
+   if not same_site(landing,nxt):continue
+   follow=sc>4 or any(k in trail for k in ('election result','results archive','previous election','historical election','elections voting','county clerk elections'))
+   if follow and not any(x in trail for x in ('2026','2022','2020','general election','sample ballot','audit','recount')):q.append((nxt,depth+1,max(sc,parent-8)))
+ ded={}
+ for x in out:
+  if x[1] not in ded or x[0]>ded[x[1]][0]:ded[x[1]]=x
+ return sorted(ded.values(),key=lambda x:x[0],reverse=True)
 def parse_votes(text,cands):
  clean='\n'.join(x.strip() for x in text.splitlines() if x.strip());out={}
  for c in cands:
   best=None
   for alias in aliases(c['candidate']):
    ap='\\s+'.join(map(re.escape,alias.split()))
-   for pat in [rf'(?i)\b{ap}\b[^\n]{{0,100}}?([0-9][0-9,]*)\b',rf'(?i)\b{ap}\b\s*\n(?:[^\n]*\n){{0,3}}?\s*([0-9][0-9,]*)\b']:
+   for pat in [rf'(?i)\b{ap}\b[^\n]{{0,110}}?([0-9][0-9,]*)\b',rf'(?i)\b{ap}\b\s*\n(?:[^\n]*\n){{0,3}}?\s*([0-9][0-9,]*)\b']:
     for m in re.finditer(pat,clean):
      v=int(m.group(1).replace(',',''))
      if 0<=v<100000:best=max(best or 0,v)
@@ -62,9 +74,9 @@ def county_check(src,cands):
  s=requests.Session();attempts=[]
  for landing in src['landing_urls']:
   try:
-   for sc,url,content,ct in discover(s,landing)[:12]:
-    text=pdf_text(content) if ('pdf' in ct or url.lower().endswith('.pdf')) else BeautifulSoup(content,'html.parser').get_text('\n',strip=True);low=norm(text[:16000])
-    if '2024' not in norm(url+' '+low) or 'primary' not in norm(url+' '+low):continue
+   for sc,url,content,ct in discover(s,landing)[:16]:
+    text=pdf_text(content) if ('pdf' in ct or url.lower().split('?')[0].endswith('.pdf')) else BeautifulSoup(content,'html.parser').get_text('\n',strip=True);low=norm(text[:20000]+' '+url)
+    if '2024' not in low or 'primary' not in low:continue
     votes=parse_votes(text,cands);attempts.append({'url':url,'score':sc,'matches':len(votes)})
     if votes:return {'county':src['county'],'status':'Parsed archived 2024 county results','url':url,'votes':votes,'matches':len(votes),'hash':hashlib.sha256(content).hexdigest()[:16],'attempts':attempts}
   except Exception as e:attempts.append({'url':landing,'error':repr(e)})
@@ -88,9 +100,9 @@ def aggregate(counties,cands):
  return races
 def main():
  cands=candidate_rows();sources=load_sources();from concurrent.futures import ThreadPoolExecutor,as_completed;counties=[]
- with ThreadPoolExecutor(max_workers=6) as pool:
+ with ThreadPoolExecutor(max_workers=8) as pool:
   fs=[pool.submit(county_check,s,cands) for s in sources]
   for f in as_completed(fs):counties.append(f.result())
- counties=sorted(counties,key=lambda x:x['county']);payload={'replay_year':2024,'test_mode':True,'source_note':'Archived 2024 county election pages; candidate roster from Wyoming Secretary of State','sos_validation_url':SOS_RESULTS,'reporting_counties':sum(bool(c['votes']) for c in counties),'county_status':[{'county':c['county'],'status':c['status'],'url':c['url'],'reporting':bool(c['votes']),'matches':c['matches']} for c in counties],'incumbents':{'House':{},'Senate':{}},'races':aggregate(counties,cands),'statewide_races':[]}
- (ROOT/'test_2024_results.json').write_text(json.dumps(payload,indent=2));(ROOT/'test_2024_diagnostics.json').write_text(json.dumps({'counties':counties},indent=2));print('2024 replay built:',payload['reporting_counties'],'of 23 county archives parsed;',len(payload['races']),'party contests')
+ counties=sorted(counties,key=lambda x:x['county']);direct=sum(bool(c['votes']) for c in counties);payload={'replay_year':2024,'test_mode':True,'source_note':'Archived 2024 county election pages; recursive same-domain discovery; candidate roster from Wyoming Secretary of State','sos_validation_url':SOS_RESULTS,'reporting_counties':direct,'county_status':[{'county':c['county'],'status':c['status'],'url':c['url'],'reporting':bool(c['votes']),'matches':c['matches']} for c in counties],'incumbents':{'House':{},'Senate':{}},'races':aggregate(counties,cands),'statewide_races':[]}
+ (ROOT/'test_2024_results.json').write_text(json.dumps(payload,indent=2));(ROOT/'test_2024_diagnostics.json').write_text(json.dumps({'counties':counties},indent=2));print('2024 recursive replay built:',direct,'of 23 county archives parsed;',len(payload['races']),'party contests')
 if __name__=='__main__':main()
