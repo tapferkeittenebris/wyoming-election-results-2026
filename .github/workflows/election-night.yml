@@ -5,6 +5,8 @@ on:
   push:
     paths:
       - 'github_updater.py'
+      - 'sources.json'
+      - 'candidates.csv'
       - 'freedom_caucus_candidates.csv'
       - 'statewide_candidates.csv'
       - 'incumbents.json'
@@ -35,7 +37,7 @@ jobs:
           cache: pip
       - name: Install scraper dependencies
         run: pip install -r requirements.txt
-      - name: Refresh incumbent layer and check election results when in window
+      - name: Refresh incumbents, county results, and SOS validation layer
         run: python github_updater.py
       - name: Commit changed dashboard data
         run: |
