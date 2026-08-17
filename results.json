@@ -2207,5 +2207,301 @@
         }
       ]
     }
+  ],
+  "statewide_races": [
+    {
+      "office": "United States Senator",
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Harriet Hageman",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Jill M Edwards",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Jimmy Skovgard",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "John Holtz",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Sam Mead",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "office": "United States Senator",
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Billy Benavidez",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "James Byrd",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "office": "United States Representative",
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Bo Biteman",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Chuck Gray",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "David Giralt",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Frank Chapman",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Jillian Balow",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Keith B. Goodenough",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Kevin Christensen",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Reid Rasner",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Richard Dodson",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Steve Friess",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "office": "United States Representative",
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Elena Del Real",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Lisa Kinney",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "office": "Governor",
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Brent Bien",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Curt Blake",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Eric Barlow",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Megan Degenfelder",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "office": "Governor",
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Kenneth R. Casner",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "office": "Secretary of State",
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "CJ Young",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Qwenton Eagle Oviatt",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Rachel Williams",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        },
+        {
+          "candidate": "Robert Short",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "office": "Secretary of State",
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Bryan McCarty",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "office": "State Auditor",
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Kristi Racines",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "office": "State Treasurer",
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Curt Meier",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Scott Smith",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "office": "Superintendent of Public Instruction",
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Chad Auer",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Steve Harshman",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Tom Kelly",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "office": "Superintendent of Public Instruction",
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Ana Cordova",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Sergio A. Maldonado, Sr.",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    }
   ]
 }
