@@ -1,0 +1,615 @@
+{
+  "counties": [
+    {
+      "county": "Albany",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.albanycountywy.gov/176/Results-of-Election",
+      "votes": {},
+      "matches": 0,
+      "attempts": [
+        {
+          "url": "https://www.albanycountywy.gov/177/Previous-Election-Results",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.albanycountywy.gov/177/Previous-Election-Results",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.albanycountywy.gov/177/Previous-Election-Results",
+          "score": 8,
+          "matches": 0
+        }
+      ]
+    },
+    {
+      "county": "Big Horn",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.bighorncountywy.gov/departments/clerk/elections",
+      "votes": {},
+      "matches": 0,
+      "attempts": [
+        {
+          "url": "https://www.bighorncountywy.gov/departments/clerk/elections",
+          "score": 10,
+          "matches": 0
+        }
+      ]
+    },
+    {
+      "county": "Campbell",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.campbellcountywy.gov/DocumentCenter/View/23726/2024-Primary-Election",
+      "votes": {
+        "phil christopherson": 1192,
+        "abby angelos": 1455,
+        "john w bear": 879,
+        "george dunlap": 706,
+        "reuben tarver": 1309
+      },
+      "matches": 5,
+      "hash": "bff054cb7a8beb54",
+      "attempts": [
+        {
+          "url": "https://www.campbellcountywy.gov/DocumentCenter/View/23728/2024-Primary-Precinct-Summary",
+          "score": 26,
+          "matches": 0
+        },
+        {
+          "url": "https://www.campbellcountywy.gov/DocumentCenter/View/23726/2024-Primary-Election",
+          "score": 24,
+          "matches": 5
+        }
+      ]
+    },
+    {
+      "county": "Carbon",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.carboncountywy.gov/DocumentCenter/View/8100/2024-Primary-Official-Election-Summary",
+      "votes": {
+        "sheryl foland": 190,
+        "pamela thayer": 728,
+        "terry lee weickum": 213,
+        "bob davis": 1221,
+        "james a wilson": 99
+      },
+      "matches": 5,
+      "hash": "ec3c3cfa1475e263",
+      "attempts": [
+        {
+          "url": "https://www.carboncountywy.gov/DocumentCenter/View/8100/2024-Primary-Official-Election-Summary",
+          "score": 29,
+          "matches": 5
+        }
+      ]
+    },
+    {
+      "county": "Converse",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.conversecountywy.gov/DocumentCenter/View/5627/2024-OFFICAL-RESULTS-ELECTION-SUMMARY-REPORT",
+      "votes": {
+        "brian boner": 98,
+        "aaron clausen": 47,
+        "tomi strock": 52
+      },
+      "matches": 3,
+      "hash": "fa955b47f0def8f1",
+      "attempts": [
+        {
+          "url": "https://www.conversecountywy.gov/538/2024-Election-Results",
+          "score": 22,
+          "matches": 0
+        },
+        {
+          "url": "https://www.conversecountywy.gov/187/Elections",
+          "score": 10,
+          "matches": 0
+        },
+        {
+          "url": "https://www.conversecountywy.gov/188/Historical-Election-Results",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.conversecountywy.gov/537/2024-Primary-Election-Sample-Ballots",
+          "score": 6,
+          "matches": 0
+        },
+        {
+          "url": "https://www.conversecountywy.gov/DocumentCenter/View/5627/2024-OFFICAL-RESULTS-ELECTION-SUMMARY-REPORT",
+          "score": 24,
+          "matches": 3
+        }
+      ]
+    },
+    {
+      "county": "Crook",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.crookcounty.wy.gov/elected_officials/clerk/election/election_results.php",
+      "votes": {},
+      "matches": 0,
+      "attempts": []
+    },
+    {
+      "county": "Fremont",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://fremontcountywy.gov/government/elections___voting.php",
+      "votes": {},
+      "matches": 0,
+      "attempts": [
+        {
+          "url": "https://fremontcountywy.gov/government/elections___voting.php",
+          "score": 10,
+          "matches": 0
+        }
+      ]
+    },
+    {
+      "county": "Goshen",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.goshencountywy.gov/ArchiveCenter/ViewFile/Item/136",
+      "votes": {
+        "allen e slagle": 387,
+        "jd williams": 350,
+        "scott smith": 1554,
+        "jackie van mark": 891
+      },
+      "matches": 4,
+      "hash": "23e2cec88c4fbdc9",
+      "attempts": [
+        {
+          "url": "https://www.goshencountywy.gov/384/Unofficial-Election-Results",
+          "score": 11,
+          "matches": 0
+        },
+        {
+          "url": "https://www.goshencountywy.gov/191/Election-Results",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.goshencountywy.gov/ArchiveCenter/ViewFile/Item/136",
+          "score": 32,
+          "matches": 4
+        }
+      ]
+    },
+    {
+      "county": "Hot Springs",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://hscounty.com/component/edocman/election-results-archives/elections-2026?Itemid=100",
+      "votes": {},
+      "matches": 0,
+      "attempts": [
+        {
+          "url": "https://hscounty.com/component/edocman/election-results-archives/election-2024?Itemid=100",
+          "score": 22,
+          "matches": 0
+        },
+        {
+          "url": "https://hscounty.com/elections",
+          "score": 10,
+          "matches": 0
+        },
+        {
+          "url": "https://hscounty.com/elections",
+          "score": 8,
+          "matches": 0
+        }
+      ]
+    },
+    {
+      "county": "Johnson",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.johnsoncowy.gov/departments/elections",
+      "votes": {},
+      "matches": 0,
+      "attempts": []
+    },
+    {
+      "county": "Laramie",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections/Election-Results",
+      "votes": {},
+      "matches": 0,
+      "attempts": [
+        {
+          "url": "https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections/Election-Results",
+          "error": "HTTPError('403 Client Error: Forbidden for url: https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections/Election-Results')"
+        },
+        {
+          "url": "https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections",
+          "error": "HTTPError('403 Client Error: Forbidden for url: https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections')"
+        }
+      ]
+    },
+    {
+      "county": "Lincoln",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+      "votes": {},
+      "matches": 0,
+      "attempts": [
+        {
+          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+          "score": 10,
+          "matches": 0
+        },
+        {
+          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+          "score": 8,
+          "matches": 0
+        }
+      ]
+    },
+    {
+      "county": "Natrona",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.natronacounty-wy.gov/DocumentCenter/View/9954/2024-Primary-Election-Summary-PDF?bidId=",
+      "votes": {
+        "brian boner": 658,
+        "jim anderson": 1304,
+        "bryce reece": 1274,
+        "christopher dresang": 945,
+        "tony locke": 1082,
+        "art washut": 994,
+        "steve harshman": 1717,
+        "jayme lien": 859,
+        "tom walters": 715,
+        "elissa campbell": 806,
+        "pete fox": 541,
+        "pamela mertens": 111,
+        "julie jarvis": 623,
+        "jeanette ward": 485,
+        "bill allemand": 1017,
+        "tom jones": 424,
+        "edis allen": 304,
+        "kevin campbell": 399
+      },
+      "matches": 18,
+      "hash": "f4c8b11c5504ea86",
+      "attempts": [
+        {
+          "url": "https://www.natronacounty-wy.gov/659/Results-Archive",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.natronacounty-wy.gov/DocumentCenter/View/9954/2024-Primary-Election-Summary-PDF?bidId=",
+          "score": 26,
+          "matches": 18
+        }
+      ]
+    },
+    {
+      "county": "Niobrara",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.niobraracounty.org/_departments/_county_clerk/ElectionResults.asp",
+      "votes": {},
+      "matches": 0,
+      "attempts": [
+        {
+          "url": "https://www.niobraracounty.org/_departments/_county_clerk/Pastelectionresults.asp",
+          "score": 8,
+          "matches": 0
+        }
+      ]
+    },
+    {
+      "county": "Park",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://parkcounty-wy.gov/wp-content/uploads/2024/08/Official-County-Election-Summary-Park-County-Primary-2024.pdf",
+      "votes": {
+        "landon greer": 2311,
+        "ed cooper": 193,
+        "tom olmstead": 342,
+        "matt hall": 1233,
+        "nina webber": 1406,
+        "paul hoeft": 1251,
+        "david northrup": 808,
+        "dalton banks": 147,
+        "kevin skates": 182,
+        "david hill": 1061
+      },
+      "matches": 10,
+      "hash": "953a34900c5924c9",
+      "attempts": [
+        {
+          "url": "https://parkcounty-wy.gov/wp-content/uploads/2024/08/Official-County-Election-Summary-Park-County-Primary-2024.pdf",
+          "score": 39,
+          "matches": 10
+        }
+      ]
+    },
+    {
+      "county": "Platte",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.plattecountywyoming.com/departments/Elections/ResultsofElection",
+      "votes": {},
+      "matches": 0,
+      "attempts": []
+    },
+    {
+      "county": "Sheridan",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+      "votes": {},
+      "matches": 0,
+      "attempts": [
+        {
+          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+          "score": 10,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php#main",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sheridancountywy.gov/departments/elections/index.php",
+          "score": 10,
+          "matches": 0
+        }
+      ]
+    },
+    {
+      "county": "Sublette",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.sublettecountywy.gov/DocumentCenter/View/5746/Election-Summary-un-8-20-24",
+      "votes": {
+        "laura taliaferro pearson": 929,
+        "albert sommers": 1446,
+        "bill winney": 243,
+        "mike schmid": 1585,
+        "cat urbigkit": 1006
+      },
+      "matches": 5,
+      "hash": "613b28edb917b30c",
+      "attempts": [
+        {
+          "url": "https://www.sublettecountywy.gov/DocumentCenter/View/5746/Election-Summary-un-8-20-24",
+          "score": 37,
+          "matches": 5
+        }
+      ]
+    },
+    {
+      "county": "Sweetwater",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+      "votes": {},
+      "matches": 0,
+      "attempts": [
+        {
+          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+          "score": 10,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php#main",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+          "score": 8,
+          "matches": 0
+        },
+        {
+          "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+          "score": 8,
+          "matches": 0
+        }
+      ]
+    },
+    {
+      "county": "Teton",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.tetoncountywy.gov/DocumentCenter/View/30864/2024-Primary-Election-Official-Precinct-Results",
+      "votes": {
+        "dan dockstader": 108,
+        "mike yin": 195,
+        "liz storer": 103
+      },
+      "matches": 3,
+      "hash": "47d38bf06ce620c1",
+      "attempts": [
+        {
+          "url": "https://www.tetoncountywy.gov/DocumentCenter/View/30864/2024-Primary-Election-Official-Precinct-Results",
+          "score": 35,
+          "matches": 3
+        }
+      ]
+    },
+    {
+      "county": "Uinta",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://uintacountywy.gov/DocumentCenter/View/8645/2026-Primary-Results-UNOFFICIAL",
+      "votes": {},
+      "matches": 0,
+      "attempts": []
+    },
+    {
+      "county": "Washakie",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.washakiecountywy.gov/DocumentCenter/View/386/2024-Official-Results",
+      "votes": {
+        "ed cooper": 422,
+        "tom olmstead": 223,
+        "martha lawley": 431,
+        "tami young": 213
+      },
+      "matches": 4,
+      "hash": "8adc26a23381aeea",
+      "attempts": [
+        {
+          "url": "https://www.washakiecountywy.gov/DocumentCenter/View/386/2024-Official-Results",
+          "score": 25,
+          "matches": 4
+        }
+      ]
+    },
+    {
+      "county": "Weston",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.westongov.com/wp-content/uploads/2024/08/Weston-County-Primary-Election-Summary-2024-Official-Results.pdf",
+      "votes": {
+        "chip neiman": 645,
+        "allen e slagle": 576,
+        "jd williams": 578
+      },
+      "matches": 3,
+      "hash": "f067f98737c08df0",
+      "attempts": [
+        {
+          "url": "https://www.westongov.com/wp-content/uploads/2024/08/Weston-County-Primary-Election-Summary-2024-Official-Results.pdf",
+          "score": 39,
+          "matches": 3
+        }
+      ]
+    }
+  ]
+}

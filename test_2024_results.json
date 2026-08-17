@@ -1,0 +1,1865 @@
+{
+  "replay_year": 2024,
+  "test_mode": true,
+  "source_note": "Archived 2024 county election pages; candidate roster from Wyoming Secretary of State",
+  "sos_validation_url": "https://sos.wyo.gov/Elections/Docs/2024/2024PrimaryResults.aspx",
+  "reporting_counties": 10,
+  "county_status": [
+    {
+      "county": "Albany",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.albanycountywy.gov/176/Results-of-Election",
+      "reporting": false,
+      "matches": 0
+    },
+    {
+      "county": "Big Horn",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.bighorncountywy.gov/departments/clerk/elections",
+      "reporting": false,
+      "matches": 0
+    },
+    {
+      "county": "Campbell",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.campbellcountywy.gov/DocumentCenter/View/23726/2024-Primary-Election",
+      "reporting": true,
+      "matches": 5
+    },
+    {
+      "county": "Carbon",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.carboncountywy.gov/DocumentCenter/View/8100/2024-Primary-Official-Election-Summary",
+      "reporting": true,
+      "matches": 5
+    },
+    {
+      "county": "Converse",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.conversecountywy.gov/DocumentCenter/View/5627/2024-OFFICAL-RESULTS-ELECTION-SUMMARY-REPORT",
+      "reporting": true,
+      "matches": 3
+    },
+    {
+      "county": "Crook",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.crookcounty.wy.gov/elected_officials/clerk/election/election_results.php",
+      "reporting": false,
+      "matches": 0
+    },
+    {
+      "county": "Fremont",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://fremontcountywy.gov/government/elections___voting.php",
+      "reporting": false,
+      "matches": 0
+    },
+    {
+      "county": "Goshen",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.goshencountywy.gov/ArchiveCenter/ViewFile/Item/136",
+      "reporting": true,
+      "matches": 4
+    },
+    {
+      "county": "Hot Springs",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://hscounty.com/component/edocman/election-results-archives/elections-2026?Itemid=100",
+      "reporting": false,
+      "matches": 0
+    },
+    {
+      "county": "Johnson",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.johnsoncowy.gov/departments/elections",
+      "reporting": false,
+      "matches": 0
+    },
+    {
+      "county": "Laramie",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections/Election-Results",
+      "reporting": false,
+      "matches": 0
+    },
+    {
+      "county": "Lincoln",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
+      "reporting": false,
+      "matches": 0
+    },
+    {
+      "county": "Natrona",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.natronacounty-wy.gov/DocumentCenter/View/9954/2024-Primary-Election-Summary-PDF?bidId=",
+      "reporting": true,
+      "matches": 18
+    },
+    {
+      "county": "Niobrara",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.niobraracounty.org/_departments/_county_clerk/ElectionResults.asp",
+      "reporting": false,
+      "matches": 0
+    },
+    {
+      "county": "Park",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://parkcounty-wy.gov/wp-content/uploads/2024/08/Official-County-Election-Summary-Park-County-Primary-2024.pdf",
+      "reporting": true,
+      "matches": 10
+    },
+    {
+      "county": "Platte",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.plattecountywyoming.com/departments/Elections/ResultsofElection",
+      "reporting": false,
+      "matches": 0
+    },
+    {
+      "county": "Sheridan",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
+      "reporting": false,
+      "matches": 0
+    },
+    {
+      "county": "Sublette",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.sublettecountywy.gov/DocumentCenter/View/5746/Election-Summary-un-8-20-24",
+      "reporting": true,
+      "matches": 5
+    },
+    {
+      "county": "Sweetwater",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
+      "reporting": false,
+      "matches": 0
+    },
+    {
+      "county": "Teton",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.tetoncountywy.gov/DocumentCenter/View/30864/2024-Primary-Election-Official-Precinct-Results",
+      "reporting": true,
+      "matches": 3
+    },
+    {
+      "county": "Uinta",
+      "status": "No parseable 2024 county archive found",
+      "url": "https://uintacountywy.gov/DocumentCenter/View/8645/2026-Primary-Results-UNOFFICIAL",
+      "reporting": false,
+      "matches": 0
+    },
+    {
+      "county": "Washakie",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.washakiecountywy.gov/DocumentCenter/View/386/2024-Official-Results",
+      "reporting": true,
+      "matches": 4
+    },
+    {
+      "county": "Weston",
+      "status": "Parsed archived 2024 county results",
+      "url": "https://www.westongov.com/wp-content/uploads/2024/08/Weston-County-Primary-Election-Summary-2024-Official-Results.pdf",
+      "reporting": true,
+      "matches": 3
+    }
+  ],
+  "incumbents": {
+    "House": {},
+    "Senate": {}
+  },
+  "races": [
+    {
+      "chamber": "House",
+      "district": 1,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Chip Neiman",
+          "votes": 645,
+          "counties": [
+            "Weston"
+          ],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 2,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Allen E. Slagle",
+          "votes": 963,
+          "counties": [
+            "Goshen",
+            "Weston"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "JD Williams",
+          "votes": 928,
+          "counties": [
+            "Goshen",
+            "Weston"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 3,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Abby Angelos",
+          "votes": 1455,
+          "counties": [
+            "Campbell"
+          ],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 4,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Jeremy Haroldson",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        },
+        {
+          "candidate": "Jeffery Thomas",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 4,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Charles Randolph",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 5,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Scott Smith",
+          "votes": 1554,
+          "counties": [
+            "Goshen"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Jackie Van Mark",
+          "votes": 891,
+          "counties": [
+            "Goshen"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 6,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Aaron Clausen",
+          "votes": 47,
+          "counties": [
+            "Converse"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Tomi Strock",
+          "votes": 52,
+          "counties": [
+            "Converse"
+          ],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 7,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Bob Nicholas",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Kathy Russell",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 7,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Jordan Evans",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 8,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Cayd Batchelor",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Steve Johnson",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        },
+        {
+          "candidate": "David Zwonitzer",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 9,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Exie Brown",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Landon J. Brown",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 10,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "John Eklund",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Jennifer James",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 11,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Seth Ulvestad",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Jacob Wasserburger",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 11,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Sara Burlingame",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 12,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Thomas L Lear",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Clarence Styvar",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 13,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Shane Swett",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 13,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Ken Chestek",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 14,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Joe Giustozzi",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 14,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Trey Sherwood",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 15,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Sheryl Foland",
+          "votes": 190,
+          "counties": [
+            "Carbon"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Pamela Thayer",
+          "votes": 728,
+          "counties": [
+            "Carbon"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Terry Lee Weickum",
+          "votes": 213,
+          "counties": [
+            "Carbon"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 16,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Mike Yin",
+          "votes": 195,
+          "counties": [
+            "Teton"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 17,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Terry Ellison",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "J.T. Larson",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 18,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Thomas D. Crank",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Scott Heiner",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 19,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Jon R. Conrad",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Joe Webb",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 20,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Mike Schmid",
+          "votes": 1585,
+          "counties": [
+            "Sublette"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Cat Urbigkit",
+          "votes": 1006,
+          "counties": [
+            "Sublette"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 21,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "McKay L. Erickson",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "T. Deb Wolfley",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 22,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Andrew P Byron",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 23,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Liz Storer",
+          "votes": 103,
+          "counties": [
+            "Teton"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 24,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Matt Hall",
+          "votes": 1233,
+          "counties": [
+            "Park"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Nina Webber",
+          "votes": 1406,
+          "counties": [
+            "Park"
+          ],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 25,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Paul Hoeft",
+          "votes": 1251,
+          "counties": [
+            "Park"
+          ],
+          "is_fc": true
+        },
+        {
+          "candidate": "David Northrup",
+          "votes": 808,
+          "counties": [
+            "Park"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 26,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Dalton Banks",
+          "votes": 147,
+          "counties": [
+            "Park"
+          ],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 27,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Martha Lawley",
+          "votes": 431,
+          "counties": [
+            "Washakie"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Tami Young",
+          "votes": 213,
+          "counties": [
+            "Washakie"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 28,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Kevin Skates",
+          "votes": 182,
+          "counties": [
+            "Park"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "John R. Winter",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 29,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Ken Pendergraft",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 30,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Tom Kelly",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Gail Symons",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 31,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "John W Bear",
+          "votes": 879,
+          "counties": [
+            "Campbell"
+          ],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 32,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Ken L. Clouston",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "George Dunlap",
+          "votes": 706,
+          "counties": [
+            "Campbell"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 33,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Sarah Penn",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 33,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Ivan D. Posey",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 34,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Pepper L. Ottman",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        },
+        {
+          "candidate": "Reg Phillips",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 35,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Christopher Dresang",
+          "votes": 945,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Tony Locke",
+          "votes": 1082,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 36,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Art  Washut",
+          "votes": 994,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 37,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Steve Harshman",
+          "votes": 1717,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 38,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Jayme Lien",
+          "votes": 859,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": true
+        },
+        {
+          "candidate": "Tom Walters",
+          "votes": 715,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 39,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Marshall Burt",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Laura Mckee",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Cody Wylie",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 40,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Marilyn Connoly",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Mark Jones",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Liberty Poley",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 41,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Gary Brown",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        },
+        {
+          "candidate": "Bill Henderson",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 41,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Jen Solis",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 42,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Rob Geringer",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Ben Hornok",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 42,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Bob Ray",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 43,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Ann Lucas",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        },
+        {
+          "candidate": "Dan Zwonitzer",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 44,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Lee Filer",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "John B Romero-Martinez",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Tamara Trujillo",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 45,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Paul Crouch",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 45,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Karlee Provenza",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 46,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Ocean Andrew",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 46,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Chris Lowry",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 47,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Bob Davis",
+          "votes": 1221,
+          "counties": [
+            "Carbon"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 47,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "James A Wilson",
+          "votes": 99,
+          "counties": [
+            "Carbon"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 48,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Darin M. McCann",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Clark Stith",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 49,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Ryan C. Berger",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Robert Wharff",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 50,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "David Hill",
+          "votes": 1061,
+          "counties": [
+            "Park"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Rachel Rodriguez-Williams",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 51,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Laurie Bratten",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 52,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Reuben Tarver",
+          "votes": 1309,
+          "counties": [
+            "Campbell"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 53,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Christopher R. Knapp",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 54,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Tina Clifford",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Lloyd Charles Larsen",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 55,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Joel Guggenmos",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Ember Oakley",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 56,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Elissa Campbell",
+          "votes": 806,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Pete Fox",
+          "votes": 541,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": true
+        },
+        {
+          "candidate": "Pamela Mertens",
+          "votes": 111,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 57,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Julie Jarvis",
+          "votes": 623,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Jeanette Ward",
+          "votes": 485,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 58,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Bill Allemand",
+          "votes": 1017,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": true
+        },
+        {
+          "candidate": "Tom Jones",
+          "votes": 424,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 59,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "J.R. Riggins",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 60,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Marlene Brady",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        },
+        {
+          "candidate": "Tony Niemiec",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 61,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Matt Malcom",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Daniel J. Singh",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "House",
+      "district": 62,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Edis Allen",
+          "votes": 304,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Kevin Campbell",
+          "votes": 399,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 2,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Brian Boner",
+          "votes": 756,
+          "counties": [
+            "Converse",
+            "Natrona"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 4,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Tara Nethercott",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 6,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Gary Bjorklund",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Eric D Johnston",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Taft C. Love",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Darin Smith",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Marc Torriani",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Kim Withers",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 8,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Jared Olsen",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 8,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Marguerite Herman",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 10,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Gary E Crum",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Keith Kennedy",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 10,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Mike Selmer",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 12,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "John K Kolb",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Jeff Ramaj",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 12,
+      "party": "Democratic",
+      "candidates": [
+        {
+          "candidate": "Kenilynn S Zanetti",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 14,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Laura Taliaferro Pearson",
+          "votes": 929,
+          "counties": [
+            "Sublette"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Albert Sommers",
+          "votes": 1446,
+          "counties": [
+            "Sublette"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Bill Winney",
+          "votes": 243,
+          "counties": [
+            "Sublette"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 16,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Dan Dockstader",
+          "votes": 108,
+          "counties": [
+            "Teton"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 18,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Tim A. French",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Landon Greer",
+          "votes": 2311,
+          "counties": [
+            "Park"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 20,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Ed Cooper",
+          "votes": 615,
+          "counties": [
+            "Park",
+            "Washakie"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Tom Olmstead",
+          "votes": 565,
+          "counties": [
+            "Park",
+            "Washakie"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 22,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Barry Crago",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Mark Jennings",
+          "votes": 0,
+          "counties": [],
+          "is_fc": true
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 24,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Phil Christopherson",
+          "votes": 1192,
+          "counties": [
+            "Campbell"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Troy D McKeown",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 26,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Elizabeth Philp",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Tim Salazar",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 28,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Jim Anderson",
+          "votes": 1304,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": false
+        },
+        {
+          "candidate": "Bryce Reece",
+          "votes": 1274,
+          "counties": [
+            "Natrona"
+          ],
+          "is_fc": false
+        }
+      ]
+    },
+    {
+      "chamber": "Senate",
+      "district": 30,
+      "party": "Republican",
+      "candidates": [
+        {
+          "candidate": "Robert L. Hendry",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Charles H Schoenwolf",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        },
+        {
+          "candidate": "Charles K. Scott",
+          "votes": 0,
+          "counties": [],
+          "is_fc": false
+        }
+      ]
+    }
+  ],
+  "statewide_races": []
+}
