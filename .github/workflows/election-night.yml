@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'github_updater.py'
+      - 'sos_fallback.py'
       - 'sources.json'
       - 'candidates.csv'
       - 'freedom_caucus_candidates.csv'
@@ -37,8 +38,10 @@ jobs:
           cache: pip
       - name: Install scraper dependencies
         run: pip install -r requirements.txt
-      - name: Refresh incumbents, county results, and SOS validation layer
+      - name: Refresh county results and SOS validation layer
         run: python github_updater.py
+      - name: Fill missing counties from Wyoming SOS precinct summaries
+        run: python sos_fallback.py
       - name: Commit changed dashboard data
         run: |
           CHANGED="$(git status --porcelain -- state.json results.json incumbents.json)"
