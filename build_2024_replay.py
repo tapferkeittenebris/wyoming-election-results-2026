@@ -21,16 +21,14 @@ def aliases(name):
 def candidate_rows():
  rows=list(csv.DictReader(io.StringIO(get(requests.Session(),CANDIDATE_CSV).content.decode('utf-8-sig',errors='replace'))));out=[]
  for row in rows:
-  low={norm(k):str(v or '').strip() for k,v in row.items()};office=low.get('office sought','');party=low.get('party affiliation','');cand=low.get('ballot name','') or ' '.join(x for x in [low.get('candidate first name',''),low.get('candidate middle name',''),low.get('candidate last name','')] if x);o=norm(office)
-  chamber='Senate' if 'senate' in o else 'House' if ('house' in o or 'representative' in o) else None
+  low={norm(k):str(v or '').strip() for k,v in row.items()};office=low.get('office sought','');party=(low.get('party affiliation','') or '').upper();cand=low.get('ballot name','') or ' '.join(x for x in [low.get('candidate first name',''),low.get('candidate middle name',''),low.get('candidate last name','')] if x);o=norm(office)
+  chamber='Senate' if 'state senator' in o else 'House' if 'state representative' in o else None
   if not chamber or not cand:continue
   m=re.search(r'(\d{1,2})',o)
   if not m:continue
-  p='Republican' if 'republican' in norm(party) else 'Democratic' if 'democrat' in norm(party) else ''
+  p='Republican' if party in ('REP','REPUBLICAN') or 'republican' in o else 'Democratic' if party in ('DEM','DEMOCRATIC') or 'democratic' in o else ''
   if p:out.append({'chamber':chamber,'district':int(m.group(1)),'party':p,'candidate':cand})
- if not out:
-  print('Example offices:',[(r.get('Office Sought'),r.get('Party Affiliation'),r.get('Ballot Name')) for r in rows[:20]])
-  raise RuntimeError('No legislative candidates parsed')
+ if not out:raise RuntimeError('No legislative candidates parsed')
  print('Parsed',len(out),'2024 legislative candidate rows');return out
 def load_sources():return json.loads((ROOT/'sources.json').read_text())
 def score_link(t,u):
