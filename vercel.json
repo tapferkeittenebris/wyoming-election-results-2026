@@ -1,19 +1,12 @@
 {
   "cleanUrls": true,
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{"type":"host","value":"www.buckthefreedomcaucus.wtf"}],
-      "destination": "https://buckthefreedomcaucus.wtf/:path*",
-      "permanent": true
-    }
-  ],
   "rewrites": [
-    {"source": "/", "destination": "/index.html"},
-    {"source": "/advertise", "destination": "/advertise.html"},
-    {"source": "/privacy", "destination": "/privacy.html"}
+    {"source": "/", "destination": "/replay.html"}
   ],
   "headers": [
-    {"source": "/(.*)", "headers": [{"key": "Cache-Control", "value": "no-store, max-age=0"}]}
+    {"source": "/(.*)", "headers": [
+      {"key": "Cache-Control", "value": "no-store, max-age=0"},
+      {"key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive"}
+    ]}
   ]
 }
