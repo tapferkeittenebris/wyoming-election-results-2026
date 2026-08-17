@@ -143,8 +143,382 @@
     }
   ],
   "incumbents": {
-    "House": {},
-    "Senate": {}
+    "House": {
+      "1": {
+        "name": "Chip Neiman",
+        "is_fc": true
+      },
+      "2": {
+        "name": "J.D. Williams",
+        "is_fc": false
+      },
+      "3": {
+        "name": "Abby Angelos",
+        "is_fc": true
+      },
+      "4": {
+        "name": "Jeremy Haroldson",
+        "is_fc": true
+      },
+      "5": {
+        "name": "Scott Smith",
+        "is_fc": true
+      },
+      "6": {
+        "name": "Tomi Strock",
+        "is_fc": true
+      },
+      "7": {
+        "name": "Bob Nicholas",
+        "is_fc": false
+      },
+      "8": {
+        "name": "Steve Johnson",
+        "is_fc": true
+      },
+      "9": {
+        "name": "Landon Brown",
+        "is_fc": false
+      },
+      "10": {
+        "name": "John Eklund, Jr.",
+        "is_fc": false
+      },
+      "11": {
+        "name": "Jacob Wasserburger",
+        "is_fc": true
+      },
+      "12": {
+        "name": "Clarence Styvar",
+        "is_fc": true
+      },
+      "13": {
+        "name": "Ken Chestek",
+        "is_fc": false
+      },
+      "14": {
+        "name": "Trey Sherwood",
+        "is_fc": false
+      },
+      "15": {
+        "name": "Pam Thayer",
+        "is_fc": false
+      },
+      "16": {
+        "name": "Mike Yin",
+        "is_fc": false
+      },
+      "17": {
+        "name": "J.T. Larson",
+        "is_fc": false
+      },
+      "18": {
+        "name": "Scott Heiner",
+        "is_fc": true
+      },
+      "19": {
+        "name": "Joe Webb",
+        "is_fc": true
+      },
+      "20": {
+        "name": "Mike Schmid",
+        "is_fc": true
+      },
+      "21": {
+        "name": "McKay Erickson",
+        "is_fc": false
+      },
+      "22": {
+        "name": "Andrew Byron",
+        "is_fc": false
+      },
+      "23": {
+        "name": "Liz Storer",
+        "is_fc": false
+      },
+      "24": {
+        "name": "Nina Webber",
+        "is_fc": true
+      },
+      "25": {
+        "name": "Paul Hoeft",
+        "is_fc": true
+      },
+      "26": {
+        "name": "Dalton Banks",
+        "is_fc": true
+      },
+      "27": {
+        "name": "Martha Lawley",
+        "is_fc": false
+      },
+      "28": {
+        "name": "John Winter",
+        "is_fc": true
+      },
+      "29": {
+        "name": "Ken Pendergraft",
+        "is_fc": true
+      },
+      "30": {
+        "name": "Tom Kelly",
+        "is_fc": true
+      },
+      "31": {
+        "name": "John Bear",
+        "is_fc": true
+      },
+      "32": {
+        "name": "Ken Clouston",
+        "is_fc": false
+      },
+      "33": {
+        "name": "Ivan Posey",
+        "is_fc": false
+      },
+      "34": {
+        "name": "Pepper Ottman",
+        "is_fc": true
+      },
+      "35": {
+        "name": "Tony Locke",
+        "is_fc": true
+      },
+      "36": {
+        "name": "Art Washut",
+        "is_fc": false
+      },
+      "37": {
+        "name": "Steve Harshman",
+        "is_fc": false
+      },
+      "38": {
+        "name": "Jayme Lien",
+        "is_fc": true
+      },
+      "39": {
+        "name": "Cody Wylie",
+        "is_fc": false
+      },
+      "40": {
+        "name": "Marilyn Connolly",
+        "is_fc": false
+      },
+      "41": {
+        "name": "Gary Brown",
+        "is_fc": true
+      },
+      "42": {
+        "name": "Rob Geringer",
+        "is_fc": false
+      },
+      "43": {
+        "name": "Ann Lucas",
+        "is_fc": true
+      },
+      "44": {
+        "name": "Lee Filer",
+        "is_fc": false
+      },
+      "45": {
+        "name": "Karlee Provenza",
+        "is_fc": false
+      },
+      "46": {
+        "name": "Ocean Andrew",
+        "is_fc": true
+      },
+      "47": {
+        "name": "Bob Davis",
+        "is_fc": false
+      },
+      "48": {
+        "name": "Darin McCann",
+        "is_fc": true
+      },
+      "49": {
+        "name": "Robert Wharff",
+        "is_fc": true
+      },
+      "50": {
+        "name": "Rachel Rodriguez-Williams",
+        "is_fc": true
+      },
+      "51": {
+        "name": "Laurie Bratten",
+        "is_fc": true
+      },
+      "52": {
+        "name": "Reuben Tarver",
+        "is_fc": true
+      },
+      "53": {
+        "name": "Christopher Knapp",
+        "is_fc": true
+      },
+      "54": {
+        "name": "Lloyd Larsen",
+        "is_fc": false
+      },
+      "55": {
+        "name": "Joel Guggenmos",
+        "is_fc": true
+      },
+      "56": {
+        "name": "Elissa Campbell",
+        "is_fc": false
+      },
+      "57": {
+        "name": "Julie Jarvis",
+        "is_fc": false
+      },
+      "58": {
+        "name": "Bill Allemand",
+        "is_fc": true
+      },
+      "59": {
+        "name": "J.R. Riggins",
+        "is_fc": false
+      },
+      "60": {
+        "name": "Marlene Brady",
+        "is_fc": true
+      },
+      "61": {
+        "name": "Daniel Singh",
+        "is_fc": true
+      },
+      "62": {
+        "name": "Kevin Campbell",
+        "is_fc": true
+      }
+    },
+    "Senate": {
+      "1": {
+        "name": "Ogden Driskill",
+        "is_fc": false
+      },
+      "2": {
+        "name": "Brian Boner",
+        "is_fc": false
+      },
+      "3": {
+        "name": "Cheri Steinmetz",
+        "is_fc": false
+      },
+      "4": {
+        "name": "Tara Nethercott",
+        "is_fc": false
+      },
+      "5": {
+        "name": "Lynn Hutchings",
+        "is_fc": false
+      },
+      "6": {
+        "name": "Taft Love",
+        "is_fc": false
+      },
+      "7": {
+        "name": "Stephan Pappas",
+        "is_fc": false
+      },
+      "8": {
+        "name": "Jared Olsen",
+        "is_fc": false
+      },
+      "9": {
+        "name": "Chris Rothfuss",
+        "is_fc": false
+      },
+      "10": {
+        "name": "Gary Crum",
+        "is_fc": false
+      },
+      "11": {
+        "name": "Larry Hicks",
+        "is_fc": false
+      },
+      "12": {
+        "name": "John Kolb",
+        "is_fc": false
+      },
+      "13": {
+        "name": "Stacy Jones",
+        "is_fc": false
+      },
+      "14": {
+        "name": "Laura Pearson",
+        "is_fc": false
+      },
+      "15": {
+        "name": "Wendy Schuler",
+        "is_fc": false
+      },
+      "16": {
+        "name": "Dan Dockstader",
+        "is_fc": false
+      },
+      "17": {
+        "name": "Mike Gierau",
+        "is_fc": false
+      },
+      "18": {
+        "name": "Tim French",
+        "is_fc": false
+      },
+      "19": {
+        "name": "Dan Laursen",
+        "is_fc": false
+      },
+      "20": {
+        "name": "Ed Cooper",
+        "is_fc": false
+      },
+      "21": {
+        "name": "Bo Biteman",
+        "is_fc": false
+      },
+      "22": {
+        "name": "Barry Crago",
+        "is_fc": false
+      },
+      "23": {
+        "name": "Eric Barlow",
+        "is_fc": false
+      },
+      "24": {
+        "name": "Troy McKeown",
+        "is_fc": false
+      },
+      "25": {
+        "name": "Cale Case",
+        "is_fc": false
+      },
+      "26": {
+        "name": "Tim Salazar",
+        "is_fc": false
+      },
+      "27": {
+        "name": "Bill Landen",
+        "is_fc": false
+      },
+      "28": {
+        "name": "Jim Anderson",
+        "is_fc": false
+      },
+      "29": {
+        "name": "Bob Ide",
+        "is_fc": false
+      },
+      "30": {
+        "name": "Charles Scott",
+        "is_fc": false
+      },
+      "31": {
+        "name": "Evie Brennan",
+        "is_fc": false
+      }
+    }
   },
   "races": [
     {
