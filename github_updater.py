@@ -32,28 +32,39 @@ def load_state(sources):
         except Exception:pass
     return blank_state(sources)
 def get(session,url):r=session.get(url,headers=UA,timeout=15,allow_redirects=True);r.raise_for_status();return r
-def _rows_from_leg_api(payload):
-    if isinstance(payload,list): return payload
-    if isinstance(payload,dict):
-        for k in ('data','result','results','legislators','items'):
-            if isinstance(payload.get(k),list): return payload[k]
-    return []
+def _legislator_dicts(obj):
+    found=[]
+    def walk(x):
+        if isinstance(x,dict):
+            kl={str(k).lower():k for k in x}
+            has_d=('district' in kl or 'currentdistrict' in kl)
+            has_n=('name' in kl or 'firstname' in kl or 'lastname' in kl)
+            if has_d and has_n: found.append(x)
+            else:
+                for v in x.values(): walk(v)
+        elif isinstance(x,list):
+            for v in x: walk(v)
+    walk(obj);return found
+def _pick(row,*names):
+    lower={str(k).lower():v for k,v in row.items()}
+    for n in names:
+        v=lower.get(n.lower())
+        if v not in (None,''):return v
+    return ''
 def refresh_incumbents():
-    fc=fc_names(); out={'House':{},'Senate':{}}
+    fc=fc_names();out={'House':{},'Senate':{}}
     try:
         s=requests.Session()
         for chamber,code in [('House','H'),('Senate','S')]:
-            r=get(s,LEG_API.format(chamber=code)); rows=_rows_from_leg_api(r.json())
+            r=get(s,LEG_API.format(chamber=code));payload=r.json();rows=_legislator_dicts(payload)
             for row in rows:
-                district=row.get('currentDistrict') or row.get('district') or row.get('District') or row.get('CurrentDistrict')
-                name=row.get('name') or row.get('Name') or ' '.join(filter(None,[row.get('firstName') or row.get('FirstName'),row.get('lastName') or row.get('LastName')]))
-                party=row.get('party') or row.get('Party') or ''
+                district=_pick(row,'currentDistrict','district');name=_pick(row,'name') or ' '.join(filter(None,[str(_pick(row,'firstName')).strip(),str(_pick(row,'lastName')).strip()]));party=_pick(row,'party')
                 try:d=str(int(str(district).strip()))
                 except Exception:continue
                 if name:out[chamber][d]={'name':str(name).strip(),'party':str(party).strip(),'is_fc':norm(name) in fc}
-        if len(out['House'])>=50 and len(out['Senate'])>=25:
-            (ROOT/'incumbents.json').write_text(json.dumps(out,indent=2),encoding='utf-8');return out
-    except Exception as e:print('Incumbent refresh failed:',e)
+            print(f'Wyoming Legislature roster {chamber}: {len(out[chamber])} districts')
+        if out['House'] or out['Senate']:(ROOT/'incumbents.json').write_text(json.dumps(out,indent=2),encoding='utf-8')
+    except Exception as e:print('Incumbent refresh failed:',repr(e))
     p=ROOT/'incumbents.json'
     if p.exists():
         try:return json.loads(p.read_text())
