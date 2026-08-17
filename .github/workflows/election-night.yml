@@ -6,6 +6,7 @@ on:
     paths:
       - 'github_updater.py'
       - 'freedom_caucus_candidates.csv'
+      - 'statewide_candidates.csv'
       - 'incumbents.json'
       - '.github/workflows/election-night.yml'
   schedule:
