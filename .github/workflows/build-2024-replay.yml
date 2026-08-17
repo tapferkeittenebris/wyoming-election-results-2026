@@ -1,0 +1,32 @@
+name: Build 2024 Primary Replay
+on:
+  push:
+    branches: [test-2024-replay]
+    paths:
+      - build_2024_replay.py
+      - sources.json
+      - freedom_caucus_candidates.csv
+      - .github/workflows/build-2024-replay.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: test-2024-replay
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4 pypdf
+      - name: Crawl archived county sites and build replay feed
+        run: python build_2024_replay.py
+      - name: Commit replay data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add test_2024_results.json test_2024_diagnostics.json
+          git diff --cached --quiet || git commit -m "Build 2024 county replay data"
+          git push origin HEAD:test-2024-replay
