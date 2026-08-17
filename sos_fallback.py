@@ -65,7 +65,6 @@ def sos_county_links(session):
             label=norm(' '.join(node.stripped_strings))
             if 'precinct by precinct' in label and 'result' in label and current not in links:
                 links[current]=urljoin(r.url,node['href'])
-    # Secondary structure fallback: inspect parent text around matching links.
     if len(links)<10:
         for a in soup.find_all('a',href=True):
             label=norm(' '.join(a.stripped_strings))
@@ -101,6 +100,14 @@ def parse_votes(text,names):
     return out
 
 
+def export_live(state):
+    import github_updater as live
+    incumbents={}
+    try: incumbents=json.loads((ROOT/'incumbents.json').read_text(encoding='utf-8'))
+    except Exception: incumbents=live.refresh_incumbents()
+    live.export(state,live.load_candidates(),incumbents,live.load_statewide())
+
+
 def main():
     state_path=ROOT/'state.json'
     if not state_path.exists():
@@ -132,6 +139,7 @@ def main():
         state.setdefault('sos_validation',{})['fallback_counties']=filled
         state['sos_validation']['fallback_page']=page
         state_path.write_text(json.dumps(state,indent=2),encoding='utf-8')
+        export_live(state)
         print('SOS fallback populated',len(filled),'counties:',', '.join(filled))
     else:
         print('SOS fallback found no additional parseable county totals')
