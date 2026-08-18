@@ -7,6 +7,8 @@ on:
       - 'github_updater.py'
       - 'github_updater_hardened.py'
       - 'sos_fallback.py'
+      - 'winner_calls.py'
+      - 'apply_winner_ui_patch.py'
       - 'sources.json'
       - 'candidates.csv'
       - 'freedom_caucus_candidates.csv'
@@ -43,16 +45,20 @@ jobs:
         run: python github_updater_hardened.py
       - name: Fill missing counties from Wyoming SOS precinct summaries
         run: python sos_fallback.py
+      - name: Apply conservative mathematical race calls
+        run: python winner_calls.py
+      - name: Ensure dashboard supports WINNER badges
+        run: python apply_winner_ui_patch.py
       - name: Commit changed dashboard data
         run: |
-          CHANGED="$(git status --porcelain -- state.json results.json incumbents.json)"
+          CHANGED="$(git status --porcelain -- state.json results.json incumbents.json index.html)"
           if [ -z "$CHANGED" ]; then
             echo "No feed changes to commit."
             exit 0
           fi
           git config user.name "wyoming-election-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add state.json results.json
+          git add state.json results.json index.html
           if [ -f incumbents.json ]; then git add incumbents.json; fi
           git commit -m "Refresh election dashboard data"
           git pull --rebase
