@@ -33,7 +33,7 @@
 </main>
 <script>
 const FEED='https://raw.githubusercontent.com/tapferkeittenebris/wyoming-election-results-2026/main/results.json';
-const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[c]));
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const supportSplash=document.getElementById('supportSplash');
 try{if(localStorage.getItem('wyElectionDashboardSupportSplashSeen')!=='1')supportSplash.classList.add('show')}catch(e){supportSplash.classList.add('show')}
 document.getElementById('enterDashboard').onclick=()=>{supportSplash.classList.remove('show');try{localStorage.setItem('wyElectionDashboardSupportSplashSeen','1')}catch(e){}};
