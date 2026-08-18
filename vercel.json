@@ -10,6 +10,8 @@
     }
   ],
   "rewrites": [
+    {"source": "/social-share-fb.jpg", "destination": "/api/share-image"},
+    {"source": "/social-share.jpg", "destination": "/api/share-image"},
     {"source": "/", "destination": "/index.html"},
     {"source": "/advertise", "destination": "/advertise.html"},
     {"source": "/privacy", "destination": "/privacy.html"}
