@@ -1,4 +1,5 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "redirects": [
     {
@@ -14,6 +15,19 @@
     {"source": "/privacy", "destination": "/privacy.html"}
   ],
   "headers": [
-    {"source": "/(.*)", "headers": [{"key": "Cache-Control", "value": "no-store, max-age=0"}]}
+    {
+      "source": "/results.json",
+      "headers": [
+        {"key": "Cache-Control", "value": "public, max-age=30, stale-while-revalidate=30"},
+        {"key": "Vercel-CDN-Cache-Control", "value": "public, max-age=60, stale-while-revalidate=300"}
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {"key": "X-Content-Type-Options", "value": "nosniff"},
+        {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"}
+      ]
+    }
   ]
 }
