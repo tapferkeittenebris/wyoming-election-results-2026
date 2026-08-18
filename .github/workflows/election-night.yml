@@ -9,6 +9,9 @@ on:
       - 'sos_fallback.py'
       - 'winner_calls.py'
       - 'apply_winner_ui_patch.py'
+      - 'sheridan_updater.py'
+      - 'sheridan_candidates.csv'
+      - 'sheridan.html'
       - 'sources.json'
       - 'candidates.csv'
       - 'freedom_caucus_candidates.csv'
@@ -16,8 +19,6 @@ on:
       - 'incumbents.json'
       - '.github/workflows/election-night.yml'
   schedule:
-    # 7:00 PM MDT Aug 18 = 01:00 UTC Aug 19; 2:00 AM MDT = 08:00 UTC.
-    # Scheduled every 10 minutes; Python additionally enforces the exact 2026 window.
     - cron: '*/10 1-8 19 8 *'
 
 permissions:
@@ -49,9 +50,11 @@ jobs:
         run: python winner_calls.py
       - name: Ensure dashboard supports WINNER badges
         run: python apply_winner_ui_patch.py
+      - name: Refresh Sheridan County ballot dashboard
+        run: python sheridan_updater.py
       - name: Commit changed dashboard data
         run: |
-          CHANGED="$(git status --porcelain -- state.json results.json incumbents.json index.html)"
+          CHANGED="$(git status --porcelain -- state.json results.json sheridan-results.json incumbents.json index.html)"
           if [ -z "$CHANGED" ]; then
             echo "No feed changes to commit."
             exit 0
@@ -59,6 +62,7 @@ jobs:
           git config user.name "wyoming-election-bot"
           git config user.email "actions@users.noreply.github.com"
           git add state.json results.json index.html
+          if [ -f sheridan-results.json ]; then git add sheridan-results.json; fi
           if [ -f incumbents.json ]; then git add incumbents.json; fi
           git commit -m "Refresh election dashboard data"
           git pull --rebase
