@@ -166,11 +166,15 @@
     }
   ],
   "sos_validation": {
-    "available": false,
+    "available": true,
     "page": "https://sos.wyo.gov/Elections/Docs/2026/2026PrimaryResults.aspx",
-    "summaries": [],
+    "summaries": [
+      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
+      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_House_Candidates_Summary.pdf",
+      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf"
+    ],
     "candidate_matches": 0,
-    "status": "2026 SOS primary results page not yet published"
+    "status": "SOS 2026 results page available for validation"
   },
   "incumbents": {
     "House": {
@@ -2533,5 +2537,11 @@
         }
       ]
     }
-  ]
+  ],
+  "race_call_method": {
+    "standard": "mathematical_clinch",
+    "description": "WINNER only when the leader cannot be overtaken using explicit official remaining-ballot or complete-reporting data.",
+    "county_sources_evaluated": 0,
+    "all_counties_ready": false
+  }
 }
