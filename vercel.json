@@ -10,12 +10,17 @@
     }
   ],
   "rewrites": [
-    {"source": "/results.json", "destination": "/api/results"},
     {"source": "/", "destination": "/index.html"},
     {"source": "/advertise", "destination": "/advertise.html"},
     {"source": "/privacy", "destination": "/privacy.html"}
   ],
   "headers": [
+    {
+      "source": "/results.json",
+      "headers": [
+        {"key": "Cache-Control", "value": "public, max-age=60, stale-while-revalidate=300"}
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [
