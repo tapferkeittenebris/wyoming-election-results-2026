@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'github_updater.py'
+      - 'github_updater_hardened.py'
       - 'sos_fallback.py'
       - 'sources.json'
       - 'candidates.csv'
@@ -39,7 +40,7 @@ jobs:
       - name: Install scraper dependencies
         run: pip install -r requirements.txt
       - name: Refresh county results and SOS validation layer
-        run: python github_updater.py
+        run: python github_updater_hardened.py
       - name: Fill missing counties from Wyoming SOS precinct summaries
         run: python sos_fallback.py
       - name: Commit changed dashboard data
