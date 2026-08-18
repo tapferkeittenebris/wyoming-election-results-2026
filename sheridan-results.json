@@ -1,0 +1,617 @@
+{
+  "last_checked": "2026-08-18T14:43:49-06:00",
+  "last_updated": null,
+  "status": "Waiting for Sheridan County results",
+  "source_url": "https://www.sheridancountywy.gov/departments/elections/2026_election_results.php",
+  "errors": [],
+  "races": [
+    {
+      "category": "Federal",
+      "office": "United States Representative",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Bo Biteman",
+          "votes": 0
+        },
+        {
+          "candidate": "Chuck Gray",
+          "votes": 0
+        },
+        {
+          "candidate": "David Giralt",
+          "votes": 0
+        },
+        {
+          "candidate": "Jillian Balow",
+          "votes": 0
+        },
+        {
+          "candidate": "Keith B. Goodenough",
+          "votes": 0
+        },
+        {
+          "candidate": "Kevin Christensen",
+          "votes": 0
+        },
+        {
+          "candidate": "Reid Rasner",
+          "votes": 0
+        },
+        {
+          "candidate": "Richard Dodson",
+          "votes": 0
+        },
+        {
+          "candidate": "Steve Friess",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Federal",
+      "office": "United States Representative",
+      "party": "Democratic",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Elena Del Real",
+          "votes": 0
+        },
+        {
+          "candidate": "Lisa Kinney",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Federal",
+      "office": "United States Senator",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Harriet Hageman",
+          "votes": 0
+        },
+        {
+          "candidate": "Jill M Edwards",
+          "votes": 0
+        },
+        {
+          "candidate": "Jimmy Skovgard",
+          "votes": 0
+        },
+        {
+          "candidate": "John Holtz",
+          "votes": 0
+        },
+        {
+          "candidate": "Sam Mead",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Federal",
+      "office": "United States Senator",
+      "party": "Democratic",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Billy Benavidez",
+          "votes": 0
+        },
+        {
+          "candidate": "James Byrd",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Statewide",
+      "office": "Governor",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Brent Bien",
+          "votes": 0
+        },
+        {
+          "candidate": "Curt Blake",
+          "votes": 0
+        },
+        {
+          "candidate": "Eric Barlow",
+          "votes": 0
+        },
+        {
+          "candidate": "Megan Degenfelder",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Statewide",
+      "office": "Governor",
+      "party": "Democratic",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Kenneth R. Casner",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Statewide",
+      "office": "Secretary of State",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "CJ Young",
+          "votes": 0
+        },
+        {
+          "candidate": "Qwenton Eagle Oviatt",
+          "votes": 0
+        },
+        {
+          "candidate": "Rachel Williams",
+          "votes": 0
+        },
+        {
+          "candidate": "Robert Short",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Statewide",
+      "office": "Secretary of State",
+      "party": "Democratic",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Bryan McCarty",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Statewide",
+      "office": "State Auditor",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Kristi Racines",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Statewide",
+      "office": "State Treasurer",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Curt Meier",
+          "votes": 0
+        },
+        {
+          "candidate": "Scott Smith",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Statewide",
+      "office": "Superintendent of Public Instruction",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Chad Auer",
+          "votes": 0
+        },
+        {
+          "candidate": "Steve Harshman",
+          "votes": 0
+        },
+        {
+          "candidate": "Tom Kelly",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Statewide",
+      "office": "Superintendent of Public Instruction",
+      "party": "Democratic",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Ana Cordova",
+          "votes": 0
+        },
+        {
+          "candidate": "Sergio A. Maldonado, Sr.",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Legislature",
+      "office": "State House District 29",
+      "party": "Republican",
+      "scope": "HD 29 voters",
+      "candidates": [
+        {
+          "candidate": "James Temple",
+          "votes": 0
+        },
+        {
+          "candidate": "Myca Sturtevant",
+          "votes": 0
+        },
+        {
+          "candidate": "Noll Roberts",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Legislature",
+      "office": "State House District 30",
+      "party": "Republican",
+      "scope": "HD 30 voters",
+      "candidates": [
+        {
+          "candidate": "Mark Jennings",
+          "votes": 0
+        },
+        {
+          "candidate": "Ryan Koltiska",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Legislature",
+      "office": "State House District 40",
+      "party": "Republican",
+      "scope": "HD 40 voters",
+      "candidates": [
+        {
+          "candidate": "Marilyn Connolly",
+          "votes": 0
+        },
+        {
+          "candidate": "Mark Jones",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Legislature",
+      "office": "State House District 5",
+      "party": "Republican",
+      "scope": "HD 5 voters",
+      "candidates": [
+        {
+          "candidate": "Joe Speckner",
+          "votes": 0
+        },
+        {
+          "candidate": "Karen Weber",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Legislature",
+      "office": "State House District 51",
+      "party": "Republican",
+      "scope": "HD 51 voters",
+      "candidates": [
+        {
+          "candidate": "Laurie Bratten",
+          "votes": 0
+        },
+        {
+          "candidate": "Susan Bigelow",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Legislature",
+      "office": "State Senate District 21",
+      "party": "Republican",
+      "scope": "SD 21 voters",
+      "candidates": [
+        {
+          "candidate": "Ken Pendergraft",
+          "votes": 0
+        },
+        {
+          "candidate": "Melissa Butcher",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "County",
+      "office": "Clerk of District Court",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Rene Botten",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "County",
+      "office": "County Assessor",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Korkie Knudtson",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "County",
+      "office": "County Attorney",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Dianna Bennett",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "County",
+      "office": "County Clerk and Recorder",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Christine Temple",
+          "votes": 0
+        },
+        {
+          "candidate": "Dylan Dalton",
+          "votes": 0
+        },
+        {
+          "candidate": "Eda Schunk Thompson",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "County",
+      "office": "County Commissioner",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Christi Haswell",
+          "votes": 0
+        },
+        {
+          "candidate": "Dennis Fox",
+          "votes": 0
+        },
+        {
+          "candidate": "Dustin Bates",
+          "votes": 0
+        },
+        {
+          "candidate": "Glenn Drummond",
+          "votes": 0
+        },
+        {
+          "candidate": "Harley Shuck",
+          "votes": 0
+        },
+        {
+          "candidate": "Holly Jennings",
+          "votes": 0
+        },
+        {
+          "candidate": "James R. Schellinger",
+          "votes": 0
+        },
+        {
+          "candidate": "Karla Kaley",
+          "votes": 0
+        },
+        {
+          "candidate": "Lee Ackerley",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "County",
+      "office": "County Coroner",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Kevin Sessions",
+          "votes": 0
+        },
+        {
+          "candidate": "Robert C. Byrd",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "County",
+      "office": "County Sheriff",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Kenneth Howard Fitzpatrick",
+          "votes": 0
+        },
+        {
+          "candidate": "William Levi Dominguez",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "County",
+      "office": "County Treasurer",
+      "party": "Republican",
+      "scope": "All Sheridan County",
+      "candidates": [
+        {
+          "candidate": "Katie Araas",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Municipal",
+      "office": "Dayton Mayor",
+      "party": "Nonpartisan",
+      "scope": "Town of Dayton voters",
+      "candidates": [
+        {
+          "candidate": "Bret N. Barney",
+          "votes": 0
+        },
+        {
+          "candidate": "Hanle Visser",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Municipal",
+      "office": "Dayton Town Council",
+      "party": "Nonpartisan",
+      "scope": "Town of Dayton voters",
+      "candidates": [
+        {
+          "candidate": "Angela Norton",
+          "votes": 0
+        },
+        {
+          "candidate": "Aric Rees",
+          "votes": 0
+        },
+        {
+          "candidate": "Guy Mitchell",
+          "votes": 0
+        },
+        {
+          "candidate": "Howard P. Hill",
+          "votes": 0
+        },
+        {
+          "candidate": "Laurie Walters-Clark",
+          "votes": 0
+        },
+        {
+          "candidate": "Lisa Chase",
+          "votes": 0
+        },
+        {
+          "candidate": "Robert (Bobby) Logan",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Municipal",
+      "office": "Ranchester Mayor",
+      "party": "Nonpartisan",
+      "scope": "Town of Ranchester voters",
+      "candidates": [
+        {
+          "candidate": "Bryan Helferich",
+          "votes": 0
+        },
+        {
+          "candidate": "Jessica Weaver",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Municipal",
+      "office": "Ranchester Town Council",
+      "party": "Nonpartisan",
+      "scope": "Town of Ranchester voters",
+      "candidates": [
+        {
+          "candidate": "Richard Hofmeier",
+          "votes": 0
+        },
+        {
+          "candidate": "Richard Rick Brown",
+          "votes": 0
+        },
+        {
+          "candidate": "Terry Roelfsema",
+          "votes": 0
+        },
+        {
+          "candidate": "Tim Maze",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "category": "Municipal",
+      "office": "Sheridan City Council",
+      "party": "Nonpartisan",
+      "scope": "City of Sheridan voters",
+      "candidates": [
+        {
+          "candidate": "Amber C. Horsley",
+          "votes": 0
+        },
+        {
+          "candidate": "Andrew Patceg",
+          "votes": 0
+        },
+        {
+          "candidate": "Greg Luhman",
+          "votes": 0
+        },
+        {
+          "candidate": "Harry Pollak",
+          "votes": 0
+        },
+        {
+          "candidate": "Nephi John Cole",
+          "votes": 0
+        },
+        {
+          "candidate": "Terry Weitzel",
+          "votes": 0
+        }
+      ]
+    }
+  ]
+}
