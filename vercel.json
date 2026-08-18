@@ -13,12 +13,19 @@
     {"source": "/social-share-fb.jpg", "destination": "/api/share-image"},
     {"source": "/social-share.jpg", "destination": "/api/share-image"},
     {"source": "/", "destination": "/index.html"},
+    {"source": "/sheridan", "destination": "/sheridan.html"},
     {"source": "/advertise", "destination": "/advertise.html"},
     {"source": "/privacy", "destination": "/privacy.html"}
   ],
   "headers": [
     {
       "source": "/results.json",
+      "headers": [
+        {"key": "Cache-Control", "value": "public, max-age=60, stale-while-revalidate=300"}
+      ]
+    },
+    {
+      "source": "/sheridan-results.json",
       "headers": [
         {"key": "Cache-Control", "value": "public, max-age=60, stale-while-revalidate=300"}
       ]
