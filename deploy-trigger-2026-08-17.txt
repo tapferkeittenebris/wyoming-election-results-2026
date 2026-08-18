@@ -1,2 +1,3 @@
 Deploy Buck the Freedom Caucus election dashboard from the correct repository.
 Triggered: 2026-08-17
+Retriggered: 2026-08-18 15:21 MDT for main-page footer update.
