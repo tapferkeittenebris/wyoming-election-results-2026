@@ -174,25 +174,7 @@
       "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf"
     ],
     "candidate_matches": 19,
-    "status": "SOS 2026 results page available for validation",
-    "summary_fallback_counties": [
-      "Campbell",
-      "Crook",
-      "Goshen",
-      "Sweetwater"
-    ],
-    "summary_urls": [
-      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
-      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_House_Candidates_Summary.pdf",
-      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf"
-    ],
-    "fallback_counties": [
-      "Campbell",
-      "Crook",
-      "Goshen",
-      "Sweetwater"
-    ],
-    "fallback_page": "https://sos.wyo.gov/Elections/Docs/2026/2026PrimaryResults.aspx"
+    "status": "SOS 2026 results page available for validation"
   },
   "incumbents": {
     "House": {
