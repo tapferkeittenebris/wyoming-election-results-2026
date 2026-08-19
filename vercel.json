@@ -1,14 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{"type":"host","value":"www.buckthefreedomcaucus.wtf"}],
-      "destination": "https://buckthefreedomcaucus.wtf/:path*",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     {"source": "/social-share-fb.jpg", "destination": "/api/share-image"},
     {"source": "/social-share.jpg", "destination": "/api/share-image"},
