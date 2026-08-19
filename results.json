@@ -1,7 +1,7 @@
 {
-  "last_checked": "2026-08-18T21:54:08-06:00",
-  "last_updated": "2026-08-18T21:51:57-06:00",
-  "reporting_counties": 9,
+  "last_checked": "2026-08-18T21:56:21-06:00",
+  "last_updated": "2026-08-18T21:56:21-06:00",
+  "reporting_counties": 10,
   "county_status": [
     {
       "county": "Albany",
@@ -96,9 +96,9 @@
     },
     {
       "county": "Niobrara",
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "url": "https://www.niobraracounty.org/_departments/_county_clerk/ElectionResults.asp",
-      "reporting": false,
+      "status": "Reporting",
+      "url": "https://www.niobraracounty.org/_departments/_county_clerk/_pdfs/2026/Election%20Summary%204%20of%206%20precincts.pdf",
+      "reporting": true,
       "errors": []
     },
     {
@@ -581,8 +581,10 @@
       "candidates": [
         {
           "candidate": "Cheri E Steinmetz",
-          "votes": 0,
-          "counties": [],
+          "votes": 574,
+          "counties": [
+            "Niobrara"
+          ],
           "is_fc": false
         }
       ]
@@ -982,8 +984,10 @@
       "candidates": [
         {
           "candidate": "JD Williams",
-          "votes": 0,
-          "counties": [],
+          "votes": 609,
+          "counties": [
+            "Niobrara"
+          ],
           "is_fc": false
         }
       ]
@@ -2419,12 +2423,13 @@
       "candidates": [
         {
           "candidate": "Harriet Hageman",
-          "votes": 30087,
+          "votes": 30645,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2435,12 +2440,13 @@
         },
         {
           "candidate": "Jill M Edwards",
-          "votes": 994,
+          "votes": 1006,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2451,12 +2457,13 @@
         },
         {
           "candidate": "Jimmy Skovgard",
-          "votes": 1328,
+          "votes": 1336,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2467,12 +2474,13 @@
         },
         {
           "candidate": "John Holtz",
-          "votes": 859,
+          "votes": 865,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2483,12 +2491,13 @@
         },
         {
           "candidate": "Sam Mead",
-          "votes": 11781,
+          "votes": 11898,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2505,12 +2514,13 @@
       "candidates": [
         {
           "candidate": "Billy Benavidez",
-          "votes": 647,
+          "votes": 648,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2521,12 +2531,13 @@
         },
         {
           "candidate": "James Byrd",
-          "votes": 2241,
+          "votes": 2256,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2543,12 +2554,13 @@
       "candidates": [
         {
           "candidate": "Bo Biteman",
-          "votes": 2804,
+          "votes": 2826,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2559,12 +2571,13 @@
         },
         {
           "candidate": "Chuck Gray",
-          "votes": 11417,
+          "votes": 11616,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2575,12 +2588,13 @@
         },
         {
           "candidate": "David Giralt",
-          "votes": 4144,
+          "votes": 4267,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2591,12 +2605,13 @@
         },
         {
           "candidate": "Frank Chapman",
-          "votes": 672,
+          "votes": 681,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Sheridan",
             "Uinta"
@@ -2605,12 +2620,13 @@
         },
         {
           "candidate": "Jillian Balow",
-          "votes": 3576,
+          "votes": 3624,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2621,12 +2637,13 @@
         },
         {
           "candidate": "Keith B. Goodenough",
-          "votes": 1497,
+          "votes": 1502,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2637,12 +2654,13 @@
         },
         {
           "candidate": "Kevin Christensen",
-          "votes": 7116,
+          "votes": 7213,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2653,12 +2671,13 @@
         },
         {
           "candidate": "Reid Rasner",
-          "votes": 3411,
+          "votes": 3448,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2669,12 +2688,13 @@
         },
         {
           "candidate": "Richard Dodson",
-          "votes": 504,
+          "votes": 508,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2685,12 +2705,13 @@
         },
         {
           "candidate": "Steve Friess",
-          "votes": 8408,
+          "votes": 8528,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2707,12 +2728,13 @@
       "candidates": [
         {
           "candidate": "Elena Del Real",
-          "votes": 656,
+          "votes": 659,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2723,12 +2745,13 @@
         },
         {
           "candidate": "Lisa Kinney",
-          "votes": 2183,
+          "votes": 2196,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2745,12 +2768,13 @@
       "candidates": [
         {
           "candidate": "Brent Bien",
-          "votes": 12172,
+          "votes": 12316,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2761,12 +2785,13 @@
         },
         {
           "candidate": "Curt Blake",
-          "votes": 657,
+          "votes": 672,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2777,12 +2802,13 @@
         },
         {
           "candidate": "Eric Barlow",
-          "votes": 18790,
+          "votes": 19094,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2793,12 +2819,13 @@
         },
         {
           "candidate": "Megan Degenfelder",
-          "votes": 13875,
+          "votes": 14107,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2815,12 +2842,13 @@
       "candidates": [
         {
           "candidate": "Kenneth R. Casner",
-          "votes": 2514,
+          "votes": 2526,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2837,12 +2865,13 @@
       "candidates": [
         {
           "candidate": "CJ Young",
-          "votes": 5348,
+          "votes": 5432,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2853,12 +2882,13 @@
         },
         {
           "candidate": "Qwenton Eagle Oviatt",
-          "votes": 2269,
+          "votes": 2286,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2869,12 +2899,13 @@
         },
         {
           "candidate": "Rachel Williams",
-          "votes": 14687,
+          "votes": 14875,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2885,12 +2916,13 @@
         },
         {
           "candidate": "Robert Short",
-          "votes": 18464,
+          "votes": 18784,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2907,12 +2939,13 @@
       "candidates": [
         {
           "candidate": "Bryan McCarty",
-          "votes": 2627,
+          "votes": 2637,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2929,12 +2962,13 @@
       "candidates": [
         {
           "candidate": "Kristi Racines",
-          "votes": 36580,
+          "votes": 37164,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2951,12 +2985,13 @@
       "candidates": [
         {
           "candidate": "Curt Meier",
-          "votes": 26592,
+          "votes": 27041,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -2967,12 +3002,13 @@
         },
         {
           "candidate": "Scott Smith",
-          "votes": 12082,
+          "votes": 12259,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Sheridan",
             "Uinta"
@@ -2987,12 +3023,13 @@
       "candidates": [
         {
           "candidate": "Chad Auer",
-          "votes": 3387,
+          "votes": 3441,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -3003,12 +3040,13 @@
         },
         {
           "candidate": "Steve Harshman",
-          "votes": 24600,
+          "votes": 24990,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -3019,12 +3057,13 @@
         },
         {
           "candidate": "Tom Kelly",
-          "votes": 13187,
+          "votes": 13329,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -3041,12 +3080,13 @@
       "candidates": [
         {
           "candidate": "Ana Cordova",
-          "votes": 1637,
+          "votes": 1645,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -3057,12 +3097,13 @@
         },
         {
           "candidate": "Sergio A. Maldonado, Sr.",
-          "votes": 1080,
+          "votes": 1085,
           "counties": [
             "Albany",
             "Hot Springs",
             "Lincoln",
             "Natrona",
+            "Niobrara",
             "Park",
             "Platte",
             "Sheridan",
@@ -3077,7 +3118,7 @@
   "race_call_method": {
     "standard": "mathematical_clinch",
     "description": "WINNER only when the leader cannot be overtaken using explicit official remaining-ballot or complete-reporting data.",
-    "county_sources_evaluated": 9,
+    "county_sources_evaluated": 10,
     "all_counties_ready": false
   }
 }

@@ -1,6 +1,6 @@
 {
-  "last_checked": "2026-08-18T21:54:08-06:00",
-  "last_updated": "2026-08-18T21:51:57-06:00",
+  "last_checked": "2026-08-18T21:56:21-06:00",
+  "last_updated": "2026-08-18T21:56:21-06:00",
   "counties": {
     "Albany": {
       "source_url": "https://www.albanycountywy.gov/176/Results-of-Election",
@@ -57,7 +57,7 @@
       },
       "errors": [],
       "result_hash": "172006904c4ac7db",
-      "last_success": "2026-08-18T21:54:08-06:00"
+      "last_success": "2026-08-18T21:56:21-06:00"
     },
     "Big Horn": {
       "source_url": "https://www.bighorncountywy.gov/departments/clerk/elections",
@@ -157,7 +157,7 @@
       },
       "errors": [],
       "result_hash": "9e81b5a7d4b3c481",
-      "last_success": "2026-08-18T21:54:08-06:00"
+      "last_success": "2026-08-18T21:56:21-06:00"
     },
     "Johnson": {
       "source_url": "https://www.johnsoncowy.gov/departments/elections",
@@ -223,7 +223,7 @@
       },
       "errors": [],
       "result_hash": "2b78d2908a05dfc6",
-      "last_success": "2026-08-18T21:54:08-06:00"
+      "last_success": "2026-08-18T21:56:21-06:00"
     },
     "Natrona": {
       "source_url": "https://www.natronacounty-wy.gov/128/Elections",
@@ -299,14 +299,56 @@
       },
       "errors": [],
       "result_hash": "0ac5ebbb290db74e",
-      "last_success": "2026-08-18T21:54:08-06:00"
+      "last_success": "2026-08-18T21:56:21-06:00"
     },
     "Niobrara": {
       "source_url": "https://www.niobraracounty.org/_departments/_county_clerk/ElectionResults.asp",
-      "result_url": null,
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "votes": {},
-      "errors": []
+      "result_url": "https://www.niobraracounty.org/_departments/_county_clerk/_pdfs/2026/Election%20Summary%204%20of%206%20precincts.pdf",
+      "status": "Reporting",
+      "votes": {
+        "cheri e steinmetz": 574,
+        "jd williams": 609,
+        "harriet hageman": 558,
+        "jill m edwards": 12,
+        "jimmy skovgard": 8,
+        "john holtz": 6,
+        "sam mead": 117,
+        "billy benavidez": 1,
+        "james byrd": 15,
+        "bo biteman": 22,
+        "chuck gray": 199,
+        "david giralt": 123,
+        "frank chapman": 9,
+        "jillian balow": 48,
+        "keith b goodenough": 5,
+        "kevin christensen": 97,
+        "reid rasner": 37,
+        "richard dodson": 4,
+        "steve friess": 120,
+        "elena del real": 3,
+        "lisa kinney": 13,
+        "brent bien": 144,
+        "curt blake": 15,
+        "eric barlow": 304,
+        "megan degenfelder": 232,
+        "kenneth r casner": 12,
+        "cj young": 84,
+        "qwenton eagle oviatt": 17,
+        "rachel williams": 188,
+        "robert short": 320,
+        "bryan mccarty": 10,
+        "kristi racines": 584,
+        "curt meier": 449,
+        "scott smith": 177,
+        "chad auer": 54,
+        "steve harshman": 390,
+        "tom kelly": 142,
+        "ana cordova": 8,
+        "sergio a maldonado sr": 5
+      },
+      "errors": [],
+      "result_hash": "9062105805ad4f6a",
+      "last_success": "2026-08-18T21:56:21-06:00"
     },
     "Park": {
       "source_url": "https://parkcounty-wy.gov/county-elections/results/",
@@ -367,7 +409,7 @@
       },
       "errors": [],
       "result_hash": "8c3ec579f7e8647a",
-      "last_success": "2026-08-18T21:54:08-06:00"
+      "last_success": "2026-08-18T21:56:21-06:00"
     },
     "Platte": {
       "source_url": "https://www.plattecountywyoming.com/departments/Elections/ResultsofElection",
@@ -473,7 +515,7 @@
       },
       "errors": [],
       "result_hash": "b9b197e9e0768a3c",
-      "last_success": "2026-08-18T21:54:08-06:00"
+      "last_success": "2026-08-18T21:56:21-06:00"
     },
     "Sublette": {
       "source_url": "https://www.sublettecountywy.gov/110/Election-Information",
@@ -551,7 +593,7 @@
       },
       "errors": [],
       "result_hash": "bfc71110f942bc4d",
-      "last_success": "2026-08-18T21:54:08-06:00"
+      "last_success": "2026-08-18T21:56:21-06:00"
     },
     "Washakie": {
       "source_url": "https://www.washakiecountywy.gov/196/Elections",
