@@ -1,7 +1,7 @@
 {
-  "last_checked": "2026-08-18T21:04:47-06:00",
-  "last_updated": "2026-08-18T20:59:20-06:00",
-  "reporting_counties": 2,
+  "last_checked": "2026-08-18T21:08:43-06:00",
+  "last_updated": "2026-08-18T21:08:43-06:00",
+  "reporting_counties": 1,
   "county_status": [
     {
       "county": "Albany",
@@ -54,9 +54,9 @@
     },
     {
       "county": "Goshen",
-      "status": "Reporting (last good county snapshot; current check unavailable)",
-      "url": "https://www.goshencountywy.gov/ArchiveCenter/ViewFile/Item/63",
-      "reporting": true,
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "url": "https://www.goshencountywy.gov/198/Voter-Information",
+      "reporting": false,
       "errors": []
     },
     {
@@ -581,10 +581,8 @@
       "candidates": [
         {
           "candidate": "Cheri E Steinmetz",
-          "votes": 2498,
-          "counties": [
-            "Goshen"
-          ],
+          "votes": 0,
+          "counties": [],
           "is_fc": false
         }
       ]
@@ -800,7 +798,7 @@
       "candidates": [
         {
           "candidate": "Ken Pendergraft",
-          "votes": 836,
+          "votes": 998,
           "counties": [
             "Sheridan"
           ],
@@ -808,7 +806,7 @@
         },
         {
           "candidate": "Melissa Butcher",
-          "votes": 1355,
+          "votes": 1506,
           "counties": [
             "Sheridan"
           ],
@@ -1557,7 +1555,7 @@
       "candidates": [
         {
           "candidate": "Mark Jennings",
-          "votes": 697,
+          "votes": 729,
           "counties": [
             "Sheridan"
           ],
@@ -1565,7 +1563,7 @@
         },
         {
           "candidate": "Ryan Koltiska",
-          "votes": 1054,
+          "votes": 1164,
           "counties": [
             "Sheridan"
           ],
@@ -1766,7 +1764,7 @@
       "candidates": [
         {
           "candidate": "Marilyn Connolly",
-          "votes": 103,
+          "votes": 260,
           "counties": [
             "Sheridan"
           ],
@@ -1774,7 +1772,7 @@
         },
         {
           "candidate": "Mark Jones",
-          "votes": 45,
+          "votes": 232,
           "counties": [
             "Sheridan"
           ],
@@ -2273,7 +2271,7 @@
       "candidates": [
         {
           "candidate": "Harriet Hageman",
-          "votes": 2653,
+          "votes": 3021,
           "counties": [
             "Sheridan"
           ],
@@ -2281,7 +2279,7 @@
         },
         {
           "candidate": "Jill M Edwards",
-          "votes": 114,
+          "votes": 125,
           "counties": [
             "Sheridan"
           ],
@@ -2289,7 +2287,7 @@
         },
         {
           "candidate": "Jimmy Skovgard",
-          "votes": 101,
+          "votes": 108,
           "counties": [
             "Sheridan"
           ],
@@ -2297,16 +2295,15 @@
         },
         {
           "candidate": "John Holtz",
-          "votes": 163,
+          "votes": 91,
           "counties": [
-            "Goshen",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Sam Mead",
-          "votes": 1457,
+          "votes": 1562,
           "counties": [
             "Sheridan"
           ],
@@ -2320,7 +2317,7 @@
       "candidates": [
         {
           "candidate": "Billy Benavidez",
-          "votes": 73,
+          "votes": 79,
           "counties": [
             "Sheridan"
           ],
@@ -2328,7 +2325,7 @@
         },
         {
           "candidate": "James Byrd",
-          "votes": 230,
+          "votes": 249,
           "counties": [
             "Sheridan"
           ],
@@ -2342,7 +2339,7 @@
       "candidates": [
         {
           "candidate": "Bo Biteman",
-          "votes": 852,
+          "votes": 954,
           "counties": [
             "Sheridan"
           ],
@@ -2350,7 +2347,7 @@
         },
         {
           "candidate": "Chuck Gray",
-          "votes": 935,
+          "votes": 1082,
           "counties": [
             "Sheridan"
           ],
@@ -2358,7 +2355,7 @@
         },
         {
           "candidate": "David Giralt",
-          "votes": 281,
+          "votes": 309,
           "counties": [
             "Sheridan"
           ],
@@ -2366,7 +2363,7 @@
         },
         {
           "candidate": "Frank Chapman",
-          "votes": 49,
+          "votes": 56,
           "counties": [
             "Sheridan"
           ],
@@ -2374,16 +2371,15 @@
         },
         {
           "candidate": "Jillian Balow",
-          "votes": 3406,
+          "votes": 343,
           "counties": [
-            "Goshen",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Keith B. Goodenough",
-          "votes": 83,
+          "votes": 90,
           "counties": [
             "Sheridan"
           ],
@@ -2391,7 +2387,7 @@
         },
         {
           "candidate": "Kevin Christensen",
-          "votes": 949,
+          "votes": 1038,
           "counties": [
             "Sheridan"
           ],
@@ -2399,7 +2395,7 @@
         },
         {
           "candidate": "Reid Rasner",
-          "votes": 221,
+          "votes": 246,
           "counties": [
             "Sheridan"
           ],
@@ -2407,7 +2403,7 @@
         },
         {
           "candidate": "Richard Dodson",
-          "votes": 34,
+          "votes": 36,
           "counties": [
             "Sheridan"
           ],
@@ -2415,7 +2411,7 @@
         },
         {
           "candidate": "Steve Friess",
-          "votes": 548,
+          "votes": 603,
           "counties": [
             "Sheridan"
           ],
@@ -2429,7 +2425,7 @@
       "candidates": [
         {
           "candidate": "Elena Del Real",
-          "votes": 66,
+          "votes": 72,
           "counties": [
             "Sheridan"
           ],
@@ -2437,7 +2433,7 @@
         },
         {
           "candidate": "Lisa Kinney",
-          "votes": 229,
+          "votes": 248,
           "counties": [
             "Sheridan"
           ],
@@ -2451,7 +2447,7 @@
       "candidates": [
         {
           "candidate": "Brent Bien",
-          "votes": 1414,
+          "votes": 1629,
           "counties": [
             "Sheridan"
           ],
@@ -2459,7 +2455,7 @@
         },
         {
           "candidate": "Curt Blake",
-          "votes": 37,
+          "votes": 39,
           "counties": [
             "Sheridan"
           ],
@@ -2467,7 +2463,7 @@
         },
         {
           "candidate": "Eric Barlow",
-          "votes": 2034,
+          "votes": 2233,
           "counties": [
             "Sheridan"
           ],
@@ -2475,7 +2471,7 @@
         },
         {
           "candidate": "Megan Degenfelder",
-          "votes": 983,
+          "votes": 1081,
           "counties": [
             "Sheridan"
           ],
@@ -2489,9 +2485,8 @@
       "candidates": [
         {
           "candidate": "Kenneth R. Casner",
-          "votes": 279,
+          "votes": 271,
           "counties": [
-            "Goshen",
             "Sheridan"
           ],
           "is_fc": false
@@ -2504,7 +2499,7 @@
       "candidates": [
         {
           "candidate": "CJ Young",
-          "votes": 572,
+          "votes": 643,
           "counties": [
             "Sheridan"
           ],
@@ -2512,7 +2507,7 @@
         },
         {
           "candidate": "Qwenton Eagle Oviatt",
-          "votes": 292,
+          "votes": 326,
           "counties": [
             "Sheridan"
           ],
@@ -2520,7 +2515,7 @@
         },
         {
           "candidate": "Rachel Williams",
-          "votes": 1350,
+          "votes": 1518,
           "counties": [
             "Sheridan"
           ],
@@ -2528,7 +2523,7 @@
         },
         {
           "candidate": "Robert Short",
-          "votes": 1691,
+          "votes": 1844,
           "counties": [
             "Sheridan"
           ],
@@ -2542,7 +2537,7 @@
       "candidates": [
         {
           "candidate": "Bryan McCarty",
-          "votes": 276,
+          "votes": 297,
           "counties": [
             "Sheridan"
           ],
@@ -2556,9 +2551,8 @@
       "candidates": [
         {
           "candidate": "Kristi Racines",
-          "votes": 4989,
+          "votes": 3961,
           "counties": [
-            "Goshen",
             "Sheridan"
           ],
           "is_fc": false
@@ -2571,16 +2565,15 @@
       "candidates": [
         {
           "candidate": "Curt Meier",
-          "votes": 5291,
+          "votes": 2998,
           "counties": [
-            "Goshen",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Scott Smith",
-          "votes": 1159,
+          "votes": 1289,
           "counties": [
             "Sheridan"
           ],
@@ -2594,7 +2587,7 @@
       "candidates": [
         {
           "candidate": "Chad Auer",
-          "votes": 394,
+          "votes": 427,
           "counties": [
             "Sheridan"
           ],
@@ -2602,7 +2595,7 @@
         },
         {
           "candidate": "Steve Harshman",
-          "votes": 2053,
+          "votes": 2257,
           "counties": [
             "Sheridan"
           ],
@@ -2610,7 +2603,7 @@
         },
         {
           "candidate": "Tom Kelly",
-          "votes": 1609,
+          "votes": 1804,
           "counties": [
             "Sheridan"
           ],
@@ -2624,7 +2617,7 @@
       "candidates": [
         {
           "candidate": "Ana Cordova",
-          "votes": 162,
+          "votes": 178,
           "counties": [
             "Sheridan"
           ],
@@ -2632,7 +2625,7 @@
         },
         {
           "candidate": "Sergio A. Maldonado, Sr.",
-          "votes": 122,
+          "votes": 129,
           "counties": [
             "Sheridan"
           ],
@@ -2644,7 +2637,7 @@
   "race_call_method": {
     "standard": "mathematical_clinch",
     "description": "WINNER only when the leader cannot be overtaken using explicit official remaining-ballot or complete-reporting data.",
-    "county_sources_evaluated": 2,
+    "county_sources_evaluated": 1,
     "all_counties_ready": false
   }
 }
