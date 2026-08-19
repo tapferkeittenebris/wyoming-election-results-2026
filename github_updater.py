@@ -17,7 +17,7 @@ TZ=ZoneInfo('America/Denver')
 START=datetime(2026,8,18,15,0,tzinfo=TZ)
 END=datetime(2026,8,19,2,0,tzinfo=TZ)
 UA={'User-Agent':'Mozilla/5.0 WyomingElectionDashboard/2.0 (+election-results-monitor)'}
-BAD=('sample ballot','public test','test','testing','logic accuracy','expected result','audit','recount','canvass','candidate roster','candidate contact','candidate filing','candidate filings','primary election candidates','precinct committeeman','archivecenter viewfile item 63')
+BAD=('sample ballot','public test','test','testing','logic accuracy','expected result','audit','recount','canvass','candidate roster','candidate contact','candidate filing','candidate filings','primary election candidates','voter guide','polling place location','archivecenter viewfile item 63')
 LEG_API='https://web.wyoleg.gov/LsoService/api/legislator/2026/{chamber}'
 SOS_RESULTS_PAGE='https://sos.wyo.gov/Elections/Docs/2026/2026PrimaryResults.aspx'
 SOS_RESULTS_HOME='https://sos.wyo.gov/elections/electionresults.aspx'
