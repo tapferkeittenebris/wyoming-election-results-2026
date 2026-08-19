@@ -1,13 +1,13 @@
 {
-  "last_checked": "2026-08-18T21:32:44-06:00",
-  "last_updated": "2026-08-18T21:34:53-06:00",
-  "reporting_counties": 5,
+  "last_checked": "2026-08-18T21:41:48-06:00",
+  "last_updated": "2026-08-18T21:41:48-06:00",
+  "reporting_counties": 7,
   "county_status": [
     {
       "county": "Albany",
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "url": "https://www.albanycountywy.gov/176/Results-of-Election",
-      "reporting": false,
+      "status": "Reporting",
+      "url": "https://www.albanycountywy.gov/DocumentCenter/View/8355/2026-Election-Summary---ZEROS",
+      "reporting": true,
       "errors": []
     },
     {
@@ -90,7 +90,7 @@
     {
       "county": "Natrona",
       "status": "Reporting",
-      "url": "https://www.natronacounty-wy.gov/DocumentCenter/View/13851/2026-Primary---Federal-Contest-Summary---Unofficial-PDF",
+      "url": "https://www.natronacounty-wy.gov/DocumentCenter/View/13861/2026-Primary---Election-Summary-and-Statistics---Unofficial-PDF",
       "reporting": true,
       "errors": []
     },
@@ -103,14 +103,14 @@
     },
     {
       "county": "Park",
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "url": "https://parkcounty-wy.gov/county-elections/results/",
-      "reporting": false,
+      "status": "Reporting",
+      "url": "https://parkcounty-wy.gov/wp-content/uploads/2026/08/Unoffical-2026-Primary-Summary.pdf",
+      "reporting": true,
       "errors": []
     },
     {
       "county": "Platte",
-      "status": "Reporting via Wyoming SOS statewide summary",
+      "status": "Reporting (last good county snapshot; current check unavailable)",
       "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
       "reporting": true,
       "errors": []
@@ -152,7 +152,7 @@
     },
     {
       "county": "Washakie",
-      "status": "Reporting via Wyoming SOS statewide summary",
+      "status": "Reporting (last good county snapshot; current check unavailable)",
       "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
       "reporting": true,
       "errors": []
@@ -173,22 +173,8 @@
       "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_House_Candidates_Summary.pdf",
       "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf"
     ],
-    "candidate_matches": 18,
-    "status": "SOS 2026 results page available for validation",
-    "summary_fallback_counties": [
-      "Platte",
-      "Washakie"
-    ],
-    "summary_urls": [
-      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
-      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_House_Candidates_Summary.pdf",
-      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf"
-    ],
-    "fallback_counties": [
-      "Platte",
-      "Washakie"
-    ],
-    "fallback_page": "https://sos.wyo.gov/Elections/Docs/2026/2026PrimaryResults.aspx"
+    "candidate_matches": 19,
+    "status": "SOS 2026 results page available for validation"
   },
   "incumbents": {
     "House": {
@@ -702,7 +688,9 @@
         {
           "candidate": "Chris Rothfuss",
           "votes": 0,
-          "counties": [],
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -797,14 +785,18 @@
       "candidates": [
         {
           "candidate": "Paul Hoeft",
-          "votes": 0,
-          "counties": [],
+          "votes": 1513,
+          "counties": [
+            "Park"
+          ],
           "is_fc": true
         },
         {
           "candidate": "R. J. Kost",
-          "votes": 0,
-          "counties": [],
+          "votes": 1180,
+          "counties": [
+            "Park"
+          ],
           "is_fc": false
         }
       ]
@@ -816,7 +808,7 @@
       "candidates": [
         {
           "candidate": "Ken Pendergraft",
-          "votes": 1638,
+          "votes": 1950,
           "counties": [
             "Sheridan"
           ],
@@ -824,7 +816,7 @@
         },
         {
           "candidate": "Melissa Butcher",
-          "votes": 2424,
+          "votes": 2740,
           "counties": [
             "Sheridan"
           ],
@@ -877,20 +869,26 @@
       "candidates": [
         {
           "candidate": "Jim Corkery",
-          "votes": 0,
-          "counties": [],
+          "votes": 612,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Kevin Helling",
-          "votes": 0,
-          "counties": [],
+          "votes": 1928,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Marcia Neumiller",
-          "votes": 0,
-          "counties": [],
+          "votes": 1093,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         }
       ]
@@ -902,14 +900,18 @@
       "candidates": [
         {
           "candidate": "Bob Ide",
-          "votes": 0,
-          "counties": [],
+          "votes": 1954,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Lisa Engebretsen",
-          "votes": 0,
-          "counties": [],
+          "votes": 2153,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         }
       ]
@@ -1212,7 +1214,9 @@
         {
           "candidate": "Shane Swett",
           "votes": 0,
-          "counties": [],
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -1225,7 +1229,9 @@
         {
           "candidate": "Ken Chestek",
           "votes": 0,
-          "counties": [],
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -1238,7 +1244,9 @@
         {
           "candidate": "Emily Study",
           "votes": 0,
-          "counties": [],
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -1251,7 +1259,9 @@
         {
           "candidate": "Trey Sherwood",
           "votes": 0,
-          "counties": [],
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -1430,14 +1440,18 @@
       "candidates": [
         {
           "candidate": "Nina Webber",
-          "votes": 0,
-          "counties": [],
+          "votes": 951,
+          "counties": [
+            "Park"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Quin Blair",
-          "votes": 0,
-          "counties": [],
+          "votes": 1844,
+          "counties": [
+            "Park"
+          ],
           "is_fc": false
         }
       ]
@@ -1449,14 +1463,18 @@
       "candidates": [
         {
           "candidate": "John Wetzel",
-          "votes": 0,
-          "counties": [],
+          "votes": 1267,
+          "counties": [
+            "Park"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Matthew R Legler",
-          "votes": 0,
-          "counties": [],
+          "votes": 1177,
+          "counties": [
+            "Park"
+          ],
           "is_fc": true
         }
       ]
@@ -1468,14 +1486,18 @@
       "candidates": [
         {
           "candidate": "Dalton Banks",
-          "votes": 0,
-          "counties": [],
+          "votes": 127,
+          "counties": [
+            "Park"
+          ],
           "is_fc": true
         },
         {
           "candidate": "J. Addison Aagard",
-          "votes": 0,
-          "counties": [],
+          "votes": 67,
+          "counties": [
+            "Park"
+          ],
           "is_fc": false
         }
       ]
@@ -1517,33 +1539,37 @@
       "candidates": [
         {
           "candidate": "Allen Hogg",
-          "votes": 549,
+          "votes": 989,
           "counties": [
-            "Hot Springs"
+            "Hot Springs",
+            "Park"
           ],
           "is_fc": false
         },
         {
           "candidate": "Carlin Jones",
-          "votes": 296,
+          "votes": 454,
           "counties": [
-            "Hot Springs"
+            "Hot Springs",
+            "Park"
           ],
           "is_fc": true
         },
         {
           "candidate": "Marshall Keller",
-          "votes": 637,
+          "votes": 685,
           "counties": [
-            "Hot Springs"
+            "Hot Springs",
+            "Park"
           ],
           "is_fc": false
         },
         {
           "candidate": "Roland Luehne",
-          "votes": 119,
+          "votes": 124,
           "counties": [
-            "Hot Springs"
+            "Hot Springs",
+            "Park"
           ],
           "is_fc": false
         }
@@ -1668,14 +1694,18 @@
       "candidates": [
         {
           "candidate": "Christopher Dresang",
-          "votes": 0,
-          "counties": [],
+          "votes": 1377,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Tony Locke",
-          "votes": 0,
-          "counties": [],
+          "votes": 1046,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": true
         }
       ]
@@ -1687,8 +1717,10 @@
       "candidates": [
         {
           "candidate": "Art Washut",
-          "votes": 0,
-          "counties": [],
+          "votes": 1131,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         }
       ]
@@ -1700,8 +1732,10 @@
       "candidates": [
         {
           "candidate": "Stewart McAdoo",
-          "votes": 0,
-          "counties": [],
+          "votes": 167,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         }
       ]
@@ -1713,20 +1747,26 @@
       "candidates": [
         {
           "candidate": "Brian Costello",
-          "votes": 0,
-          "counties": [],
+          "votes": 1408,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Donna Rice",
-          "votes": 0,
-          "counties": [],
+          "votes": 398,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Ross Schriftman",
-          "votes": 0,
-          "counties": [],
+          "votes": 843,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": true
         }
       ]
@@ -1738,8 +1778,10 @@
       "candidates": [
         {
           "candidate": "Betsy Erickson",
-          "votes": 0,
-          "counties": [],
+          "votes": 164,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         }
       ]
@@ -1751,14 +1793,18 @@
       "candidates": [
         {
           "candidate": "Jayme Lien",
-          "votes": 0,
-          "counties": [],
+          "votes": 869,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Robert L. Hendry",
-          "votes": 0,
-          "counties": [],
+          "votes": 938,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         }
       ]
@@ -1770,8 +1816,10 @@
       "candidates": [
         {
           "candidate": "Catherine McQueen",
-          "votes": 0,
-          "counties": [],
+          "votes": 109,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         }
       ]
@@ -1910,7 +1958,9 @@
         {
           "candidate": "Ross Davenport",
           "votes": 0,
-          "counties": [],
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -1923,7 +1973,9 @@
         {
           "candidate": "Karlee Provenza",
           "votes": 0,
-          "counties": [],
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -1936,13 +1988,17 @@
         {
           "candidate": "Cam Wright",
           "votes": 0,
-          "counties": [],
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Ocean Andrew",
           "votes": 0,
-          "counties": [],
+          "counties": [
+            "Albany"
+          ],
           "is_fc": true
         }
       ]
@@ -1955,7 +2011,9 @@
         {
           "candidate": "Gary Wilken",
           "votes": 0,
-          "counties": [],
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         }
       ]
@@ -2018,14 +2076,18 @@
       "candidates": [
         {
           "candidate": "David Hill",
-          "votes": 0,
-          "counties": [],
+          "votes": 1557,
+          "counties": [
+            "Park"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Levi Asay",
-          "votes": 0,
-          "counties": [],
+          "votes": 1263,
+          "counties": [
+            "Park"
+          ],
           "is_fc": false
         }
       ]
@@ -2037,7 +2099,7 @@
       "candidates": [
         {
           "candidate": "Laurie Bratten",
-          "votes": 1029,
+          "votes": 1395,
           "counties": [
             "Sheridan"
           ],
@@ -2045,7 +2107,7 @@
         },
         {
           "candidate": "Susan Bigelow",
-          "votes": 1023,
+          "votes": 1291,
           "counties": [
             "Sheridan"
           ],
@@ -2130,14 +2192,18 @@
       "candidates": [
         {
           "candidate": "Elissa Campbell",
-          "votes": 0,
-          "counties": [],
+          "votes": 1234,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Pete Fox",
-          "votes": 0,
-          "counties": [],
+          "votes": 580,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": true
         }
       ]
@@ -2149,14 +2215,18 @@
       "candidates": [
         {
           "candidate": "Jeanette Ward",
-          "votes": 0,
-          "counties": [],
+          "votes": 496,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Julie Jarvis",
-          "votes": 0,
-          "counties": [],
+          "votes": 685,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         }
       ]
@@ -2168,8 +2238,10 @@
       "candidates": [
         {
           "candidate": "Luc Colgrove",
-          "votes": 0,
-          "counties": [],
+          "votes": 113,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         }
       ]
@@ -2181,14 +2253,18 @@
       "candidates": [
         {
           "candidate": "Bill Allemand",
-          "votes": 0,
-          "counties": [],
+          "votes": 800,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Peter Boyer",
-          "votes": 0,
-          "counties": [],
+          "votes": 773,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         }
       ]
@@ -2200,8 +2276,10 @@
       "candidates": [
         {
           "candidate": "Keenan Morgan",
-          "votes": 0,
-          "counties": [],
+          "votes": 97,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         }
       ]
@@ -2213,14 +2291,18 @@
       "candidates": [
         {
           "candidate": "J.R. Riggins",
-          "votes": 0,
-          "counties": [],
+          "votes": 745,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Neil Jeske",
-          "votes": 0,
-          "counties": [],
+          "votes": 612,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": true
         }
       ]
@@ -2232,8 +2314,10 @@
       "candidates": [
         {
           "candidate": "Laurie Longtine",
-          "votes": 0,
-          "counties": [],
+          "votes": 140,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         }
       ]
@@ -2283,14 +2367,18 @@
       "candidates": [
         {
           "candidate": "Edis Allen",
-          "votes": 0,
-          "counties": [],
+          "votes": 368,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Kevin J. Campbell",
-          "votes": 0,
-          "counties": [],
+          "votes": 531,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": true
         }
       ]
@@ -2303,10 +2391,12 @@
       "candidates": [
         {
           "candidate": "Harriet Hageman",
-          "votes": 18688,
+          "votes": 25281,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2315,10 +2405,12 @@
         },
         {
           "candidate": "Jill M Edwards",
-          "votes": 606,
+          "votes": 817,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2327,10 +2419,12 @@
         },
         {
           "candidate": "Jimmy Skovgard",
-          "votes": 944,
+          "votes": 1194,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2339,10 +2433,12 @@
         },
         {
           "candidate": "John Holtz",
-          "votes": 471,
+          "votes": 675,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2351,10 +2447,12 @@
         },
         {
           "candidate": "Sam Mead",
-          "votes": 8053,
+          "votes": 10741,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2369,10 +2467,12 @@
       "candidates": [
         {
           "candidate": "Billy Benavidez",
-          "votes": 458,
+          "votes": 537,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2381,10 +2481,12 @@
         },
         {
           "candidate": "James Byrd",
-          "votes": 1662,
+          "votes": 1933,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2399,10 +2501,12 @@
       "candidates": [
         {
           "candidate": "Bo Biteman",
-          "votes": 2062,
+          "votes": 2404,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2411,10 +2515,12 @@
         },
         {
           "candidate": "Chuck Gray",
-          "votes": 6725,
+          "votes": 9542,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2423,10 +2529,12 @@
         },
         {
           "candidate": "David Giralt",
-          "votes": 2843,
+          "votes": 3603,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2435,20 +2543,24 @@
         },
         {
           "candidate": "Frank Chapman",
-          "votes": 491,
+          "votes": 581,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jillian Balow",
-          "votes": 2223,
+          "votes": 2990,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2457,10 +2569,12 @@
         },
         {
           "candidate": "Keith B. Goodenough",
-          "votes": 1199,
+          "votes": 1366,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2469,10 +2583,12 @@
         },
         {
           "candidate": "Kevin Christensen",
-          "votes": 5010,
+          "votes": 6604,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2481,10 +2597,12 @@
         },
         {
           "candidate": "Reid Rasner",
-          "votes": 2088,
+          "votes": 2740,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2493,10 +2611,12 @@
         },
         {
           "candidate": "Richard Dodson",
-          "votes": 339,
+          "votes": 440,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2505,10 +2625,12 @@
         },
         {
           "candidate": "Steve Friess",
-          "votes": 4954,
+          "votes": 7267,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2523,10 +2645,12 @@
       "candidates": [
         {
           "candidate": "Elena Del Real",
-          "votes": 463,
+          "votes": 540,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2535,10 +2659,12 @@
         },
         {
           "candidate": "Lisa Kinney",
-          "votes": 1608,
+          "votes": 1886,
           "counties": [
+            "Albany",
             "Hot Springs",
             "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2553,9 +2679,12 @@
       "candidates": [
         {
           "candidate": "Brent Bien",
-          "votes": 4004,
+          "votes": 10403,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2564,9 +2693,12 @@
         },
         {
           "candidate": "Curt Blake",
-          "votes": 154,
+          "votes": 544,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2575,9 +2707,12 @@
         },
         {
           "candidate": "Eric Barlow",
-          "votes": 5508,
+          "votes": 16119,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2586,9 +2721,12 @@
         },
         {
           "candidate": "Megan Degenfelder",
-          "votes": 3646,
+          "votes": 12030,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2603,9 +2741,12 @@
       "candidates": [
         {
           "candidate": "Kenneth R. Casner",
-          "votes": 732,
+          "votes": 2139,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2620,9 +2761,12 @@
       "candidates": [
         {
           "candidate": "CJ Young",
-          "votes": 1592,
+          "votes": 4554,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2631,9 +2775,12 @@
         },
         {
           "candidate": "Qwenton Eagle Oviatt",
-          "votes": 773,
+          "votes": 1889,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2642,9 +2789,12 @@
         },
         {
           "candidate": "Rachel Williams",
-          "votes": 3960,
+          "votes": 12547,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2653,9 +2803,12 @@
         },
         {
           "candidate": "Robert Short",
-          "votes": 5330,
+          "votes": 16393,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2670,9 +2823,12 @@
       "candidates": [
         {
           "candidate": "Bryan McCarty",
-          "votes": 780,
+          "votes": 2246,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2687,9 +2843,12 @@
       "candidates": [
         {
           "candidate": "Kristi Racines",
-          "votes": 10841,
+          "votes": 31459,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2704,9 +2863,12 @@
       "candidates": [
         {
           "candidate": "Curt Meier",
-          "votes": 8321,
+          "votes": 23112,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2715,9 +2877,12 @@
         },
         {
           "candidate": "Scott Smith",
-          "votes": 2149,
+          "votes": 10217,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Sheridan"
           ],
           "is_fc": true
@@ -2730,9 +2895,12 @@
       "candidates": [
         {
           "candidate": "Chad Auer",
-          "votes": 1113,
+          "votes": 2830,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2741,9 +2909,12 @@
         },
         {
           "candidate": "Steve Harshman",
-          "votes": 6303,
+          "votes": 21939,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2752,9 +2923,12 @@
         },
         {
           "candidate": "Tom Kelly",
-          "votes": 4442,
+          "votes": 11067,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2769,9 +2943,12 @@
       "candidates": [
         {
           "candidate": "Ana Cordova",
-          "votes": 454,
+          "votes": 1400,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2780,9 +2957,12 @@
         },
         {
           "candidate": "Sergio A. Maldonado, Sr.",
-          "votes": 355,
+          "votes": 919,
           "counties": [
+            "Albany",
             "Hot Springs",
+            "Natrona",
+            "Park",
             "Platte",
             "Sheridan",
             "Washakie"
@@ -2795,7 +2975,7 @@
   "race_call_method": {
     "standard": "mathematical_clinch",
     "description": "WINNER only when the leader cannot be overtaken using explicit official remaining-ballot or complete-reporting data.",
-    "county_sources_evaluated": 5,
+    "county_sources_evaluated": 7,
     "all_counties_ready": false
   }
 }
