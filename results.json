@@ -1,7 +1,7 @@
 {
-  "last_checked": "2026-08-18T21:56:21-06:00",
-  "last_updated": "2026-08-18T21:56:21-06:00",
-  "reporting_counties": 10,
+  "last_checked": "2026-08-18T22:00:30-06:00",
+  "last_updated": "2026-08-18T22:00:30-06:00",
+  "reporting_counties": 11,
   "county_status": [
     {
       "county": "Albany",
@@ -75,9 +75,9 @@
     },
     {
       "county": "Laramie",
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "url": "https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections/Election-Results",
-      "reporting": false,
+      "status": "Reporting",
+      "url": "https://www.laramiecountywy.gov/files/sharedassets/public/v/2/clerk/documents/election-results/2026-primary/unofficial-results.pdf",
+      "reporting": true,
       "errors": []
     },
     {
@@ -596,26 +596,34 @@
       "candidates": [
         {
           "candidate": "Ben Hornok",
-          "votes": 0,
-          "counties": [],
+          "votes": 626,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Lauren Schoenfeld",
-          "votes": 0,
-          "counties": [],
+          "votes": 582,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Meagan Herrington",
-          "votes": 0,
-          "counties": [],
+          "votes": 182,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Ronald D. McCleary",
-          "votes": 0,
-          "counties": [],
+          "votes": 67,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -627,8 +635,10 @@
       "candidates": [
         {
           "candidate": "Ted Hanlon",
-          "votes": 0,
-          "counties": [],
+          "votes": 142,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -640,16 +650,18 @@
       "candidates": [
         {
           "candidate": "Roy Birt",
-          "votes": 1394,
+          "votes": 2041,
           "counties": [
+            "Laramie",
             "Platte"
           ],
           "is_fc": true
         },
         {
           "candidate": "Taft Love",
-          "votes": 1156,
+          "votes": 2067,
           "counties": [
+            "Laramie",
             "Platte"
           ],
           "is_fc": false
@@ -663,8 +675,10 @@
       "candidates": [
         {
           "candidate": "Mark Rinne",
-          "votes": 0,
-          "counties": [],
+          "votes": 1383,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -676,8 +690,10 @@
       "candidates": [
         {
           "candidate": "Jim Lee",
-          "votes": 0,
-          "counties": [],
+          "votes": 292,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -933,14 +949,18 @@
       "candidates": [
         {
           "candidate": "Daniel J. Singh",
-          "votes": 0,
-          "counties": [],
+          "votes": 479,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Evie Brennan",
-          "votes": 0,
-          "counties": [],
+          "votes": 928,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -952,8 +972,10 @@
       "candidates": [
         {
           "candidate": "Shifa Hamid",
-          "votes": 0,
-          "counties": [],
+          "votes": 158,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -1018,8 +1040,9 @@
       "candidates": [
         {
           "candidate": "Jeremy Haroldson",
-          "votes": 1853,
+          "votes": 1873,
           "counties": [
+            "Laramie",
             "Platte"
           ],
           "is_fc": true
@@ -1071,14 +1094,18 @@
       "candidates": [
         {
           "candidate": "Bob Nicholas",
-          "votes": 0,
-          "counties": [],
+          "votes": 577,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Deb Mutter Shamley",
-          "votes": 0,
-          "counties": [],
+          "votes": 364,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -1090,8 +1117,10 @@
       "candidates": [
         {
           "candidate": "Gavin Lobmeyer",
-          "votes": 0,
-          "counties": [],
+          "votes": 121,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -1103,14 +1132,18 @@
       "candidates": [
         {
           "candidate": "Luke Reiner",
-          "votes": 0,
-          "counties": [],
+          "votes": 830,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Steve Johnson",
-          "votes": 0,
-          "counties": [],
+          "votes": 499,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": true
         }
       ]
@@ -1122,8 +1155,10 @@
       "candidates": [
         {
           "candidate": "Brenda J Lyttle",
-          "votes": 0,
-          "counties": [],
+          "votes": 85,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -1135,14 +1170,18 @@
       "candidates": [
         {
           "candidate": "Boyd O. Wiggam",
-          "votes": 0,
-          "counties": [],
+          "votes": 475,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Exie R. Brown, Jr.",
-          "votes": 0,
-          "counties": [],
+          "votes": 350,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": true
         }
       ]
@@ -1154,8 +1193,10 @@
       "candidates": [
         {
           "candidate": "Stephen D. Latham",
-          "votes": 0,
-          "counties": [],
+          "votes": 110,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -1167,8 +1208,10 @@
       "candidates": [
         {
           "candidate": "Justin Fornstrom",
-          "votes": 0,
-          "counties": [],
+          "votes": 1423,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -1180,14 +1223,18 @@
       "candidates": [
         {
           "candidate": "Dan McIntosh",
-          "votes": 0,
-          "counties": [],
+          "votes": 413,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Paul Wing",
-          "votes": 0,
-          "counties": [],
+          "votes": 140,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": true
         }
       ]
@@ -1199,8 +1246,10 @@
       "candidates": [
         {
           "candidate": "Britney Tennant",
-          "votes": 0,
-          "counties": [],
+          "votes": 144,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -1212,8 +1261,10 @@
       "candidates": [
         {
           "candidate": "Clarence Styvar",
-          "votes": 0,
-          "counties": [],
+          "votes": 460,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": true
         }
       ]
@@ -1895,14 +1946,18 @@
       "candidates": [
         {
           "candidate": "Erin Edwards",
-          "votes": 0,
-          "counties": [],
+          "votes": 592,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Gary Brown",
-          "votes": 0,
-          "counties": [],
+          "votes": 244,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": true
         }
       ]
@@ -1914,8 +1969,10 @@
       "candidates": [
         {
           "candidate": "Stacy Becker",
-          "votes": 0,
-          "counties": [],
+          "votes": 190,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -1927,8 +1984,10 @@
       "candidates": [
         {
           "candidate": "Rob Geringer",
-          "votes": 0,
-          "counties": [],
+          "votes": 871,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -1940,8 +1999,10 @@
       "candidates": [
         {
           "candidate": "Jim VanDyke",
-          "votes": 0,
-          "counties": [],
+          "votes": 56,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -1953,14 +2014,18 @@
       "candidates": [
         {
           "candidate": "Ann Lucas",
-          "votes": 0,
-          "counties": [],
+          "votes": 370,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Jessica Crowder",
-          "votes": 0,
-          "counties": [],
+          "votes": 554,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -1972,8 +2037,10 @@
       "candidates": [
         {
           "candidate": "Lee Filer",
-          "votes": 0,
-          "counties": [],
+          "votes": 355,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -2380,14 +2447,18 @@
       "candidates": [
         {
           "candidate": "Andrew Server",
-          "votes": 0,
-          "counties": [],
+          "votes": 272,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Seth Bard",
-          "votes": 0,
-          "counties": [],
+          "votes": 188,
+          "counties": [
+            "Laramie"
+          ],
           "is_fc": false
         }
       ]
@@ -2423,10 +2494,11 @@
       "candidates": [
         {
           "candidate": "Harriet Hageman",
-          "votes": 30645,
+          "votes": 36936,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2440,10 +2512,11 @@
         },
         {
           "candidate": "Jill M Edwards",
-          "votes": 1006,
+          "votes": 1323,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2457,10 +2530,11 @@
         },
         {
           "candidate": "Jimmy Skovgard",
-          "votes": 1336,
+          "votes": 1623,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2474,10 +2548,11 @@
         },
         {
           "candidate": "John Holtz",
-          "votes": 865,
+          "votes": 1071,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2491,10 +2566,11 @@
         },
         {
           "candidate": "Sam Mead",
-          "votes": 11898,
+          "votes": 14338,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2514,10 +2590,11 @@
       "candidates": [
         {
           "candidate": "Billy Benavidez",
-          "votes": 648,
+          "votes": 871,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2531,10 +2608,11 @@
         },
         {
           "candidate": "James Byrd",
-          "votes": 2256,
+          "votes": 3252,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2554,10 +2632,11 @@
       "candidates": [
         {
           "candidate": "Bo Biteman",
-          "votes": 2826,
+          "votes": 3227,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2571,10 +2650,11 @@
         },
         {
           "candidate": "Chuck Gray",
-          "votes": 11616,
+          "votes": 13758,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2588,10 +2668,11 @@
         },
         {
           "candidate": "David Giralt",
-          "votes": 4267,
+          "votes": 4936,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2605,10 +2686,11 @@
         },
         {
           "candidate": "Frank Chapman",
-          "votes": 681,
+          "votes": 860,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2620,10 +2702,11 @@
         },
         {
           "candidate": "Jillian Balow",
-          "votes": 3624,
+          "votes": 4865,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2637,10 +2720,11 @@
         },
         {
           "candidate": "Keith B. Goodenough",
-          "votes": 1502,
+          "votes": 1699,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2654,10 +2738,11 @@
         },
         {
           "candidate": "Kevin Christensen",
-          "votes": 7213,
+          "votes": 8564,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2671,10 +2756,11 @@
         },
         {
           "candidate": "Reid Rasner",
-          "votes": 3448,
+          "votes": 4497,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2688,10 +2774,11 @@
         },
         {
           "candidate": "Richard Dodson",
-          "votes": 508,
+          "votes": 651,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2705,10 +2792,11 @@
         },
         {
           "candidate": "Steve Friess",
-          "votes": 8528,
+          "votes": 10649,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2728,10 +2816,11 @@
       "candidates": [
         {
           "candidate": "Elena Del Real",
-          "votes": 659,
+          "votes": 995,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2745,10 +2834,11 @@
         },
         {
           "candidate": "Lisa Kinney",
-          "votes": 2196,
+          "votes": 3054,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2768,10 +2858,11 @@
       "candidates": [
         {
           "candidate": "Brent Bien",
-          "votes": 12316,
+          "votes": 14459,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2785,10 +2876,11 @@
         },
         {
           "candidate": "Curt Blake",
-          "votes": 672,
+          "votes": 870,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2802,10 +2894,11 @@
         },
         {
           "candidate": "Eric Barlow",
-          "votes": 19094,
+          "votes": 23095,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2819,10 +2912,11 @@
         },
         {
           "candidate": "Megan Degenfelder",
-          "votes": 14107,
+          "votes": 17417,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2842,10 +2936,11 @@
       "candidates": [
         {
           "candidate": "Kenneth R. Casner",
-          "votes": 2526,
+          "votes": 3635,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2865,10 +2960,11 @@
       "candidates": [
         {
           "candidate": "CJ Young",
-          "votes": 5432,
+          "votes": 7342,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2882,10 +2978,11 @@
         },
         {
           "candidate": "Qwenton Eagle Oviatt",
-          "votes": 2286,
+          "votes": 2808,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2899,10 +2996,11 @@
         },
         {
           "candidate": "Rachel Williams",
-          "votes": 14875,
+          "votes": 17551,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2916,10 +3014,11 @@
         },
         {
           "candidate": "Robert Short",
-          "votes": 18784,
+          "votes": 22585,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2939,10 +3038,11 @@
       "candidates": [
         {
           "candidate": "Bryan McCarty",
-          "votes": 2637,
+          "votes": 3812,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2962,10 +3062,11 @@
       "candidates": [
         {
           "candidate": "Kristi Racines",
-          "votes": 37164,
+          "votes": 45916,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -2985,10 +3086,11 @@
       "candidates": [
         {
           "candidate": "Curt Meier",
-          "votes": 27041,
+          "votes": 33451,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -3002,10 +3104,11 @@
         },
         {
           "candidate": "Scott Smith",
-          "votes": 12259,
+          "votes": 14831,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -3023,10 +3126,11 @@
       "candidates": [
         {
           "candidate": "Chad Auer",
-          "votes": 3441,
+          "votes": 4947,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -3040,10 +3144,11 @@
         },
         {
           "candidate": "Steve Harshman",
-          "votes": 24990,
+          "votes": 29402,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -3057,10 +3162,11 @@
         },
         {
           "candidate": "Tom Kelly",
-          "votes": 13329,
+          "votes": 16341,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -3080,10 +3186,11 @@
       "candidates": [
         {
           "candidate": "Ana Cordova",
-          "votes": 1645,
+          "votes": 2447,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
@@ -3097,10 +3204,11 @@
         },
         {
           "candidate": "Sergio A. Maldonado, Sr.",
-          "votes": 1085,
+          "votes": 1446,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Laramie",
             "Lincoln",
             "Natrona",
             "Niobrara",
