@@ -1,6 +1,6 @@
 {
-  "last_checked": "2026-08-18T22:11:18-06:00",
-  "last_updated": "2026-08-18T22:13:28-06:00",
+  "last_checked": "2026-08-18T22:32:41-06:00",
+  "last_updated": "2026-08-18T22:35:05-06:00",
   "counties": {
     "Albany": {
       "source_url": "https://www.albanycountywy.gov/176/Results-of-Election",
@@ -97,7 +97,7 @@
     "Fremont": {
       "source_url": "https://fremontcountywy.gov/government/elections___voting.php",
       "result_url": "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
-      "status": "Reporting via Wyoming SOS statewide summary",
+      "status": "Reporting (last good county snapshot; current check unavailable)",
       "votes": {
         "harriet hageman": 5812,
         "jill m edwards": 201,
@@ -206,7 +206,7 @@
       },
       "errors": [],
       "result_hash": "9e81b5a7d4b3c481",
-      "last_success": "2026-08-18T22:11:18-06:00"
+      "last_success": "2026-08-18T22:32:41-06:00"
     },
     "Johnson": {
       "source_url": "https://www.johnsoncowy.gov/departments/elections",
@@ -297,7 +297,7 @@
       },
       "errors": [],
       "result_hash": "c8ae2a8ca90961ef",
-      "last_success": "2026-08-18T22:11:18-06:00"
+      "last_success": "2026-08-18T22:32:41-06:00"
     },
     "Lincoln": {
       "source_url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
@@ -349,7 +349,7 @@
       },
       "errors": [],
       "result_hash": "2b78d2908a05dfc6",
-      "last_success": "2026-08-18T22:11:18-06:00"
+      "last_success": "2026-08-18T22:32:41-06:00"
     },
     "Natrona": {
       "source_url": "https://www.natronacounty-wy.gov/128/Elections",
@@ -429,52 +429,52 @@
     },
     "Niobrara": {
       "source_url": "https://www.niobraracounty.org/_departments/_county_clerk/ElectionResults.asp",
-      "result_url": "https://www.niobraracounty.org/_departments/_county_clerk/_pdfs/2026/Election%20Summary%204%20of%206%20precincts.pdf",
+      "result_url": "https://www.niobraracounty.org/_departments/_county_clerk/_pdfs/2026/2026%20Primary%20County%20Summary%20Report.pdf",
       "status": "Reporting",
       "votes": {
-        "cheri e steinmetz": 574,
-        "jd williams": 609,
-        "harriet hageman": 558,
-        "jill m edwards": 12,
-        "jimmy skovgard": 8,
-        "john holtz": 6,
-        "sam mead": 117,
+        "cheri e steinmetz": 690,
+        "jd williams": 707,
+        "harriet hageman": 674,
+        "jill m edwards": 14,
+        "jimmy skovgard": 10,
+        "john holtz": 9,
+        "sam mead": 128,
         "billy benavidez": 1,
-        "james byrd": 15,
-        "bo biteman": 22,
-        "chuck gray": 199,
-        "david giralt": 123,
-        "frank chapman": 9,
-        "jillian balow": 48,
-        "keith b goodenough": 5,
-        "kevin christensen": 97,
-        "reid rasner": 37,
+        "james byrd": 17,
+        "bo biteman": 23,
+        "chuck gray": 278,
+        "david giralt": 134,
+        "frank chapman": 10,
+        "jillian balow": 53,
+        "keith b goodenough": 6,
+        "kevin christensen": 108,
+        "reid rasner": 48,
         "richard dodson": 4,
-        "steve friess": 120,
-        "elena del real": 3,
-        "lisa kinney": 13,
-        "brent bien": 144,
-        "curt blake": 15,
-        "eric barlow": 304,
-        "megan degenfelder": 232,
-        "kenneth r casner": 12,
-        "cj young": 84,
-        "qwenton eagle oviatt": 17,
-        "rachel williams": 188,
-        "robert short": 320,
-        "bryan mccarty": 10,
-        "kristi racines": 584,
-        "curt meier": 449,
-        "scott smith": 177,
-        "chad auer": 54,
-        "steve harshman": 390,
-        "tom kelly": 142,
-        "ana cordova": 8,
-        "sergio a maldonado sr": 5
+        "steve friess": 132,
+        "elena del real": 4,
+        "lisa kinney": 14,
+        "brent bien": 207,
+        "curt blake": 18,
+        "eric barlow": 333,
+        "megan degenfelder": 269,
+        "kenneth r casner": 14,
+        "cj young": 93,
+        "qwenton eagle oviatt": 22,
+        "rachel williams": 229,
+        "robert short": 384,
+        "bryan mccarty": 12,
+        "kristi racines": 697,
+        "curt meier": 520,
+        "scott smith": 226,
+        "chad auer": 63,
+        "steve harshman": 457,
+        "tom kelly": 181,
+        "ana cordova": 9,
+        "sergio a maldonado sr": 6
       },
       "errors": [],
-      "result_hash": "9062105805ad4f6a",
-      "last_success": "2026-08-18T22:11:18-06:00"
+      "result_hash": "582f9b65959e14c6",
+      "last_success": "2026-08-18T22:32:41-06:00"
     },
     "Park": {
       "source_url": "https://parkcounty-wy.gov/county-elections/results/",
@@ -535,7 +535,7 @@
       },
       "errors": [],
       "result_hash": "8c3ec579f7e8647a",
-      "last_success": "2026-08-18T22:11:18-06:00"
+      "last_success": "2026-08-18T22:32:41-06:00"
     },
     "Platte": {
       "source_url": "https://www.plattecountywyoming.com/departments/Elections/ResultsofElection",
@@ -641,14 +641,55 @@
       },
       "errors": [],
       "result_hash": "39edca2c579e34f3",
-      "last_success": "2026-08-18T22:11:18-06:00"
+      "last_success": "2026-08-18T22:32:41-06:00"
     },
     "Sublette": {
       "source_url": "https://www.sublettecountywy.gov/110/Election-Information",
-      "result_url": null,
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "votes": {},
-      "errors": []
+      "result_url": "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
+      "status": "Reporting via Wyoming SOS statewide summary",
+      "votes": {
+        "harriet hageman": 1923,
+        "jill m edwards": 72,
+        "jimmy skovgard": 65,
+        "john holtz": 61,
+        "sam mead": 977,
+        "billy benavidez": 13,
+        "james byrd": 67,
+        "bo biteman": 113,
+        "chuck gray": 719,
+        "david giralt": 242,
+        "jillian balow": 245,
+        "keith b goodenough": 73,
+        "kevin christensen": 675,
+        "reid rasner": 249,
+        "richard dodson": 34,
+        "steve friess": 555,
+        "elena del real": 16,
+        "lisa kinney": 64,
+        "brent bien": 664,
+        "curt blake": 50,
+        "eric barlow": 1513,
+        "megan degenfelder": 913,
+        "kenneth r casner": 72,
+        "cj young": 433,
+        "qwenton eagle oviatt": 183,
+        "rachel williams": 854,
+        "robert short": 1136,
+        "bryan mccarty": 77,
+        "kristi racines": 2595,
+        "curt meier": 1781,
+        "chad auer": 282,
+        "steve harshman": 1435,
+        "tom kelly": 935,
+        "ana cordova": 53,
+        "sergio a maldonado sr": 29,
+        "albert sommers": 2027,
+        "bill winney": 497,
+        "matt mcginnis": 603
+      },
+      "errors": [],
+      "source": "Wyoming Secretary of State statewide summary",
+      "last_success": "2026-08-18T22:35:04-06:00"
     },
     "Sweetwater": {
       "source_url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
@@ -719,7 +760,7 @@
       },
       "errors": [],
       "result_hash": "bfc71110f942bc4d",
-      "last_success": "2026-08-18T22:11:18-06:00"
+      "last_success": "2026-08-18T22:32:41-06:00"
     },
     "Washakie": {
       "source_url": "https://www.washakiecountywy.gov/196/Elections",
@@ -771,7 +812,7 @@
     "Weston": {
       "source_url": "https://www.westongov.com/county-clerk/elections/election-results/",
       "result_url": "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
-      "status": "Reporting via Wyoming SOS statewide summary",
+      "status": "Reporting (last good county snapshot; current check unavailable)",
       "votes": {
         "harriet hageman": 1336,
         "jill m edwards": 51,
@@ -831,8 +872,7 @@
     "candidate_matches": 19,
     "status": "SOS 2026 results page available for validation",
     "summary_fallback_counties": [
-      "Fremont",
-      "Weston"
+      "Sublette"
     ],
     "summary_urls": [
       "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
@@ -840,8 +880,7 @@
       "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf"
     ],
     "fallback_counties": [
-      "Fremont",
-      "Weston"
+      "Sublette"
     ],
     "fallback_page": "https://sos.wyo.gov/Elections/Docs/2026/2026PrimaryResults.aspx"
   }
