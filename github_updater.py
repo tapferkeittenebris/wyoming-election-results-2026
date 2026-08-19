@@ -17,7 +17,7 @@ TZ=ZoneInfo('America/Denver')
 START=datetime(2026,8,18,15,0,tzinfo=TZ)
 END=datetime(2026,8,19,2,0,tzinfo=TZ)
 UA={'User-Agent':'Mozilla/5.0 WyomingElectionDashboard/2.0 (+election-results-monitor)'}
-BAD=('2024','2022','2020','sample ballot','public test','testing','expected result','audit','recount','canvass')
+BAD=('2024','2022','2020','sample ballot','public test','test','testing','logic accuracy','expected result','audit','recount','canvass','candidate roster','candidate contact','primary election candidates','precinct committeeman')
 LEG_API='https://web.wyoleg.gov/LsoService/api/legislator/2026/{chamber}'
 SOS_RESULTS_PAGE='https://sos.wyo.gov/Elections/Docs/2026/2026PrimaryResults.aspx'
 SOS_RESULTS_HOME='https://sos.wyo.gov/elections/electionresults.aspx'
@@ -101,9 +101,13 @@ def pdf_text(content):
     try:return '\n'.join((p.extract_text() or '') for p in PdfReader(io.BytesIO(content)).pages)
     except Exception:return ''
 
+def has_bad_marker(value):
+    s=' '+norm(value)+' '
+    return any((' '+marker+' ') in s for marker in BAD)
+
 def score_link(text,url):
     s=norm(text+' '+url)
-    if any(x in s for x in BAD):return -100
+    if has_bad_marker(s):return -100
     sc=(12 if '2026' in s else 0)+(11 if 'primary' in s else 0)+(8 if 'unofficial' in s else 0)+(7 if 'result' in s else 0)+(5 if 'return' in s else 0)+(4 if 'summary' in s else 0)+(3 if 'election' in s else 0)+(3 if url.lower().split('?')[0].endswith('.pdf') else 0)
     return sc
 
@@ -172,7 +176,7 @@ def check_county(source,candidates):
                 is_pdf='pdf' in ct or (url.lower().split('?')[0].endswith('.pdf') and 'text/' not in ct)
                 text=pdf_text(content) if is_pdf else BeautifulSoup(content,'html.parser').get_text('\n',strip=True)
                 low=norm(text[:16000]+' '+url)
-                if any(b in low for b in BAD) and not ('unofficial' in low and '2026' in low):continue
+                if has_bad_marker(low):continue
                 if '2026' not in low and 'primary' not in low:continue
                 votes=parse_votes(text,candidates)
                 if votes:return source['county'],'Reporting',url,votes,hashlib.sha256(content).hexdigest()[:16],errors
@@ -241,6 +245,12 @@ def export(state,candidates,incumbents,statewide):
 
 def main():
     candidates=load_candidates();statewide=load_statewide();parse_candidates=candidates+statewide_parse_candidates(statewide);sources=load_sources();state=load_state(sources);incumbents=refresh_incumbents();now=datetime.now(TZ)
+    # Remove snapshots accidentally parsed from test decks, candidate rosters,
+    # or contact sheets before a county posted its actual returns.
+    for info in state['counties'].values():
+        if info.get('votes') and has_bad_marker(info.get('result_url','')):
+            info.update({'result_url':None,'status':'Waiting for county results','votes':{}})
+            info.pop('result_hash',None);info.pop('last_success',None)
     # Always check whether SOS has published its 2026 validation/fallback page.
     state['sos_validation']=check_sos_validation(parse_candidates)
     if not (START<=now<=END):

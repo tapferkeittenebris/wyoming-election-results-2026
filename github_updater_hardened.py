@@ -126,7 +126,7 @@ def discover(session, landing, max_depth=2, max_pages=28):
             for label, href in re.findall(r"\[([^\]]+)\]\((https?://[^)]+)\)", markdown):
                 u = _repair_known_url(href)
                 sc = base.score_link(label, u)
-                if _allowed(landing, u) and sc > 0 and not any(x in base.norm(label + " " + u) for x in base.BAD):
+                if _allowed(landing, u) and sc > 0 and not base.has_bad_marker(label + " " + u):
                     q.append((u, depth + 1, max(sc, parent_score - 8)))
 
         # Normal hyperlinks, including Johnson County's public Drive documents.
@@ -150,7 +150,7 @@ def discover(session, landing, max_depth=2, max_pages=28):
                     "unofficial result",
                 )
             )
-            if follow and not any(x in trail for x in base.BAD):
+            if follow and not base.has_bad_marker(trail):
                 q.append((_drive_download(u), depth + 1, max(sc, parent_score - 8)))
 
         # Some county CMSes expose result documents only through embedded viewers.
