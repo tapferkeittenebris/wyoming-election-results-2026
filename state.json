@@ -1,18 +1,13 @@
 {
-  "last_checked": "2026-08-18T20:59:20-06:00",
+  "last_checked": "2026-08-18T21:04:47-06:00",
   "last_updated": "2026-08-18T20:59:20-06:00",
   "counties": {
     "Albany": {
       "source_url": "https://www.albanycountywy.gov/176/Results-of-Election",
-      "result_url": "https://www.albanycountywy.gov/DocumentCenter/View/543/2006---Write---Ins---Primary-PDF",
-      "status": "Reporting (last good county snapshot; current check unavailable)",
-      "votes": {
-        "cale case": 1,
-        "lisa kinney": 4
-      },
-      "errors": [],
-      "result_hash": "990f5239fdbe4f79",
-      "last_success": "2026-08-18T20:55:44-06:00"
+      "result_url": null,
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Big Horn": {
       "source_url": "https://www.bighorncountywy.gov/departments/clerk/elections",
@@ -23,37 +18,17 @@
     },
     "Campbell": {
       "source_url": "https://www.campbellcountywy.gov/2077/Election-Results",
-      "result_url": "https://www.campbellcountywy.gov/DocumentCenter/View/13807/2018-Primary-Election",
-      "status": "Reporting",
-      "votes": {
-        "ogden driskill": 577,
-        "bill fortner": 131,
-        "ronda boller": 113,
-        "john holtz": 254,
-        "jillian balow": 6,
-        "eric barlow": 1,
-        "kenneth r casner": 38,
-        "curt meier": 2
-      },
-      "errors": [],
-      "result_hash": "66aec5293ce98ce9",
-      "last_success": "2026-08-18T20:59:20-06:00"
+      "result_url": null,
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Carbon": {
       "source_url": "https://www.carboncountywy.gov/997/Election-Results",
-      "result_url": "https://www.carboncountywy.gov/DocumentCenter/View/4778/CARBON-WEBSITE-2018-PRIMARY-OFFICIAL-REPORT?bidId=",
-      "status": "Reporting",
-      "votes": {
-        "bob davis": 1313,
-        "john holtz": 83,
-        "jillian balow": 2333,
-        "kenneth r casner": 100,
-        "kristi racines": 1453,
-        "curt meier": 1360
-      },
-      "errors": [],
-      "result_hash": "51b6a0f67175e5c7",
-      "last_success": "2026-08-18T20:59:20-06:00"
+      "result_url": null,
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Converse": {
       "source_url": "https://www.conversecountywy.gov/187/Elections",
@@ -79,7 +54,7 @@
     "Goshen": {
       "source_url": "https://www.goshencountywy.gov/198/Voter-Information",
       "result_url": "https://www.goshencountywy.gov/ArchiveCenter/ViewFile/Item/63",
-      "status": "Reporting",
+      "status": "Reporting (last good county snapshot; current check unavailable)",
       "votes": {
         "cheri e steinmetz": 2498,
         "john holtz": 82,
@@ -122,21 +97,10 @@
     },
     "Natrona": {
       "source_url": "https://www.natronacounty-wy.gov/128/Elections",
-      "result_url": "https://www.natronacounty-wy.gov/DocumentCenter/View/3184/2016-Primary-Election-Summary---EL45?bidId=",
-      "status": "Reporting (last good county snapshot; current check unavailable)",
-      "votes": {
-        "bob ide": 121,
-        "art washut": 113,
-        "robert l hendry": 31,
-        "catherine mcqueen": 51,
-        "j r riggins": 89,
-        "laurie longtine": 312,
-        "chuck gray": 738,
-        "steve harshman": 1534
-      },
-      "errors": [],
-      "result_hash": "370e6bb6b822d8a5",
-      "last_success": "2026-08-18T20:55:44-06:00"
+      "result_url": null,
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Niobrara": {
       "source_url": "https://www.niobraracounty.org/_departments/_county_clerk/ElectionResults.asp",
@@ -147,73 +111,17 @@
     },
     "Park": {
       "source_url": "https://parkcounty-wy.gov/county-elections/results/",
-      "result_url": "https://parkcounty-wy.gov/wp-content/uploads/2026/07/2026-Primary-Candidate-Filings-7.24.26.pdf",
-      "status": "Reporting",
-      "votes": {
-        "paul hoeft": 5,
-        "r j kost": 5,
-        "nina webber": 5,
-        "quin blair": 5,
-        "john wetzel": 5,
-        "matthew r legler": 5,
-        "dalton banks": 5,
-        "j addison aagard": 5,
-        "allen hogg": 5,
-        "carlin jones": 5,
-        "marshall keller": 5,
-        "roland luehne": 5,
-        "david hill": 5,
-        "levi asay": 5,
-        "harriet hageman": 5,
-        "jill m edwards": 5,
-        "jimmy skovgard": 5,
-        "sam mead": 5,
-        "billy benavidez": 5,
-        "james byrd": 5,
-        "bo biteman": 5,
-        "chuck gray": 5,
-        "david giralt": 5,
-        "frank chapman": 7,
-        "jillian balow": 5,
-        "keith b goodenough": 5,
-        "kevin christensen": 5,
-        "reid rasner": 5,
-        "richard dodson": 5,
-        "steve friess": 5,
-        "elena del real": 5,
-        "lisa kinney": 5,
-        "brent bien": 5,
-        "curt blake": 5,
-        "eric barlow": 5,
-        "megan degenfelder": 5,
-        "kenneth r casner": 5,
-        "cj young": 5,
-        "qwenton eagle oviatt": 5,
-        "rachel williams": 5,
-        "robert short": 5,
-        "kristi racines": 5,
-        "curt meier": 5,
-        "scott smith": 5,
-        "chad auer": 5,
-        "steve harshman": 5,
-        "tom kelly": 5,
-        "ana cordova": 5,
-        "sergio a maldonado sr": 5
-      },
-      "errors": [],
-      "result_hash": "b1c5800700299b93",
-      "last_success": "2026-08-18T20:59:20-06:00"
+      "result_url": null,
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Platte": {
       "source_url": "https://www.plattecountywyoming.com/departments/Elections/ResultsofElection",
-      "result_url": "https://www.plattecountywyoming.com/media/Elections/2026/Primary%20Rosters/625%20Candidate%20Roster%20Final%20Includes%20withdrawn%20candidates.pdf",
-      "status": "Reporting (last good county snapshot; current check unavailable)",
-      "votes": {
-        "roy birt": 191
-      },
-      "errors": [],
-      "result_hash": "ae431872f89f91fa",
-      "last_success": "2026-08-18T20:55:44-06:00"
+      "result_url": null,
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Sheridan": {
       "source_url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
@@ -271,7 +179,7 @@
       },
       "errors": [],
       "result_hash": "7ba333642dc2fa2a",
-      "last_success": "2026-08-18T20:59:20-06:00"
+      "last_success": "2026-08-18T21:04:47-06:00"
     },
     "Sublette": {
       "source_url": "https://www.sublettecountywy.gov/110/Election-Information",
@@ -303,14 +211,10 @@
     },
     "Washakie": {
       "source_url": "https://www.washakiecountywy.gov/196/Elections",
-      "result_url": "https://www.washakiecountywy.gov/DocumentCenter/View/323/2006-Primary-PDF",
-      "status": "Reporting",
-      "votes": {
-        "bill winney": 764
-      },
-      "errors": [],
-      "result_hash": "af9583c01f992de6",
-      "last_success": "2026-08-18T20:59:20-06:00"
+      "result_url": null,
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Weston": {
       "source_url": "https://www.westongov.com/county-clerk/elections/election-results/",
@@ -328,7 +232,7 @@
       "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_House_Candidates_Summary.pdf",
       "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf"
     ],
-    "candidate_matches": 0,
+    "candidate_matches": 18,
     "status": "SOS 2026 results page available for validation"
   }
 }
