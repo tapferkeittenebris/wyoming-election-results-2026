@@ -150,7 +150,7 @@ def discover(session, landing, max_depth=2, max_pages=28):
                     "unofficial result",
                 )
             )
-            if follow and not base.has_bad_marker(trail):
+            if follow and not base.has_bad_marker(txt + " " + u):
                 q.append((_drive_download(u), depth + 1, max(sc, parent_score - 8)))
 
         # Some county CMSes expose result documents only through embedded viewers.

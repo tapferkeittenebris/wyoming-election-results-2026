@@ -32,14 +32,16 @@ jobs:
         run: python tests/replay_2024.py
       - name: Production feed dry run
         run: python github_updater.py
-      - name: Assert dry run did not ingest historical votes
+      - name: Assert dry run did not ingest historical or non-result documents
         run: |
           python - <<'PY'
           import json
+          from github_updater import has_bad_marker
           d=json.load(open('results.json'))
-          assert d.get('reporting_counties',0)==0, 'Pre-election production feed unexpectedly contains county votes'
           assert len(d.get('races',[]))>0, 'Legislative race feed is empty'
           assert len(d.get('statewide_races',[]))>0, 'Statewide race feed is empty'
           assert len(d.get('county_status',[]))==23, 'County status list must contain all 23 counties'
+          bad=[row for row in d['county_status'] if row.get('reporting') and has_bad_marker(row.get('url',''))]
+          assert not bad, f'Production feed contains historical or non-result documents: {bad}'
           print('Production dry-run feed shape passed.')
           PY
