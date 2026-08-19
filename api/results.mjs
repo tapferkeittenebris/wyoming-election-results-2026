@@ -13,6 +13,7 @@ export default async function handler(request, response) {
   try {
     const upstream = await fetch(`${UPSTREAM}?v=${cacheBucket}`, {
       signal: controller.signal,
+      cache: 'no-store',
       headers: {
         'Accept': 'application/json',
         'User-Agent': 'Buck-the-Freedom-Caucus-results-proxy'
