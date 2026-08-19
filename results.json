@@ -1,11 +1,11 @@
 {
-  "last_checked": "2026-08-18T22:00:30-06:00",
-  "last_updated": "2026-08-18T22:00:30-06:00",
-  "reporting_counties": 11,
+  "last_checked": "2026-08-18T22:11:18-06:00",
+  "last_updated": "2026-08-18T22:13:28-06:00",
+  "reporting_counties": 13,
   "county_status": [
     {
       "county": "Albany",
-      "status": "Reporting",
+      "status": "Reporting (last good county snapshot; current check unavailable)",
       "url": "https://www.albanycountywy.gov/DocumentCenter/View/8355/2026-Election-Summary---ZEROS",
       "reporting": true,
       "errors": []
@@ -47,9 +47,9 @@
     },
     {
       "county": "Fremont",
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "url": "https://fremontcountywy.gov/government/elections___voting.php",
-      "reporting": false,
+      "status": "Reporting via Wyoming SOS statewide summary",
+      "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
+      "reporting": true,
       "errors": []
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "county": "Natrona",
-      "status": "Reporting",
+      "status": "Reporting (last good county snapshot; current check unavailable)",
       "url": "https://www.natronacounty-wy.gov/DocumentCenter/View/13861/2026-Primary---Election-Summary-and-Statistics---Unofficial-PDF",
       "reporting": true,
       "errors": []
@@ -159,9 +159,9 @@
     },
     {
       "county": "Weston",
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "url": "https://www.westongov.com/county-clerk/elections/election-results/",
-      "reporting": false,
+      "status": "Reporting via Wyoming SOS statewide summary",
+      "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
+      "reporting": true,
       "errors": []
     }
   ],
@@ -174,7 +174,21 @@
       "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf"
     ],
     "candidate_matches": 19,
-    "status": "SOS 2026 results page available for validation"
+    "status": "SOS 2026 results page available for validation",
+    "summary_fallback_counties": [
+      "Fremont",
+      "Weston"
+    ],
+    "summary_urls": [
+      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
+      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_House_Candidates_Summary.pdf",
+      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf"
+    ],
+    "fallback_counties": [
+      "Fremont",
+      "Weston"
+    ],
+    "fallback_page": "https://sos.wyo.gov/Elections/Docs/2026/2026PrimaryResults.aspx"
   },
   "incumbents": {
     "House": {
@@ -562,14 +576,18 @@
       "candidates": [
         {
           "candidate": "Chip Neiman",
-          "votes": 0,
-          "counties": [],
+          "votes": 356,
+          "counties": [
+            "Weston"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Ogden Driskill",
-          "votes": 0,
-          "counties": [],
+          "votes": 617,
+          "counties": [
+            "Weston"
+          ],
           "is_fc": false
         }
       ]
@@ -581,9 +599,10 @@
       "candidates": [
         {
           "candidate": "Cheri E Steinmetz",
-          "votes": 574,
+          "votes": 1479,
           "counties": [
-            "Niobrara"
+            "Niobrara",
+            "Weston"
           ],
           "is_fc": false
         }
@@ -834,7 +853,7 @@
       "candidates": [
         {
           "candidate": "Ken Pendergraft",
-          "votes": 2189,
+          "votes": 2391,
           "counties": [
             "Sheridan"
           ],
@@ -842,7 +861,7 @@
         },
         {
           "candidate": "Melissa Butcher",
-          "votes": 2954,
+          "votes": 3361,
           "counties": [
             "Sheridan"
           ],
@@ -876,14 +895,18 @@
       "candidates": [
         {
           "candidate": "Cale Case",
-          "votes": 0,
-          "counties": [],
+          "votes": 2604,
+          "counties": [
+            "Fremont"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Lisa Wilson",
-          "votes": 0,
-          "counties": [],
+          "votes": 1536,
+          "counties": [
+            "Fremont"
+          ],
           "is_fc": true
         }
       ]
@@ -987,14 +1010,18 @@
       "candidates": [
         {
           "candidate": "Troy Claycomb",
-          "votes": 0,
-          "counties": [],
+          "votes": 710,
+          "counties": [
+            "Weston"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Zeta Nuckolls Anderson",
-          "votes": 0,
-          "counties": [],
+          "votes": 247,
+          "counties": [
+            "Weston"
+          ],
           "is_fc": false
         }
       ]
@@ -1006,9 +1033,10 @@
       "candidates": [
         {
           "candidate": "JD Williams",
-          "votes": 609,
+          "votes": 1555,
           "counties": [
-            "Niobrara"
+            "Niobrara",
+            "Weston"
           ],
           "is_fc": false
         }
@@ -1618,8 +1646,9 @@
       "candidates": [
         {
           "candidate": "Allen Hogg",
-          "votes": 989,
+          "votes": 1077,
           "counties": [
+            "Fremont",
             "Hot Springs",
             "Park"
           ],
@@ -1627,8 +1656,9 @@
         },
         {
           "candidate": "Carlin Jones",
-          "votes": 454,
+          "votes": 481,
           "counties": [
+            "Fremont",
             "Hot Springs",
             "Park"
           ],
@@ -1636,8 +1666,9 @@
         },
         {
           "candidate": "Marshall Keller",
-          "votes": 685,
+          "votes": 760,
           "counties": [
+            "Fremont",
             "Hot Springs",
             "Park"
           ],
@@ -1645,8 +1676,9 @@
         },
         {
           "candidate": "Roland Luehne",
-          "votes": 124,
+          "votes": 142,
           "counties": [
+            "Fremont",
             "Hot Springs",
             "Park"
           ],
@@ -1661,7 +1693,7 @@
       "candidates": [
         {
           "candidate": "James Temple",
-          "votes": 551,
+          "votes": 580,
           "counties": [
             "Sheridan"
           ],
@@ -1669,7 +1701,7 @@
         },
         {
           "candidate": "Myca Sturtevant",
-          "votes": 1167,
+          "votes": 1315,
           "counties": [
             "Sheridan"
           ],
@@ -1677,7 +1709,7 @@
         },
         {
           "candidate": "Noll Roberts",
-          "votes": 142,
+          "votes": 154,
           "counties": [
             "Sheridan"
           ],
@@ -1692,7 +1724,7 @@
       "candidates": [
         {
           "candidate": "Mark Jennings",
-          "votes": 888,
+          "votes": 972,
           "counties": [
             "Sheridan"
           ],
@@ -1700,7 +1732,7 @@
         },
         {
           "candidate": "Ryan Koltiska",
-          "votes": 1458,
+          "votes": 1632,
           "counties": [
             "Sheridan"
           ],
@@ -1747,8 +1779,10 @@
       "candidates": [
         {
           "candidate": "Ivan D. Posey",
-          "votes": 0,
-          "counties": [],
+          "votes": 276,
+          "counties": [
+            "Fremont"
+          ],
           "is_fc": false
         }
       ]
@@ -1760,8 +1794,10 @@
       "candidates": [
         {
           "candidate": "Pepper L Ottman",
-          "votes": 0,
-          "counties": [],
+          "votes": 2286,
+          "counties": [
+            "Fremont"
+          ],
           "is_fc": true
         }
       ]
@@ -1923,7 +1959,7 @@
       "candidates": [
         {
           "candidate": "Marilyn Connolly",
-          "votes": 260,
+          "votes": 276,
           "counties": [
             "Sheridan"
           ],
@@ -1931,7 +1967,7 @@
         },
         {
           "candidate": "Mark Jones",
-          "votes": 232,
+          "votes": 247,
           "counties": [
             "Sheridan"
           ],
@@ -2198,7 +2234,7 @@
       "candidates": [
         {
           "candidate": "Laurie Bratten",
-          "votes": 1662,
+          "votes": 1837,
           "counties": [
             "Sheridan"
           ],
@@ -2206,7 +2242,7 @@
         },
         {
           "candidate": "Susan Bigelow",
-          "votes": 1468,
+          "votes": 1699,
           "counties": [
             "Sheridan"
           ],
@@ -2259,14 +2295,18 @@
       "candidates": [
         {
           "candidate": "Jeff Martin",
-          "votes": 0,
-          "counties": [],
+          "votes": 1044,
+          "counties": [
+            "Fremont"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Lloyd Charles Larsen",
-          "votes": 0,
-          "counties": [],
+          "votes": 2109,
+          "counties": [
+            "Fremont"
+          ],
           "is_fc": false
         }
       ]
@@ -2278,8 +2318,10 @@
       "candidates": [
         {
           "candidate": "Carl Manning",
-          "votes": 0,
-          "counties": [],
+          "votes": 1813,
+          "counties": [
+            "Fremont"
+          ],
           "is_fc": false
         }
       ]
@@ -2494,9 +2536,10 @@
       "candidates": [
         {
           "candidate": "Harriet Hageman",
-          "votes": 36936,
+          "votes": 44576,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2506,15 +2549,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jill M Edwards",
-          "votes": 1323,
+          "votes": 1596,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2524,15 +2569,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jimmy Skovgard",
-          "votes": 1623,
+          "votes": 1885,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2542,15 +2589,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "John Holtz",
-          "votes": 1071,
+          "votes": 1319,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2560,15 +2609,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Sam Mead",
-          "votes": 14338,
+          "votes": 18371,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2578,7 +2629,8 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         }
@@ -2590,9 +2642,10 @@
       "candidates": [
         {
           "candidate": "Billy Benavidez",
-          "votes": 871,
+          "votes": 1106,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2602,15 +2655,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "James Byrd",
-          "votes": 3252,
+          "votes": 3998,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2620,7 +2675,8 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         }
@@ -2632,9 +2688,10 @@
       "candidates": [
         {
           "candidate": "Bo Biteman",
-          "votes": 3227,
+          "votes": 3796,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2644,15 +2701,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Chuck Gray",
-          "votes": 13758,
+          "votes": 16378,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2662,15 +2721,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "David Giralt",
-          "votes": 4936,
+          "votes": 5859,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2680,13 +2741,14 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Frank Chapman",
-          "votes": 860,
+          "votes": 868,
           "counties": [
             "Albany",
             "Hot Springs",
@@ -2702,9 +2764,10 @@
         },
         {
           "candidate": "Jillian Balow",
-          "votes": 4865,
+          "votes": 6010,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2714,15 +2777,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Keith B. Goodenough",
-          "votes": 1699,
+          "votes": 1981,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2732,15 +2797,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Kevin Christensen",
-          "votes": 8564,
+          "votes": 11104,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2750,15 +2817,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Reid Rasner",
-          "votes": 4497,
+          "votes": 5683,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2768,15 +2837,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Richard Dodson",
-          "votes": 651,
+          "votes": 798,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2786,15 +2857,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Steve Friess",
-          "votes": 10649,
+          "votes": 13010,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2804,7 +2877,8 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         }
@@ -2816,9 +2890,10 @@
       "candidates": [
         {
           "candidate": "Elena Del Real",
-          "votes": 995,
+          "votes": 1261,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2828,15 +2903,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Lisa Kinney",
-          "votes": 3054,
+          "votes": 3767,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2846,7 +2923,8 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         }
@@ -2858,9 +2936,10 @@
       "candidates": [
         {
           "candidate": "Brent Bien",
-          "votes": 14459,
+          "votes": 17379,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2870,15 +2949,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Curt Blake",
-          "votes": 870,
+          "votes": 1033,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2888,15 +2969,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Eric Barlow",
-          "votes": 23095,
+          "votes": 29049,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2906,15 +2989,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Megan Degenfelder",
-          "votes": 17417,
+          "votes": 21019,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2924,7 +3009,8 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         }
@@ -2936,9 +3022,10 @@
       "candidates": [
         {
           "candidate": "Kenneth R. Casner",
-          "votes": 3635,
+          "votes": 4469,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2948,7 +3035,8 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         }
@@ -2960,9 +3048,10 @@
       "candidates": [
         {
           "candidate": "CJ Young",
-          "votes": 7342,
+          "votes": 8850,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2972,15 +3061,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Qwenton Eagle Oviatt",
-          "votes": 2808,
+          "votes": 3576,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -2990,15 +3081,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Rachel Williams",
-          "votes": 17551,
+          "votes": 20931,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -3008,15 +3101,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": true
         },
         {
           "candidate": "Robert Short",
-          "votes": 22585,
+          "votes": 28270,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -3026,7 +3121,8 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         }
@@ -3038,9 +3134,10 @@
       "candidates": [
         {
           "candidate": "Bryan McCarty",
-          "votes": 3812,
+          "votes": 4700,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -3050,7 +3147,8 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         }
@@ -3062,9 +3160,10 @@
       "candidates": [
         {
           "candidate": "Kristi Racines",
-          "votes": 45916,
+          "votes": 56181,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -3074,7 +3173,8 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         }
@@ -3086,9 +3186,10 @@
       "candidates": [
         {
           "candidate": "Curt Meier",
-          "votes": 33451,
+          "votes": 41340,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -3098,13 +3199,14 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Scott Smith",
-          "votes": 14831,
+          "votes": 15019,
           "counties": [
             "Albany",
             "Hot Springs",
@@ -3126,9 +3228,10 @@
       "candidates": [
         {
           "candidate": "Chad Auer",
-          "votes": 4947,
+          "votes": 6229,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -3138,15 +3241,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Steve Harshman",
-          "votes": 29402,
+          "votes": 35954,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -3156,15 +3261,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Tom Kelly",
-          "votes": 16341,
+          "votes": 19716,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -3174,7 +3281,8 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": true
         }
@@ -3186,9 +3294,10 @@
       "candidates": [
         {
           "candidate": "Ana Cordova",
-          "votes": 2447,
+          "votes": 2859,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -3198,15 +3307,17 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         },
         {
           "candidate": "Sergio A. Maldonado, Sr.",
-          "votes": 1446,
+          "votes": 2015,
           "counties": [
             "Albany",
+            "Fremont",
             "Hot Springs",
             "Laramie",
             "Lincoln",
@@ -3216,7 +3327,8 @@
             "Platte",
             "Sheridan",
             "Uinta",
-            "Washakie"
+            "Washakie",
+            "Weston"
           ],
           "is_fc": false
         }
