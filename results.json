@@ -1,7 +1,7 @@
 {
-  "last_checked": "2026-08-18T22:11:18-06:00",
-  "last_updated": "2026-08-18T22:13:28-06:00",
-  "reporting_counties": 13,
+  "last_checked": "2026-08-18T22:32:41-06:00",
+  "last_updated": "2026-08-18T22:35:05-06:00",
+  "reporting_counties": 14,
   "county_status": [
     {
       "county": "Albany",
@@ -47,7 +47,7 @@
     },
     {
       "county": "Fremont",
-      "status": "Reporting via Wyoming SOS statewide summary",
+      "status": "Reporting (last good county snapshot; current check unavailable)",
       "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
       "reporting": true,
       "errors": []
@@ -97,7 +97,7 @@
     {
       "county": "Niobrara",
       "status": "Reporting",
-      "url": "https://www.niobraracounty.org/_departments/_county_clerk/_pdfs/2026/Election%20Summary%204%20of%206%20precincts.pdf",
+      "url": "https://www.niobraracounty.org/_departments/_county_clerk/_pdfs/2026/2026%20Primary%20County%20Summary%20Report.pdf",
       "reporting": true,
       "errors": []
     },
@@ -124,9 +124,9 @@
     },
     {
       "county": "Sublette",
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "url": "https://www.sublettecountywy.gov/110/Election-Information",
-      "reporting": false,
+      "status": "Reporting via Wyoming SOS statewide summary",
+      "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
+      "reporting": true,
       "errors": []
     },
     {
@@ -159,7 +159,7 @@
     },
     {
       "county": "Weston",
-      "status": "Reporting via Wyoming SOS statewide summary",
+      "status": "Reporting (last good county snapshot; current check unavailable)",
       "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
       "reporting": true,
       "errors": []
@@ -176,8 +176,7 @@
     "candidate_matches": 19,
     "status": "SOS 2026 results page available for validation",
     "summary_fallback_counties": [
-      "Fremont",
-      "Weston"
+      "Sublette"
     ],
     "summary_urls": [
       "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
@@ -185,8 +184,7 @@
       "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf"
     ],
     "fallback_counties": [
-      "Fremont",
-      "Weston"
+      "Sublette"
     ],
     "fallback_page": "https://sos.wyo.gov/Elections/Docs/2026/2026PrimaryResults.aspx"
   },
@@ -599,7 +597,7 @@
       "candidates": [
         {
           "candidate": "Cheri E Steinmetz",
-          "votes": 1479,
+          "votes": 1595,
           "counties": [
             "Niobrara",
             "Weston"
@@ -1033,7 +1031,7 @@
       "candidates": [
         {
           "candidate": "JD Williams",
-          "votes": 1555,
+          "votes": 1653,
           "counties": [
             "Niobrara",
             "Weston"
@@ -1464,25 +1462,28 @@
       "candidates": [
         {
           "candidate": "Albert Sommers",
-          "votes": 36,
+          "votes": 2063,
           "counties": [
-            "Lincoln"
+            "Lincoln",
+            "Sublette"
           ],
           "is_fc": false
         },
         {
           "candidate": "Bill Winney",
-          "votes": 34,
+          "votes": 531,
           "counties": [
-            "Lincoln"
+            "Lincoln",
+            "Sublette"
           ],
           "is_fc": false
         },
         {
           "candidate": "Matt McGinnis",
-          "votes": 116,
+          "votes": 719,
           "counties": [
-            "Lincoln"
+            "Lincoln",
+            "Sublette"
           ],
           "is_fc": false
         }
@@ -2536,7 +2537,7 @@
       "candidates": [
         {
           "candidate": "Harriet Hageman",
-          "votes": 44576,
+          "votes": 46615,
           "counties": [
             "Albany",
             "Fremont",
@@ -2548,6 +2549,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2556,7 +2558,7 @@
         },
         {
           "candidate": "Jill M Edwards",
-          "votes": 1596,
+          "votes": 1670,
           "counties": [
             "Albany",
             "Fremont",
@@ -2568,6 +2570,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2576,7 +2579,7 @@
         },
         {
           "candidate": "Jimmy Skovgard",
-          "votes": 1885,
+          "votes": 1952,
           "counties": [
             "Albany",
             "Fremont",
@@ -2588,6 +2591,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2596,7 +2600,7 @@
         },
         {
           "candidate": "John Holtz",
-          "votes": 1319,
+          "votes": 1383,
           "counties": [
             "Albany",
             "Fremont",
@@ -2608,6 +2612,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2616,7 +2621,7 @@
         },
         {
           "candidate": "Sam Mead",
-          "votes": 18371,
+          "votes": 19359,
           "counties": [
             "Albany",
             "Fremont",
@@ -2628,6 +2633,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2642,7 +2648,7 @@
       "candidates": [
         {
           "candidate": "Billy Benavidez",
-          "votes": 1106,
+          "votes": 1119,
           "counties": [
             "Albany",
             "Fremont",
@@ -2654,6 +2660,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2662,7 +2669,7 @@
         },
         {
           "candidate": "James Byrd",
-          "votes": 3998,
+          "votes": 4067,
           "counties": [
             "Albany",
             "Fremont",
@@ -2674,6 +2681,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2688,7 +2696,7 @@
       "candidates": [
         {
           "candidate": "Bo Biteman",
-          "votes": 3796,
+          "votes": 3910,
           "counties": [
             "Albany",
             "Fremont",
@@ -2700,6 +2708,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2708,7 +2717,7 @@
         },
         {
           "candidate": "Chuck Gray",
-          "votes": 16378,
+          "votes": 17176,
           "counties": [
             "Albany",
             "Fremont",
@@ -2720,6 +2729,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2728,7 +2738,7 @@
         },
         {
           "candidate": "David Giralt",
-          "votes": 5859,
+          "votes": 6112,
           "counties": [
             "Albany",
             "Fremont",
@@ -2740,6 +2750,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2748,7 +2759,7 @@
         },
         {
           "candidate": "Frank Chapman",
-          "votes": 868,
+          "votes": 869,
           "counties": [
             "Albany",
             "Hot Springs",
@@ -2764,7 +2775,7 @@
         },
         {
           "candidate": "Jillian Balow",
-          "votes": 6010,
+          "votes": 6260,
           "counties": [
             "Albany",
             "Fremont",
@@ -2776,6 +2787,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2784,7 +2796,7 @@
         },
         {
           "candidate": "Keith B. Goodenough",
-          "votes": 1981,
+          "votes": 2055,
           "counties": [
             "Albany",
             "Fremont",
@@ -2796,6 +2808,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2804,7 +2817,7 @@
         },
         {
           "candidate": "Kevin Christensen",
-          "votes": 11104,
+          "votes": 11790,
           "counties": [
             "Albany",
             "Fremont",
@@ -2816,6 +2829,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2824,7 +2838,7 @@
         },
         {
           "candidate": "Reid Rasner",
-          "votes": 5683,
+          "votes": 5943,
           "counties": [
             "Albany",
             "Fremont",
@@ -2836,6 +2850,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2844,7 +2859,7 @@
         },
         {
           "candidate": "Richard Dodson",
-          "votes": 798,
+          "votes": 832,
           "counties": [
             "Albany",
             "Fremont",
@@ -2856,6 +2871,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2864,7 +2880,7 @@
         },
         {
           "candidate": "Steve Friess",
-          "votes": 13010,
+          "votes": 13577,
           "counties": [
             "Albany",
             "Fremont",
@@ -2876,6 +2892,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2890,7 +2907,7 @@
       "candidates": [
         {
           "candidate": "Elena Del Real",
-          "votes": 1261,
+          "votes": 1278,
           "counties": [
             "Albany",
             "Fremont",
@@ -2902,6 +2919,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2910,7 +2928,7 @@
         },
         {
           "candidate": "Lisa Kinney",
-          "votes": 3767,
+          "votes": 3832,
           "counties": [
             "Albany",
             "Fremont",
@@ -2922,6 +2940,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2936,7 +2955,7 @@
       "candidates": [
         {
           "candidate": "Brent Bien",
-          "votes": 17379,
+          "votes": 18106,
           "counties": [
             "Albany",
             "Fremont",
@@ -2948,6 +2967,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2956,7 +2976,7 @@
         },
         {
           "candidate": "Curt Blake",
-          "votes": 1033,
+          "votes": 1086,
           "counties": [
             "Albany",
             "Fremont",
@@ -2968,6 +2988,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2976,7 +2997,7 @@
         },
         {
           "candidate": "Eric Barlow",
-          "votes": 29049,
+          "votes": 30591,
           "counties": [
             "Albany",
             "Fremont",
@@ -2988,6 +3009,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -2996,7 +3018,7 @@
         },
         {
           "candidate": "Megan Degenfelder",
-          "votes": 21019,
+          "votes": 21969,
           "counties": [
             "Albany",
             "Fremont",
@@ -3008,6 +3030,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3022,7 +3045,7 @@
       "candidates": [
         {
           "candidate": "Kenneth R. Casner",
-          "votes": 4469,
+          "votes": 4543,
           "counties": [
             "Albany",
             "Fremont",
@@ -3034,6 +3057,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3048,7 +3072,7 @@
       "candidates": [
         {
           "candidate": "CJ Young",
-          "votes": 8850,
+          "votes": 9292,
           "counties": [
             "Albany",
             "Fremont",
@@ -3060,6 +3084,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3068,7 +3093,7 @@
         },
         {
           "candidate": "Qwenton Eagle Oviatt",
-          "votes": 3576,
+          "votes": 3764,
           "counties": [
             "Albany",
             "Fremont",
@@ -3080,6 +3105,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3088,7 +3114,7 @@
         },
         {
           "candidate": "Rachel Williams",
-          "votes": 20931,
+          "votes": 21826,
           "counties": [
             "Albany",
             "Fremont",
@@ -3100,6 +3126,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3108,7 +3135,7 @@
         },
         {
           "candidate": "Robert Short",
-          "votes": 28270,
+          "votes": 29470,
           "counties": [
             "Albany",
             "Fremont",
@@ -3120,6 +3147,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3134,7 +3162,7 @@
       "candidates": [
         {
           "candidate": "Bryan McCarty",
-          "votes": 4700,
+          "votes": 4779,
           "counties": [
             "Albany",
             "Fremont",
@@ -3146,6 +3174,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3160,7 +3189,7 @@
       "candidates": [
         {
           "candidate": "Kristi Racines",
-          "votes": 56181,
+          "votes": 58889,
           "counties": [
             "Albany",
             "Fremont",
@@ -3172,6 +3201,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3186,7 +3216,7 @@
       "candidates": [
         {
           "candidate": "Curt Meier",
-          "votes": 41340,
+          "votes": 43192,
           "counties": [
             "Albany",
             "Fremont",
@@ -3198,6 +3228,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3206,7 +3237,7 @@
         },
         {
           "candidate": "Scott Smith",
-          "votes": 15019,
+          "votes": 15068,
           "counties": [
             "Albany",
             "Hot Springs",
@@ -3228,7 +3259,7 @@
       "candidates": [
         {
           "candidate": "Chad Auer",
-          "votes": 6229,
+          "votes": 6520,
           "counties": [
             "Albany",
             "Fremont",
@@ -3240,6 +3271,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3248,7 +3280,7 @@
         },
         {
           "candidate": "Steve Harshman",
-          "votes": 35954,
+          "votes": 37456,
           "counties": [
             "Albany",
             "Fremont",
@@ -3260,6 +3292,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3268,7 +3301,7 @@
         },
         {
           "candidate": "Tom Kelly",
-          "votes": 19716,
+          "votes": 20690,
           "counties": [
             "Albany",
             "Fremont",
@@ -3280,6 +3313,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3294,7 +3328,7 @@
       "candidates": [
         {
           "candidate": "Ana Cordova",
-          "votes": 2859,
+          "votes": 2913,
           "counties": [
             "Albany",
             "Fremont",
@@ -3306,6 +3340,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3314,7 +3349,7 @@
         },
         {
           "candidate": "Sergio A. Maldonado, Sr.",
-          "votes": 2015,
+          "votes": 2045,
           "counties": [
             "Albany",
             "Fremont",
@@ -3326,6 +3361,7 @@
             "Park",
             "Platte",
             "Sheridan",
+            "Sublette",
             "Uinta",
             "Washakie",
             "Weston"
@@ -3338,7 +3374,7 @@
   "race_call_method": {
     "standard": "mathematical_clinch",
     "description": "WINNER only when the leader cannot be overtaken using explicit official remaining-ballot or complete-reporting data.",
-    "county_sources_evaluated": 10,
+    "county_sources_evaluated": 11,
     "all_counties_ready": false
   }
 }
