@@ -19,7 +19,7 @@ Do not restore per-browser cache-busting such as `?t=${Date.now()}` on the dashb
 
 ## Election-night window
 
-The scheduled workflow runs at 10-minute intervals covering **7:00 PM MDT August 18 through 2:00 AM MDT August 19, 2026**. The Python updater also enforces the date/time window so the county sites are not scraped outside election night.
+The scheduled workflow runs at 10-minute intervals covering **3:00 PM MDT August 18 through 2:00 AM MDT August 19, 2026**. This early-monitoring window allows county result pages to be detected before polls close while preserving the last good snapshot throughout election night. The workflow syncs the latest `main` branch before scraping so queued runs do not publish from stale checkouts.
 
 ## Display classifications
 

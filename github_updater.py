@@ -14,7 +14,7 @@ from pypdf import PdfReader
 
 ROOT=Path(__file__).resolve().parent
 TZ=ZoneInfo('America/Denver')
-START=datetime(2026,8,18,19,0,tzinfo=TZ)
+START=datetime(2026,8,18,15,0,tzinfo=TZ)
 END=datetime(2026,8,19,2,0,tzinfo=TZ)
 UA={'User-Agent':'Mozilla/5.0 WyomingElectionDashboard/2.0 (+election-results-monitor)'}
 BAD=('2024','2022','2020','sample ballot','public test','testing','expected result','audit','recount','canvass')
