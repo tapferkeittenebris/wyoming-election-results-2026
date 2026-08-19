@@ -1,12 +1,12 @@
 {
-  "last_checked": "2026-08-18T20:39:55-06:00",
-  "last_updated": "2026-08-18T20:39:55-06:00",
-  "reporting_counties": 11,
+  "last_checked": "2026-08-18T20:55:44-06:00",
+  "last_updated": "2026-08-18T20:55:44-06:00",
+  "reporting_counties": 12,
   "county_status": [
     {
       "county": "Albany",
       "status": "Reporting",
-      "url": "https://www.albanycountywy.gov/DocumentCenter/View/547/2008---Primary-PDF",
+      "url": "https://www.albanycountywy.gov/DocumentCenter/View/543/2006---Write---Ins---Primary-PDF",
       "reporting": true,
       "errors": []
     },
@@ -104,7 +104,7 @@
     {
       "county": "Park",
       "status": "Reporting",
-      "url": "https://parkcounty-wy.gov/wp-content/uploads/2026/08/Primary-8.27.pdf",
+      "url": "https://parkcounty-wy.gov/wp-content/uploads/2026/08/Unoffical-2026-Primary-Summary.pdf",
       "reporting": true,
       "errors": []
     },
@@ -117,9 +117,9 @@
     },
     {
       "county": "Sheridan",
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
-      "reporting": false,
+      "status": "Reporting",
+      "url": "https://cms2.revize.com/revize/sheridan/Document%20Center/Departments/Elected%20Office/2026%20Election%20Documents/Primary/Election%20Summary.pdf?t=202608182211570",
+      "reporting": true,
       "errors": []
     },
     {
@@ -691,9 +691,8 @@
       "candidates": [
         {
           "candidate": "Chris Rothfuss",
-          "votes": 1803,
+          "votes": 504,
           "counties": [
-            "Albany",
             "Carbon"
           ],
           "is_fc": false
@@ -798,7 +797,7 @@
       "candidates": [
         {
           "candidate": "Paul Hoeft",
-          "votes": 414,
+          "votes": 1513,
           "counties": [
             "Park"
           ],
@@ -806,8 +805,10 @@
         },
         {
           "candidate": "R. J. Kost",
-          "votes": 0,
-          "counties": [],
+          "votes": 1180,
+          "counties": [
+            "Park"
+          ],
           "is_fc": false
         }
       ]
@@ -819,14 +820,18 @@
       "candidates": [
         {
           "candidate": "Ken Pendergraft",
-          "votes": 0,
-          "counties": [],
+          "votes": 657,
+          "counties": [
+            "Sheridan"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Melissa Butcher",
-          "votes": 0,
-          "counties": [],
+          "votes": 1183,
+          "counties": [
+            "Sheridan"
+          ],
           "is_fc": false
         }
       ]
@@ -861,8 +866,10 @@
       "candidates": [
         {
           "candidate": "Cale Case",
-          "votes": 0,
-          "counties": [],
+          "votes": 1,
+          "counties": [
+            "Albany"
+          ],
           "is_fc": false
         },
         {
@@ -1378,9 +1385,8 @@
         },
         {
           "candidate": "Bill Winney",
-          "votes": 360,
+          "votes": 164,
           "counties": [
-            "Albany",
             "Carbon"
           ],
           "is_fc": false
@@ -1428,8 +1434,10 @@
       "candidates": [
         {
           "candidate": "Shannon A. Brennan",
-          "votes": 0,
-          "counties": [],
+          "votes": 3,
+          "counties": [
+            "Teton"
+          ],
           "is_fc": false
         }
       ]
@@ -1477,7 +1485,7 @@
       "candidates": [
         {
           "candidate": "John Wetzel",
-          "votes": 448,
+          "votes": 1267,
           "counties": [
             "Park"
           ],
@@ -1485,7 +1493,7 @@
         },
         {
           "candidate": "Matthew R Legler",
-          "votes": 329,
+          "votes": 1177,
           "counties": [
             "Park"
           ],
@@ -1500,7 +1508,7 @@
       "candidates": [
         {
           "candidate": "Dalton Banks",
-          "votes": 44,
+          "votes": 127,
           "counties": [
             "Park"
           ],
@@ -1508,8 +1516,10 @@
         },
         {
           "candidate": "J. Addison Aagard",
-          "votes": 0,
-          "counties": [],
+          "votes": 67,
+          "counties": [
+            "Park"
+          ],
           "is_fc": false
         }
       ]
@@ -1551,7 +1561,7 @@
       "candidates": [
         {
           "candidate": "Allen Hogg",
-          "votes": 241,
+          "votes": 440,
           "counties": [
             "Park"
           ],
@@ -1559,7 +1569,7 @@
         },
         {
           "candidate": "Carlin Jones",
-          "votes": 113,
+          "votes": 158,
           "counties": [
             "Park"
           ],
@@ -1567,7 +1577,7 @@
         },
         {
           "candidate": "Marshall Keller",
-          "votes": 43,
+          "votes": 48,
           "counties": [
             "Park"
           ],
@@ -1575,7 +1585,7 @@
         },
         {
           "candidate": "Roland Luehne",
-          "votes": 3,
+          "votes": 5,
           "counties": [
             "Park"
           ],
@@ -1590,20 +1600,26 @@
       "candidates": [
         {
           "candidate": "James Temple",
-          "votes": 0,
-          "counties": [],
+          "votes": 229,
+          "counties": [
+            "Sheridan"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Myca Sturtevant",
-          "votes": 0,
-          "counties": [],
+          "votes": 579,
+          "counties": [
+            "Sheridan"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Noll Roberts",
-          "votes": 0,
-          "counties": [],
+          "votes": 48,
+          "counties": [
+            "Sheridan"
+          ],
           "is_fc": false
         }
       ]
@@ -1615,14 +1631,18 @@
       "candidates": [
         {
           "candidate": "Mark Jennings",
-          "votes": 0,
-          "counties": [],
+          "votes": 628,
+          "counties": [
+            "Sheridan"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Ryan Koltiska",
-          "votes": 0,
-          "counties": [],
+          "votes": 935,
+          "counties": [
+            "Sheridan"
+          ],
           "is_fc": false
         }
       ]
@@ -1642,7 +1662,7 @@
         },
         {
           "candidate": "John W. Bear",
-          "votes": 30,
+          "votes": 210,
           "counties": [
             "Campbell"
           ],
@@ -1789,8 +1809,10 @@
         },
         {
           "candidate": "Robert L. Hendry",
-          "votes": 0,
-          "counties": [],
+          "votes": 31,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         }
       ]
@@ -1830,14 +1852,18 @@
       "candidates": [
         {
           "candidate": "Marilyn Connolly",
-          "votes": 0,
-          "counties": [],
+          "votes": 33,
+          "counties": [
+            "Sheridan"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Mark Jones",
-          "votes": 0,
-          "counties": [],
+          "votes": 25,
+          "counties": [
+            "Sheridan"
+          ],
           "is_fc": false
         }
       ]
@@ -2050,7 +2076,7 @@
       "candidates": [
         {
           "candidate": "David Hill",
-          "votes": 1431,
+          "votes": 1557,
           "counties": [
             "Park"
           ],
@@ -2058,7 +2084,7 @@
         },
         {
           "candidate": "Levi Asay",
-          "votes": 1156,
+          "votes": 1263,
           "counties": [
             "Park"
           ],
@@ -2073,14 +2099,18 @@
       "candidates": [
         {
           "candidate": "Laurie Bratten",
-          "votes": 0,
-          "counties": [],
+          "votes": 463,
+          "counties": [
+            "Sheridan"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Susan Bigelow",
-          "votes": 0,
-          "counties": [],
+          "votes": 517,
+          "counties": [
+            "Sheridan"
+          ],
           "is_fc": false
         }
       ]
@@ -2253,8 +2283,10 @@
       "candidates": [
         {
           "candidate": "J.R. Riggins",
-          "votes": 0,
-          "counties": [],
+          "votes": 89,
+          "counties": [
+            "Natrona"
+          ],
           "is_fc": false
         },
         {
@@ -2331,8 +2363,10 @@
         },
         {
           "candidate": "Kevin J. Campbell",
-          "votes": 0,
-          "counties": [],
+          "votes": 307,
+          "counties": [
+            "Converse"
+          ],
           "is_fc": true
         }
       ]
@@ -2345,51 +2379,56 @@
       "candidates": [
         {
           "candidate": "Harriet Hageman",
-          "votes": 5608,
+          "votes": 9315,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jill M Edwards",
-          "votes": 1551,
+          "votes": 1706,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jimmy Skovgard",
-          "votes": 632,
+          "votes": 799,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "John Holtz",
-          "votes": 1071,
+          "votes": 1194,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Sam Mead",
-          "votes": 2784,
+          "votes": 4487,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         }
@@ -2401,21 +2440,23 @@
       "candidates": [
         {
           "candidate": "Billy Benavidez",
-          "votes": 766,
+          "votes": 846,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "James Byrd",
-          "votes": 674,
+          "votes": 911,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         }
@@ -2427,100 +2468,113 @@
       "candidates": [
         {
           "candidate": "Bo Biteman",
-          "votes": 2524,
+          "votes": 3211,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Chuck Gray",
-          "votes": 3318,
+          "votes": 4826,
           "counties": [
             "Campbell",
             "Goshen",
             "Natrona",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "David Giralt",
-          "votes": 1731,
+          "votes": 2129,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Frank Chapman",
-          "votes": 2187,
+          "votes": 2242,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jillian Balow",
-          "votes": 3145,
+          "votes": 3573,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Keith B. Goodenough",
-          "votes": 56,
+          "votes": 1699,
           "counties": [
-            "Goshen"
+            "Campbell",
+            "Carbon",
+            "Goshen",
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Kevin Christensen",
-          "votes": 3064,
+          "votes": 4195,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Reid Rasner",
-          "votes": 880,
+          "votes": 1268,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Richard Dodson",
-          "votes": 1731,
+          "votes": 1773,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Steve Friess",
-          "votes": 3140,
+          "votes": 4055,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         }
@@ -2532,21 +2586,24 @@
       "candidates": [
         {
           "candidate": "Elena Del Real",
-          "votes": 999,
+          "votes": 1068,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Lisa Kinney",
-          "votes": 917,
+          "votes": 1164,
           "counties": [
+            "Albany",
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         }
@@ -2558,41 +2615,45 @@
       "candidates": [
         {
           "candidate": "Brent Bien",
-          "votes": 3220,
+          "votes": 5192,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Curt Blake",
-          "votes": 774,
+          "votes": 846,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Eric Barlow",
-          "votes": 4104,
+          "votes": 6545,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Megan Degenfelder",
-          "votes": 2195,
+          "votes": 3633,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         }
@@ -2604,9 +2665,12 @@
       "candidates": [
         {
           "candidate": "Kenneth R. Casner",
-          "votes": 28,
+          "votes": 963,
           "counties": [
-            "Goshen"
+            "Campbell",
+            "Goshen",
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         }
@@ -2618,41 +2682,45 @@
       "candidates": [
         {
           "candidate": "CJ Young",
-          "votes": 1289,
+          "votes": 1975,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Qwenton Eagle Oviatt",
-          "votes": 1656,
+          "votes": 1995,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Rachel Williams",
-          "votes": 3997,
+          "votes": 6223,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": true
         },
         {
           "candidate": "Robert Short",
-          "votes": 3856,
+          "votes": 5943,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         }
@@ -2664,10 +2732,11 @@
       "candidates": [
         {
           "candidate": "Bryan McCarty",
-          "votes": 905,
+          "votes": 1195,
           "counties": [
             "Campbell",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         }
@@ -2679,11 +2748,12 @@
       "candidates": [
         {
           "candidate": "Kristi Racines",
-          "votes": 6113,
+          "votes": 10871,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         }
@@ -2695,21 +2765,23 @@
       "candidates": [
         {
           "candidate": "Curt Meier",
-          "votes": 4609,
+          "votes": 7961,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Scott Smith",
-          "votes": 2718,
+          "votes": 4593,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": true
         }
@@ -2721,32 +2793,35 @@
       "candidates": [
         {
           "candidate": "Chad Auer",
-          "votes": 1454,
+          "votes": 1927,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Steve Harshman",
-          "votes": 5885,
+          "votes": 8785,
           "counties": [
             "Campbell",
             "Goshen",
             "Natrona",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Tom Kelly",
-          "votes": 2477,
+          "votes": 4478,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": true
         }
@@ -2758,19 +2833,23 @@
       "candidates": [
         {
           "candidate": "Ana Cordova",
-          "votes": 1340,
+          "votes": 1506,
           "counties": [
             "Campbell",
             "Goshen",
-            "Park"
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Sergio A. Maldonado, Sr.",
-          "votes": 56,
+          "votes": 1172,
           "counties": [
-            "Goshen"
+            "Campbell",
+            "Goshen",
+            "Park",
+            "Sheridan"
           ],
           "is_fc": false
         }
@@ -2780,7 +2859,7 @@
   "race_call_method": {
     "standard": "mathematical_clinch",
     "description": "WINNER only when the leader cannot be overtaken using explicit official remaining-ballot or complete-reporting data.",
-    "county_sources_evaluated": 11,
+    "county_sources_evaluated": 12,
     "all_counties_ready": false
   }
 }

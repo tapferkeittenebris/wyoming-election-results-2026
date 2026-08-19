@@ -1,8 +1,8 @@
 {
-  "last_checked": "2026-08-18T20:42:35-06:00",
-  "last_updated": null,
-  "status": "Waiting for Sheridan County results",
-  "source_url": "https://www.sheridancountywy.gov/departments/elections/2026_election_results.php",
+  "last_checked": "2026-08-18T20:57:58-06:00",
+  "last_updated": "2026-08-18T20:57:58-06:00",
+  "status": "Reporting",
+  "source_url": "https://cms2.revize.com/revize/sheridan/Document%20Center/Departments/Elected%20Office/2026%20Election%20Documents/Primary/Election%20Summary.pdf?t=202608182211570",
   "errors": [],
   "races": [
     {
@@ -12,40 +12,44 @@
       "scope": "All Sheridan County",
       "candidates": [
         {
-          "candidate": "Bo Biteman",
-          "votes": 0
+          "candidate": "Kevin Christensen",
+          "votes": 949
         },
         {
           "candidate": "Chuck Gray",
-          "votes": 0
+          "votes": 935
         },
         {
-          "candidate": "David Giralt",
-          "votes": 0
-        },
-        {
-          "candidate": "Jillian Balow",
-          "votes": 0
-        },
-        {
-          "candidate": "Keith B. Goodenough",
-          "votes": 0
-        },
-        {
-          "candidate": "Kevin Christensen",
-          "votes": 0
-        },
-        {
-          "candidate": "Reid Rasner",
-          "votes": 0
-        },
-        {
-          "candidate": "Richard Dodson",
-          "votes": 0
+          "candidate": "Bo Biteman",
+          "votes": 852
         },
         {
           "candidate": "Steve Friess",
-          "votes": 0
+          "votes": 548
+        },
+        {
+          "candidate": "Jillian Balow",
+          "votes": 321
+        },
+        {
+          "candidate": "David Giralt",
+          "votes": 281
+        },
+        {
+          "candidate": "Reid Rasner",
+          "votes": 221
+        },
+        {
+          "candidate": "Keith B. Goodenough",
+          "votes": 83
+        },
+        {
+          "candidate": "Frank Chapman",
+          "votes": 49
+        },
+        {
+          "candidate": "Richard Dodson",
+          "votes": 34
         }
       ]
     },
@@ -56,12 +60,12 @@
       "scope": "All Sheridan County",
       "candidates": [
         {
-          "candidate": "Elena Del Real",
-          "votes": 0
+          "candidate": "Lisa Kinney",
+          "votes": 229
         },
         {
-          "candidate": "Lisa Kinney",
-          "votes": 0
+          "candidate": "Elena Del Real",
+          "votes": 66
         }
       ]
     },
@@ -73,23 +77,23 @@
       "candidates": [
         {
           "candidate": "Harriet Hageman",
-          "votes": 0
-        },
-        {
-          "candidate": "Jill M Edwards",
-          "votes": 0
-        },
-        {
-          "candidate": "Jimmy Skovgard",
-          "votes": 0
-        },
-        {
-          "candidate": "John Holtz",
-          "votes": 0
+          "votes": 2653
         },
         {
           "candidate": "Sam Mead",
-          "votes": 0
+          "votes": 1457
+        },
+        {
+          "candidate": "Jill M Edwards",
+          "votes": 114
+        },
+        {
+          "candidate": "Jimmy Skovgard",
+          "votes": 101
+        },
+        {
+          "candidate": "John Holtz",
+          "votes": 81
         }
       ]
     },
@@ -100,12 +104,12 @@
       "scope": "All Sheridan County",
       "candidates": [
         {
-          "candidate": "Billy Benavidez",
-          "votes": 0
+          "candidate": "James Byrd",
+          "votes": 230
         },
         {
-          "candidate": "James Byrd",
-          "votes": 0
+          "candidate": "Billy Benavidez",
+          "votes": 73
         }
       ]
     },
@@ -116,20 +120,20 @@
       "scope": "All Sheridan County",
       "candidates": [
         {
-          "candidate": "Brent Bien",
-          "votes": 0
-        },
-        {
-          "candidate": "Curt Blake",
-          "votes": 0
-        },
-        {
           "candidate": "Eric Barlow",
-          "votes": 0
+          "votes": 2034
+        },
+        {
+          "candidate": "Brent Bien",
+          "votes": 1414
         },
         {
           "candidate": "Megan Degenfelder",
-          "votes": 0
+          "votes": 983
+        },
+        {
+          "candidate": "Curt Blake",
+          "votes": 37
         }
       ]
     },
@@ -141,7 +145,7 @@
       "candidates": [
         {
           "candidate": "Kenneth R. Casner",
-          "votes": 0
+          "votes": 252
         }
       ]
     },
@@ -152,20 +156,20 @@
       "scope": "All Sheridan County",
       "candidates": [
         {
-          "candidate": "CJ Young",
-          "votes": 0
-        },
-        {
-          "candidate": "Qwenton Eagle Oviatt",
-          "votes": 0
+          "candidate": "Robert Short",
+          "votes": 1691
         },
         {
           "candidate": "Rachel Williams",
-          "votes": 0
+          "votes": 1350
         },
         {
-          "candidate": "Robert Short",
-          "votes": 0
+          "candidate": "CJ Young",
+          "votes": 572
+        },
+        {
+          "candidate": "Qwenton Eagle Oviatt",
+          "votes": 292
         }
       ]
     },
@@ -177,7 +181,7 @@
       "candidates": [
         {
           "candidate": "Bryan McCarty",
-          "votes": 0
+          "votes": 276
         }
       ]
     },
@@ -189,7 +193,7 @@
       "candidates": [
         {
           "candidate": "Kristi Racines",
-          "votes": 0
+          "votes": 3571
         }
       ]
     },
@@ -201,11 +205,11 @@
       "candidates": [
         {
           "candidate": "Curt Meier",
-          "votes": 0
+          "votes": 2720
         },
         {
           "candidate": "Scott Smith",
-          "votes": 0
+          "votes": 1159
         }
       ]
     },
@@ -216,16 +220,16 @@
       "scope": "All Sheridan County",
       "candidates": [
         {
-          "candidate": "Chad Auer",
-          "votes": 0
-        },
-        {
           "candidate": "Steve Harshman",
-          "votes": 0
+          "votes": 2053
         },
         {
           "candidate": "Tom Kelly",
-          "votes": 0
+          "votes": 1609
+        },
+        {
+          "candidate": "Chad Auer",
+          "votes": 394
         }
       ]
     },
@@ -237,11 +241,11 @@
       "candidates": [
         {
           "candidate": "Ana Cordova",
-          "votes": 0
+          "votes": 162
         },
         {
           "candidate": "Sergio A. Maldonado, Sr.",
-          "votes": 0
+          "votes": 122
         }
       ]
     },
@@ -252,16 +256,16 @@
       "scope": "HD 29 voters",
       "candidates": [
         {
-          "candidate": "James Temple",
-          "votes": 0
+          "candidate": "Myca Sturtevant",
+          "votes": 724
         },
         {
-          "candidate": "Myca Sturtevant",
-          "votes": 0
+          "candidate": "James Temple",
+          "votes": 323
         },
         {
           "candidate": "Noll Roberts",
-          "votes": 0
+          "votes": 69
         }
       ]
     },
@@ -272,12 +276,12 @@
       "scope": "HD 30 voters",
       "candidates": [
         {
-          "candidate": "Mark Jennings",
-          "votes": 0
+          "candidate": "Ryan Koltiska",
+          "votes": 1054
         },
         {
-          "candidate": "Ryan Koltiska",
-          "votes": 0
+          "candidate": "Mark Jennings",
+          "votes": 697
         }
       ]
     },
@@ -289,11 +293,11 @@
       "candidates": [
         {
           "candidate": "Marilyn Connolly",
-          "votes": 0
+          "votes": 103
         },
         {
           "candidate": "Mark Jones",
-          "votes": 0
+          "votes": 45
         }
       ]
     },
@@ -305,11 +309,11 @@
       "candidates": [
         {
           "candidate": "Laurie Bratten",
-          "votes": 0
+          "votes": 671
         },
         {
           "candidate": "Susan Bigelow",
-          "votes": 0
+          "votes": 657
         }
       ]
     },
@@ -320,12 +324,12 @@
       "scope": "SD 21 voters",
       "candidates": [
         {
-          "candidate": "Ken Pendergraft",
-          "votes": 0
+          "candidate": "Melissa Butcher",
+          "votes": 1355
         },
         {
-          "candidate": "Melissa Butcher",
-          "votes": 0
+          "candidate": "Ken Pendergraft",
+          "votes": 836
         }
       ]
     },
@@ -337,7 +341,7 @@
       "candidates": [
         {
           "candidate": "Rene Botten",
-          "votes": 0
+          "votes": 3501
         }
       ]
     },
@@ -372,16 +376,16 @@
       "scope": "All Sheridan County",
       "candidates": [
         {
+          "candidate": "Eda Schunk Thompson",
+          "votes": 2684
+        },
+        {
           "candidate": "Christine Temple",
-          "votes": 0
+          "votes": 1204
         },
         {
           "candidate": "Dylan Dalton",
-          "votes": 0
-        },
-        {
-          "candidate": "Eda Schunk Thompson",
-          "votes": 0
+          "votes": 264
         }
       ]
     },
@@ -392,40 +396,40 @@
       "scope": "All Sheridan County",
       "candidates": [
         {
+          "candidate": "James R. Schellinger",
+          "votes": 2286
+        },
+        {
           "candidate": "Christi Haswell",
-          "votes": 0
-        },
-        {
-          "candidate": "Dennis Fox",
-          "votes": 0
-        },
-        {
-          "candidate": "Dustin Bates",
-          "votes": 0
-        },
-        {
-          "candidate": "Glenn Drummond",
-          "votes": 0
-        },
-        {
-          "candidate": "Harley Shuck",
-          "votes": 0
+          "votes": 2057
         },
         {
           "candidate": "Holly Jennings",
-          "votes": 0
+          "votes": 1818
         },
         {
-          "candidate": "James R. Schellinger",
-          "votes": 0
+          "candidate": "Glenn Drummond",
+          "votes": 1647
+        },
+        {
+          "candidate": "Dennis Fox",
+          "votes": 1402
         },
         {
           "candidate": "Karla Kaley",
-          "votes": 0
+          "votes": 1201
+        },
+        {
+          "candidate": "Harley Shuck",
+          "votes": 347
+        },
+        {
+          "candidate": "Dustin Bates",
+          "votes": 344
         },
         {
           "candidate": "Lee Ackerley",
-          "votes": 0
+          "votes": 214
         }
       ]
     },
@@ -436,12 +440,12 @@
       "scope": "All Sheridan County",
       "candidates": [
         {
-          "candidate": "Kevin Sessions",
-          "votes": 0
+          "candidate": "Robert C. Byrd",
+          "votes": 2254
         },
         {
-          "candidate": "Robert C. Byrd",
-          "votes": 0
+          "candidate": "Kevin Sessions",
+          "votes": 1993
         }
       ]
     },
@@ -452,12 +456,12 @@
       "scope": "All Sheridan County",
       "candidates": [
         {
-          "candidate": "Kenneth Howard Fitzpatrick",
-          "votes": 0
+          "candidate": "William Levi Dominguez",
+          "votes": 2789
         },
         {
-          "candidate": "William Levi Dominguez",
-          "votes": 0
+          "candidate": "Kenneth Howard Fitzpatrick",
+          "votes": 1612
         }
       ]
     },
@@ -469,7 +473,7 @@
       "candidates": [
         {
           "candidate": "Katie Araas",
-          "votes": 0
+          "votes": 3696
         }
       ]
     },
@@ -481,7 +485,7 @@
       "candidates": [
         {
           "candidate": "Bret N. Barney",
-          "votes": 0
+          "votes": 91
         },
         {
           "candidate": "Hanle Visser",
@@ -496,32 +500,32 @@
       "scope": "Town of Dayton voters",
       "candidates": [
         {
-          "candidate": "Angela Norton",
-          "votes": 0
-        },
-        {
           "candidate": "Aric Rees",
-          "votes": 0
+          "votes": 167
         },
         {
           "candidate": "Guy Mitchell",
-          "votes": 0
-        },
-        {
-          "candidate": "Howard P. Hill",
-          "votes": 0
-        },
-        {
-          "candidate": "Laurie Walters-Clark",
-          "votes": 0
-        },
-        {
-          "candidate": "Lisa Chase",
-          "votes": 0
+          "votes": 139
         },
         {
           "candidate": "Robert (Bobby) Logan",
-          "votes": 0
+          "votes": 112
+        },
+        {
+          "candidate": "Lisa Chase",
+          "votes": 100
+        },
+        {
+          "candidate": "Laurie Walters-Clark",
+          "votes": 85
+        },
+        {
+          "candidate": "Howard P. Hill",
+          "votes": 78
+        },
+        {
+          "candidate": "Angela Norton",
+          "votes": 38
         }
       ]
     },
@@ -532,12 +536,12 @@
       "scope": "Town of Ranchester voters",
       "candidates": [
         {
-          "candidate": "Bryan Helferich",
-          "votes": 0
+          "candidate": "Jessica Weaver",
+          "votes": 16
         },
         {
-          "candidate": "Jessica Weaver",
-          "votes": 0
+          "candidate": "Bryan Helferich",
+          "votes": 7
         }
       ]
     },
@@ -548,20 +552,20 @@
       "scope": "Town of Ranchester voters",
       "candidates": [
         {
-          "candidate": "Richard Hofmeier",
-          "votes": 0
+          "candidate": "Tim Maze",
+          "votes": 18
         },
         {
-          "candidate": "Richard Rick Brown",
-          "votes": 0
+          "candidate": "Richard Hofmeier",
+          "votes": 16
         },
         {
           "candidate": "Terry Roelfsema",
-          "votes": 0
+          "votes": 12
         },
         {
-          "candidate": "Tim Maze",
-          "votes": 0
+          "candidate": "Richard Rick Brown",
+          "votes": 3
         }
       ]
     },
@@ -572,28 +576,28 @@
       "scope": "City of Sheridan voters",
       "candidates": [
         {
-          "candidate": "Amber C. Horsley",
-          "votes": 0
-        },
-        {
-          "candidate": "Andrew Patceg",
-          "votes": 0
-        },
-        {
           "candidate": "Greg Luhman",
-          "votes": 0
-        },
-        {
-          "candidate": "Harry Pollak",
-          "votes": 0
-        },
-        {
-          "candidate": "Nephi John Cole",
-          "votes": 0
+          "votes": 1384
         },
         {
           "candidate": "Terry Weitzel",
-          "votes": 0
+          "votes": 1363
+        },
+        {
+          "candidate": "Amber C. Horsley",
+          "votes": 1035
+        },
+        {
+          "candidate": "Andrew Patceg",
+          "votes": 883
+        },
+        {
+          "candidate": "Harry Pollak",
+          "votes": 706
+        },
+        {
+          "candidate": "Nephi John Cole",
+          "votes": 693
         }
       ]
     }

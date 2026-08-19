@@ -1,18 +1,18 @@
 {
-  "last_checked": "2026-08-18T20:39:55-06:00",
-  "last_updated": "2026-08-18T20:39:55-06:00",
+  "last_checked": "2026-08-18T20:55:44-06:00",
+  "last_updated": "2026-08-18T20:55:44-06:00",
   "counties": {
     "Albany": {
       "source_url": "https://www.albanycountywy.gov/176/Results-of-Election",
-      "result_url": "https://www.albanycountywy.gov/DocumentCenter/View/547/2008---Primary-PDF",
+      "result_url": "https://www.albanycountywy.gov/DocumentCenter/View/543/2006---Write---Ins---Primary-PDF",
       "status": "Reporting",
       "votes": {
-        "chris rothfuss": 1299,
-        "bill winney": 196
+        "cale case": 1,
+        "lisa kinney": 4
       },
       "errors": [],
-      "result_hash": "760a76d0f8469f63",
-      "last_success": "2026-08-18T20:39:55-06:00"
+      "result_hash": "990f5239fdbe4f79",
+      "last_success": "2026-08-18T20:55:44-06:00"
     },
     "Big Horn": {
       "source_url": "https://www.bighorncountywy.gov/departments/clerk/elections",
@@ -33,7 +33,7 @@
         "anne ziegenhorn": 216,
         "earl collier": 270,
         "douglas moore": 168,
-        "john w bear": 30,
+        "john w bear": 210,
         "ken clouston": 126,
         "bill fortner": 216,
         "ronda boller": 270,
@@ -51,6 +51,7 @@
         "david giralt": 1110,
         "frank chapman": 1998,
         "jillian balow": 2442,
+        "keith b goodenough": 888,
         "kevin christensen": 1776,
         "reid rasner": 444,
         "richard dodson": 1554,
@@ -61,6 +62,7 @@
         "curt blake": 666,
         "eric barlow": 1110,
         "megan degenfelder": 444,
+        "kenneth r casner": 444,
         "cj young": 666,
         "qwenton eagle oviatt": 1332,
         "rachel williams": 888,
@@ -72,11 +74,12 @@
         "chad auer": 888,
         "steve harshman": 666,
         "tom kelly": 444,
-        "ana cordova": 1110
+        "ana cordova": 1110,
+        "sergio a maldonado sr": 888
       },
       "errors": [],
       "result_hash": "9ed3e19fb6acf794",
-      "last_success": "2026-08-18T20:39:55-06:00"
+      "last_success": "2026-08-18T20:55:44-06:00"
     },
     "Carbon": {
       "source_url": "https://www.carboncountywy.gov/997/Election-Results",
@@ -84,22 +87,24 @@
       "status": "Reporting",
       "votes": {
         "chris rothfuss": 504,
-        "bill winney": 164
+        "bill winney": 164,
+        "keith b goodenough": 531
       },
       "errors": [],
       "result_hash": "8eb29f1a6641dc43",
-      "last_success": "2026-08-18T20:39:55-06:00"
+      "last_success": "2026-08-18T20:55:44-06:00"
     },
     "Converse": {
       "source_url": "https://www.conversecountywy.gov/187/Elections",
       "result_url": "https://www.conversecountywy.gov/DocumentCenter/View/6290/2026-Precinct-Committeeman-woman-Roster",
       "status": "Reporting",
       "votes": {
-        "jim willox": 451
+        "jim willox": 451,
+        "kevin j campbell": 307
       },
       "errors": [],
       "result_hash": "c80f67b9bf5c7bad",
-      "last_success": "2026-08-18T20:39:55-06:00"
+      "last_success": "2026-08-18T20:55:44-06:00"
     },
     "Crook": {
       "source_url": "https://www.crookcounty.wy.gov/elected_officials/clerk/election/election_results.php",
@@ -163,7 +168,7 @@
       },
       "errors": [],
       "result_hash": "811a1a814186d88d",
-      "last_success": "2026-08-18T20:39:55-06:00"
+      "last_success": "2026-08-18T20:55:44-06:00"
     },
     "Hot Springs": {
       "source_url": "https://hscounty.com/component/edocman/election-results-archives/elections-2026?Itemid=100",
@@ -200,14 +205,16 @@
       "votes": {
         "bob ide": 121,
         "art washut": 113,
+        "robert l hendry": 31,
         "catherine mcqueen": 51,
+        "j r riggins": 89,
         "laurie longtine": 312,
         "chuck gray": 738,
         "steve harshman": 1534
       },
       "errors": [],
       "result_hash": "370e6bb6b822d8a5",
-      "last_success": "2026-08-18T20:39:55-06:00"
+      "last_success": "2026-08-18T20:55:44-06:00"
     },
     "Niobrara": {
       "source_url": "https://www.niobraracounty.org/_departments/_county_clerk/ElectionResults.asp",
@@ -218,59 +225,64 @@
     },
     "Park": {
       "source_url": "https://parkcounty-wy.gov/county-elections/results/",
-      "result_url": "https://parkcounty-wy.gov/wp-content/uploads/2026/08/Primary-8.27.pdf",
+      "result_url": "https://parkcounty-wy.gov/wp-content/uploads/2026/08/Unoffical-2026-Primary-Summary.pdf",
       "status": "Reporting",
       "votes": {
-        "paul hoeft": 414,
+        "paul hoeft": 1513,
+        "r j kost": 1180,
         "nina webber": 951,
         "quin blair": 1844,
-        "john wetzel": 448,
-        "matthew r legler": 329,
-        "dalton banks": 44,
-        "allen hogg": 241,
-        "carlin jones": 113,
-        "marshall keller": 43,
-        "roland luehne": 3,
-        "david hill": 1431,
-        "levi asay": 1156,
-        "harriet hageman": 4428,
-        "jill m edwards": 135,
-        "jimmy skovgard": 160,
-        "john holtz": 127,
-        "sam mead": 2076,
-        "billy benavidez": 58,
-        "james byrd": 202,
-        "bo biteman": 164,
-        "chuck gray": 1872,
-        "david giralt": 551,
-        "frank chapman": 64,
-        "jillian balow": 549,
-        "kevin christensen": 1175,
-        "reid rasner": 408,
-        "richard dodson": 79,
-        "steve friess": 1724,
-        "elena del real": 55,
-        "lisa kinney": 209,
-        "brent bien": 2276,
-        "curt blake": 66,
-        "eric barlow": 2924,
-        "megan degenfelder": 1723,
-        "cj young": 581,
-        "qwenton eagle oviatt": 240,
-        "rachel williams": 3053,
-        "robert short": 2676,
-        "bryan mccarty": 239,
-        "kristi racines": 5641,
-        "curt meier": 3901,
-        "scott smith": 2246,
-        "chad auer": 510,
-        "steve harshman": 3643,
-        "tom kelly": 2005,
-        "ana cordova": 160
+        "john wetzel": 1267,
+        "matthew r legler": 1177,
+        "dalton banks": 127,
+        "j addison aagard": 67,
+        "allen hogg": 440,
+        "carlin jones": 158,
+        "marshall keller": 48,
+        "roland luehne": 5,
+        "david hill": 1557,
+        "levi asay": 1263,
+        "harriet hageman": 6127,
+        "jill m edwards": 199,
+        "jimmy skovgard": 238,
+        "john holtz": 198,
+        "sam mead": 2524,
+        "billy benavidez": 77,
+        "james byrd": 259,
+        "bo biteman": 238,
+        "chuck gray": 2636,
+        "david giralt": 729,
+        "frank chapman": 89,
+        "jillian balow": 721,
+        "keith b goodenough": 159,
+        "kevin christensen": 1476,
+        "reid rasner": 626,
+        "richard dodson": 97,
+        "steve friess": 2198,
+        "elena del real": 72,
+        "lisa kinney": 268,
+        "brent bien": 3157,
+        "curt blake": 108,
+        "eric barlow": 3680,
+        "megan degenfelder": 2421,
+        "kenneth r casner": 291,
+        "cj young": 836,
+        "qwenton eagle oviatt": 348,
+        "rachel williams": 4227,
+        "robert short": 3338,
+        "bryan mccarty": 307,
+        "kristi racines": 7565,
+        "curt meier": 5031,
+        "scott smith": 3235,
+        "chad auer": 671,
+        "steve harshman": 4823,
+        "tom kelly": 2792,
+        "ana cordova": 199,
+        "sergio a maldonado sr": 129
       },
       "errors": [],
-      "result_hash": "920ec3bb8d6003ba",
-      "last_success": "2026-08-18T20:39:55-06:00"
+      "result_hash": "8c3ec579f7e8647a",
+      "last_success": "2026-08-18T20:55:44-06:00"
     },
     "Platte": {
       "source_url": "https://www.plattecountywyoming.com/departments/Elections/ResultsofElection",
@@ -281,14 +293,65 @@
       },
       "errors": [],
       "result_hash": "ae431872f89f91fa",
-      "last_success": "2026-08-18T20:39:55-06:00"
+      "last_success": "2026-08-18T20:55:44-06:00"
     },
     "Sheridan": {
       "source_url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
-      "result_url": null,
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "votes": {},
-      "errors": []
+      "result_url": "https://cms2.revize.com/revize/sheridan/Document%20Center/Departments/Elected%20Office/2026%20Election%20Documents/Primary/Election%20Summary.pdf?t=202608182211570",
+      "status": "Reporting",
+      "votes": {
+        "ken pendergraft": 657,
+        "melissa butcher": 1183,
+        "james temple": 229,
+        "myca sturtevant": 579,
+        "noll roberts": 48,
+        "mark jennings": 628,
+        "ryan koltiska": 935,
+        "marilyn connolly": 33,
+        "mark jones": 25,
+        "laurie bratten": 463,
+        "susan bigelow": 517,
+        "harriet hageman": 2008,
+        "jill m edwards": 91,
+        "jimmy skovgard": 89,
+        "john holtz": 52,
+        "sam mead": 1255,
+        "billy benavidez": 61,
+        "james byrd": 180,
+        "bo biteman": 613,
+        "chuck gray": 744,
+        "david giralt": 220,
+        "frank chapman": 30,
+        "jillian balow": 256,
+        "keith b goodenough": 65,
+        "kevin christensen": 830,
+        "reid rasner": 170,
+        "richard dodson": 24,
+        "steve friess": 441,
+        "elena del real": 52,
+        "lisa kinney": 184,
+        "brent bien": 1091,
+        "curt blake": 30,
+        "eric barlow": 1685,
+        "megan degenfelder": 740,
+        "kenneth r casner": 200,
+        "cj young": 431,
+        "qwenton eagle oviatt": 231,
+        "rachel williams": 1052,
+        "robert short": 1425,
+        "bryan mccarty": 222,
+        "kristi racines": 2834,
+        "curt meier": 2222,
+        "scott smith": 886,
+        "chad auer": 312,
+        "steve harshman": 1720,
+        "tom kelly": 1214,
+        "ana cordova": 127,
+        "sergio a maldonado sr": 99
+      },
+      "errors": [],
+      "result_hash": "8a92776395416257",
+      "last_success": "2026-08-18T20:55:44-06:00"
     },
     "Sublette": {
       "source_url": "https://www.sublettecountywy.gov/110/Election-Information",
@@ -312,11 +375,12 @@
         "mike gierau": 1,
         "lisa wilson": 1,
         "mike yin": 1,
-        "andrew byron": 1
+        "andrew byron": 1,
+        "shannon a brennan": 3
       },
       "errors": [],
       "result_hash": "6198d515a4388ac4",
-      "last_success": "2026-08-18T20:39:55-06:00"
+      "last_success": "2026-08-18T20:55:44-06:00"
     },
     "Uinta": {
       "source_url": "https://uintacountywy.gov/DocumentCenter/View/8645/2026-Primary-Results-UNOFFICIAL",
@@ -330,7 +394,7 @@
       },
       "errors": [],
       "result_hash": "d6ff583aa2f617c8",
-      "last_success": "2026-08-18T20:39:55-06:00"
+      "last_success": "2026-08-18T20:55:44-06:00"
     },
     "Washakie": {
       "source_url": "https://www.washakiecountywy.gov/196/Elections",
@@ -342,7 +406,7 @@
       },
       "errors": [],
       "result_hash": "928fe268f019d1f7",
-      "last_success": "2026-08-18T20:39:55-06:00"
+      "last_success": "2026-08-18T20:55:44-06:00"
     },
     "Weston": {
       "source_url": "https://www.westongov.com/county-clerk/elections/election-results/",
