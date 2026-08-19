@@ -224,7 +224,7 @@ def _check_lincoln(source, candidates):
             digest.update(content)
             for name, value in votes.items():
                 totals[name] = totals.get(name, 0) + int(value)
-        return source["county"], "Reporting (aggregated official precinct returns)", source.get("direct_urls", source["landing_urls"])[0], totals, digest.hexdigest()[:16], errors
+        return source["county"], "Reporting (aggregated official precinct returns)", source["landing_urls"][0], totals, digest.hexdigest()[:16], errors
     return source["county"], "Waiting for county results", None, {}, None, errors
 
 
