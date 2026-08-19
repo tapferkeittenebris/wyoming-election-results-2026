@@ -4,12 +4,14 @@
 Keeps github_updater.py as the canonical parser/aggregator, but replaces only
 its bounded result-link discovery so county-site quirks do not block results:
 - repairs two known malformed Revize relative links (Lincoln and Sheridan)
+- proxies public 403 responses from Lincoln and Sheridan through Jina's reader
 - follows iframe/embed/object document sources in addition to anchors
 - permits Johnson County's explicitly trusted Google Drive document links
 - converts public Google Drive file links to direct-download targets when possible
 """
 from __future__ import annotations
 
+import hashlib
 import re
 from collections import deque
 from urllib.parse import parse_qs, urlencode, urljoin, urlparse, urlunparse
@@ -21,6 +23,7 @@ import github_updater as base
 
 EXTERNAL_HOSTS_BY_ROOT = {
     "johnsoncowy.gov": {"drive.google.com", "docs.google.com"},
+    "lincolncountywy.gov": {"cms5.revize.com"},
 }
 
 REVIZE_PATH_REPAIRS = (
@@ -35,6 +38,7 @@ REVIZE_PATH_REPAIRS = (
 )
 
 JINA_PROXY_ROOT = "https://r.jina.ai/http://"
+JINA_FALLBACK_HOSTS = {"lincolncountywy.gov", "sheridancountywy.gov"}
 
 
 def _host(url: str) -> str:
@@ -47,6 +51,9 @@ def _repair_known_url(url: str) -> str:
     for bad, good in REVIZE_PATH_REPAIRS:
         if bad in path:
             path = path.replace(bad, good, 1)
+    host = parts.netloc.lower().removeprefix("www.")
+    if host == "lincolncountywy.gov" and path.lower().startswith("/documents/"):
+        return urlunparse(parts._replace(scheme="https", netloc="cms5.revize.com", path="/revize/lincolncountynew25" + path))
     return urlunparse(parts._replace(path=path))
 
 
@@ -68,12 +75,12 @@ def _drive_download(url: str) -> str:
     return f"https://drive.google.com/uc?{urlencode({'export': 'download', 'id': file_id})}"
 
 
-def _get_with_sheridan_fallback(session, url: str):
-    """Fetch an official URL, proxying Sheridan's public 403 responses as text."""
+def _get_with_county_fallback(session, url: str):
+    """Fetch an official URL, proxying known public county 403 responses as text."""
     try:
         return base.get(session, url)
     except Exception:
-        if _host(url) != "sheridancountywy.gov":
+        if _host(url) not in JINA_FALLBACK_HOSTS:
             raise
         original = urlparse(url)
         proxy_target = urlunparse(original._replace(scheme="http"))
@@ -98,7 +105,7 @@ def discover(session, landing, max_depth=2, max_pages=28):
         seen.add(url)
 
         try:
-            r = _get_with_sheridan_fallback(session, url)
+            r = _get_with_county_fallback(session, url)
         except Exception:
             continue
 
@@ -173,7 +180,65 @@ def discover(session, landing, max_depth=2, max_pages=28):
     return sorted(ded.values(), key=lambda x: x[0], reverse=True)
 
 
+def _check_lincoln(source, candidates):
+    """Aggregate Lincoln's precinct PDFs until the county posts a consolidated file."""
+    session = base.requests.Session()
+    errors = []
+    documents = []
+    seen = set()
+    seen_paths = set()
+    targets = list(source.get("direct_urls", [])) + list(source["landing_urls"])
+    for landing in targets:
+        try:
+            for _, url, content, ct in discover(session, landing):
+                if url in seen:
+                    continue
+                seen.add(url)
+                document_name = base.norm(urlparse(url).path.rsplit("/", 1)[-1])
+                if not any(marker in document_name for marker in ("unofficial", "summary")):
+                    continue
+                document_path = urlparse(url).path.lower()
+                if document_path in seen_paths:
+                    continue
+                seen_paths.add(document_path)
+                is_pdf = "pdf" in ct or (url.lower().split("?")[0].endswith(".pdf") and "text/" not in ct)
+                text = base.pdf_text(content) if is_pdf else BeautifulSoup(content, "html.parser").get_text("\n", strip=True)
+                if base.has_bad_marker(text[:16000] + " " + url):
+                    continue
+                low = base.norm(text[:16000] + " " + url)
+                if "2026" not in low and "primary" not in low:
+                    continue
+                votes = base.parse_votes(text, candidates)
+                if votes:
+                    documents.append((url, votes, content))
+        except Exception as e:
+            errors.append(f"{landing}: {type(e).__name__}")
+    summaries = [doc for doc in documents if "summary" in base.norm(doc[0])]
+    if summaries:
+        url, votes, content = max(summaries, key=lambda doc: len(doc[1]))
+        return source["county"], "Reporting", url, votes, hashlib.sha256(content).hexdigest()[:16], errors
+    if documents:
+        totals = {}
+        digest = hashlib.sha256()
+        for _, votes, content in documents:
+            digest.update(content)
+            for name, value in votes.items():
+                totals[name] = totals.get(name, 0) + int(value)
+        return source["county"], "Reporting (aggregated official precinct returns)", source.get("direct_urls", source["landing_urls"])[0], totals, digest.hexdigest()[:16], errors
+    return source["county"], "Waiting for county results", None, {}, None, errors
+
+
+base_check_county = base.check_county
+
+
+def check_county(source, candidates):
+    if source.get("county") == "Lincoln":
+        return _check_lincoln(source, candidates)
+    return base_check_county(source, candidates)
+
+
 base.discover = discover
+base.check_county = check_county
 
 if __name__ == "__main__":
     base.main()
