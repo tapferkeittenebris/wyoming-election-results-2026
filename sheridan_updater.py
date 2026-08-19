@@ -31,7 +31,7 @@ def source():
     raise RuntimeError('Sheridan source missing')
 
 def parse_text(content,ct,url):
-    if 'pdf' in ct or url.lower().split('?')[0].endswith('.pdf'):
+    if 'pdf' in ct or (url.lower().split('?')[0].endswith('.pdf') and 'text/' not in ct):
         return base.pdf_text(content)
     return BeautifulSoup(content,'html.parser').get_text('\n',strip=True)
 

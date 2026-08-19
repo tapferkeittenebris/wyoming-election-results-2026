@@ -142,6 +142,11 @@ def discover(session,landing,max_depth=2,max_pages=24):
 def aliases(name):
     n=norm(name);p=n.split();a={n}
     if len(p)>=2:a|={p[0]+' '+p[-1],p[-1]+' '+p[0]}
+    a.update({
+        'james r schellinger': {'jim schellinger'},
+        'kenneth howard fitzpatrick': {'howie fitzpatrick'},
+        'william levi dominguez': {'levi dominguez'},
+    }.get(n,set()))
     return sorted(a,key=len,reverse=True)
 
 def parse_votes(text,candidates):
@@ -149,7 +154,7 @@ def parse_votes(text,candidates):
     for c in candidates:
         best=None
         for alias in aliases(c.candidate):
-            ap='\\s+'.join(map(re.escape,alias.split()))
+            ap=r'[^A-Za-z0-9\n]+'.join(map(re.escape,alias.split()))
             for pat in [rf'(?i)\b{ap}\b[^\n]{{0,110}}?([0-9][0-9,]*)\b',rf'(?i)\b{ap}\b\s*\n(?:[^\n]*\n){{0,3}}?\s*([0-9][0-9,]*)\b']:
                 for m in re.finditer(pat,clean):
                     v=int(m.group(1).replace(',',''))
@@ -164,7 +169,8 @@ def check_county(source,candidates):
     for landing in targets:
         try:
             for _,url,content,ct in discover(session,landing)[:14]:
-                text=pdf_text(content) if ('pdf' in ct or url.lower().split('?')[0].endswith('.pdf')) else BeautifulSoup(content,'html.parser').get_text('\n',strip=True)
+                is_pdf='pdf' in ct or (url.lower().split('?')[0].endswith('.pdf') and 'text/' not in ct)
+                text=pdf_text(content) if is_pdf else BeautifulSoup(content,'html.parser').get_text('\n',strip=True)
                 low=norm(text[:16000]+' '+url)
                 if any(b in low for b in BAD) and not ('unofficial' in low and '2026' in low):continue
                 if '2026' not in low and 'primary' not in low:continue

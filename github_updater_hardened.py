@@ -34,6 +34,8 @@ REVIZE_PATH_REPAIRS = (
     ),
 )
 
+JINA_PROXY_ROOT = "https://r.jina.ai/http://"
+
 
 def _host(url: str) -> str:
     return urlparse(url).netloc.lower().removeprefix("www.")
@@ -66,6 +68,22 @@ def _drive_download(url: str) -> str:
     return f"https://drive.google.com/uc?{urlencode({'export': 'download', 'id': file_id})}"
 
 
+def _get_with_sheridan_fallback(session, url: str):
+    """Fetch an official URL, proxying Sheridan's public 403 responses as text."""
+    try:
+        return base.get(session, url)
+    except Exception:
+        if _host(url) != "sheridancountywy.gov":
+            raise
+        original = urlparse(url)
+        proxy_target = urlunparse(original._replace(scheme="http"))
+        response = base.get(session, JINA_PROXY_ROOT + proxy_target)
+        response.url = url
+        response.headers["content-type"] = "text/markdown; charset=utf-8"
+        response._jina_markdown = True
+        return response
+
+
 def discover(session, landing, max_depth=2, max_pages=28):
     """Hardened bounded crawl for county election-result documents."""
     out = []
@@ -80,13 +98,14 @@ def discover(session, landing, max_depth=2, max_pages=28):
         seen.add(url)
 
         try:
-            r = base.get(session, url)
+            r = _get_with_sheridan_fallback(session, url)
         except Exception:
             continue
 
         ct = r.headers.get("content-type", "").lower()
         final = _repair_known_url(r.url)
-        if "pdf" in ct or final.lower().split("?")[0].endswith(".pdf"):
+        jina_markdown = bool(getattr(r, "_jina_markdown", False))
+        if not jina_markdown and ("pdf" in ct or final.lower().split("?")[0].endswith(".pdf")):
             out.append((max(parent_score, 20), final, r.content, ct))
             continue
 
@@ -99,6 +118,16 @@ def discover(session, landing, max_depth=2, max_pages=28):
 
         if depth >= max_depth:
             continue
+
+        # Jina renders links as Markdown when it retrieves a public page that
+        # Sheridan's server refuses to return directly to the runner.
+        if jina_markdown:
+            markdown = r.content.decode("utf-8", errors="ignore")
+            for label, href in re.findall(r"\[([^\]]+)\]\((https?://[^)]+)\)", markdown):
+                u = _repair_known_url(href)
+                sc = base.score_link(label, u)
+                if _allowed(landing, u) and sc > 0 and not any(x in base.norm(label + " " + u) for x in base.BAD):
+                    q.append((u, depth + 1, max(sc, parent_score - 8)))
 
         # Normal hyperlinks, including Johnson County's public Drive documents.
         for a in soup.find_all("a", href=True):
