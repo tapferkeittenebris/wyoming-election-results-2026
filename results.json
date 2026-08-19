@@ -1,7 +1,7 @@
 {
-  "last_checked": "2026-08-18T21:45:57-06:00",
-  "last_updated": "2026-08-18T21:41:48-06:00",
-  "reporting_counties": 7,
+  "last_checked": "2026-08-18T21:51:57-06:00",
+  "last_updated": "2026-08-18T21:51:57-06:00",
+  "reporting_counties": 9,
   "county_status": [
     {
       "county": "Albany",
@@ -82,9 +82,9 @@
     },
     {
       "county": "Lincoln",
-      "status": "Waiting for county results \u00b7 SOS validation available",
+      "status": "Reporting (aggregated official precinct returns)",
       "url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
-      "reporting": false,
+      "reporting": true,
       "errors": []
     },
     {
@@ -145,9 +145,9 @@
     },
     {
       "county": "Uinta",
-      "status": "Waiting for county results \u00b7 SOS validation available",
+      "status": "Reporting",
       "url": "https://uintacountywy.gov/DocumentCenter/View/8645/2026-Primary-Results-UNOFFICIAL",
-      "reporting": false,
+      "reporting": true,
       "errors": []
     },
     {
@@ -741,26 +741,34 @@
       "candidates": [
         {
           "candidate": "Chris Katzl",
-          "votes": 0,
-          "counties": [],
+          "votes": 184,
+          "counties": [
+            "Uinta"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Jen Hegeman",
-          "votes": 0,
-          "counties": [],
+          "votes": 350,
+          "counties": [
+            "Uinta"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Tina Johnson",
-          "votes": 0,
-          "counties": [],
+          "votes": 1041,
+          "counties": [
+            "Uinta"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Wendy Davis Schuler",
-          "votes": 0,
-          "counties": [],
+          "votes": 2551,
+          "counties": [
+            "Uinta"
+          ],
           "is_fc": false
         }
       ]
@@ -808,7 +816,7 @@
       "candidates": [
         {
           "candidate": "Ken Pendergraft",
-          "votes": 1950,
+          "votes": 2189,
           "counties": [
             "Sheridan"
           ],
@@ -816,7 +824,7 @@
         },
         {
           "candidate": "Melissa Butcher",
-          "votes": 2740,
+          "votes": 2954,
           "counties": [
             "Sheridan"
           ],
@@ -1325,14 +1333,20 @@
       "candidates": [
         {
           "candidate": "Kenneth D Roberts",
-          "votes": 0,
-          "counties": [],
+          "votes": 981,
+          "counties": [
+            "Lincoln",
+            "Uinta"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Scott Heiner",
-          "votes": 0,
-          "counties": [],
+          "votes": 600,
+          "counties": [
+            "Lincoln",
+            "Uinta"
+          ],
           "is_fc": true
         }
       ]
@@ -1344,14 +1358,18 @@
       "candidates": [
         {
           "candidate": "Chad Stephens",
-          "votes": 0,
-          "counties": [],
+          "votes": 1327,
+          "counties": [
+            "Uinta"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Joe Webb",
-          "votes": 0,
-          "counties": [],
+          "votes": 881,
+          "counties": [
+            "Uinta"
+          ],
           "is_fc": true
         }
       ]
@@ -1363,20 +1381,26 @@
       "candidates": [
         {
           "candidate": "Albert Sommers",
-          "votes": 0,
-          "counties": [],
+          "votes": 36,
+          "counties": [
+            "Lincoln"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Bill Winney",
-          "votes": 0,
-          "counties": [],
+          "votes": 34,
+          "counties": [
+            "Lincoln"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Matt McGinnis",
-          "votes": 0,
-          "counties": [],
+          "votes": 116,
+          "counties": [
+            "Lincoln"
+          ],
           "is_fc": false
         }
       ]
@@ -2057,14 +2081,18 @@
       "candidates": [
         {
           "candidate": "David Walton",
-          "votes": 0,
-          "counties": [],
+          "votes": 1173,
+          "counties": [
+            "Uinta"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Robert Wharff",
-          "votes": 0,
-          "counties": [],
+          "votes": 765,
+          "counties": [
+            "Uinta"
+          ],
           "is_fc": true
         }
       ]
@@ -2099,7 +2127,7 @@
       "candidates": [
         {
           "candidate": "Laurie Bratten",
-          "votes": 1395,
+          "votes": 1662,
           "counties": [
             "Sheridan"
           ],
@@ -2107,7 +2135,7 @@
         },
         {
           "candidate": "Susan Bigelow",
-          "votes": 1291,
+          "votes": 1468,
           "counties": [
             "Sheridan"
           ],
@@ -2391,70 +2419,80 @@
       "candidates": [
         {
           "candidate": "Harriet Hageman",
-          "votes": 25281,
+          "votes": 30087,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jill M Edwards",
-          "votes": 817,
+          "votes": 994,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jimmy Skovgard",
-          "votes": 1194,
+          "votes": 1328,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "John Holtz",
-          "votes": 675,
+          "votes": 859,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Sam Mead",
-          "votes": 10741,
+          "votes": 11781,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
@@ -2467,28 +2505,32 @@
       "candidates": [
         {
           "candidate": "Billy Benavidez",
-          "votes": 537,
+          "votes": 647,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "James Byrd",
-          "votes": 1933,
+          "votes": 2241,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
@@ -2501,138 +2543,158 @@
       "candidates": [
         {
           "candidate": "Bo Biteman",
-          "votes": 2404,
+          "votes": 2804,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Chuck Gray",
-          "votes": 9542,
+          "votes": 11417,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "David Giralt",
-          "votes": 3603,
+          "votes": 4144,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Frank Chapman",
-          "votes": 581,
+          "votes": 672,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
-            "Sheridan"
+            "Sheridan",
+            "Uinta"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jillian Balow",
-          "votes": 2990,
+          "votes": 3576,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Keith B. Goodenough",
-          "votes": 1366,
+          "votes": 1497,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Kevin Christensen",
-          "votes": 6604,
+          "votes": 7116,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Reid Rasner",
-          "votes": 2740,
+          "votes": 3411,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Richard Dodson",
-          "votes": 440,
+          "votes": 504,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Steve Friess",
-          "votes": 7267,
+          "votes": 8408,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
@@ -2645,28 +2707,32 @@
       "candidates": [
         {
           "candidate": "Elena Del Real",
-          "votes": 540,
+          "votes": 656,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Lisa Kinney",
-          "votes": 1886,
+          "votes": 2183,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
@@ -2679,56 +2745,64 @@
       "candidates": [
         {
           "candidate": "Brent Bien",
-          "votes": 10403,
+          "votes": 12172,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Curt Blake",
-          "votes": 544,
+          "votes": 657,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Eric Barlow",
-          "votes": 16119,
+          "votes": 18790,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Megan Degenfelder",
-          "votes": 12030,
+          "votes": 13875,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
@@ -2741,14 +2815,16 @@
       "candidates": [
         {
           "candidate": "Kenneth R. Casner",
-          "votes": 2139,
+          "votes": 2514,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
@@ -2761,56 +2837,64 @@
       "candidates": [
         {
           "candidate": "CJ Young",
-          "votes": 4554,
+          "votes": 5348,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Qwenton Eagle Oviatt",
-          "votes": 1889,
+          "votes": 2269,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Rachel Williams",
-          "votes": 12547,
+          "votes": 14687,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": true
         },
         {
           "candidate": "Robert Short",
-          "votes": 16393,
+          "votes": 18464,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
@@ -2823,14 +2907,16 @@
       "candidates": [
         {
           "candidate": "Bryan McCarty",
-          "votes": 2246,
+          "votes": 2627,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
@@ -2843,14 +2929,16 @@
       "candidates": [
         {
           "candidate": "Kristi Racines",
-          "votes": 31459,
+          "votes": 36580,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
@@ -2863,27 +2951,31 @@
       "candidates": [
         {
           "candidate": "Curt Meier",
-          "votes": 23112,
+          "votes": 26592,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Scott Smith",
-          "votes": 10217,
+          "votes": 12082,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
-            "Sheridan"
+            "Sheridan",
+            "Uinta"
           ],
           "is_fc": true
         }
@@ -2895,42 +2987,48 @@
       "candidates": [
         {
           "candidate": "Chad Auer",
-          "votes": 2830,
+          "votes": 3387,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Steve Harshman",
-          "votes": 21939,
+          "votes": 24600,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Tom Kelly",
-          "votes": 11067,
+          "votes": 13187,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": true
@@ -2943,28 +3041,32 @@
       "candidates": [
         {
           "candidate": "Ana Cordova",
-          "votes": 1400,
+          "votes": 1637,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Sergio A. Maldonado, Sr.",
-          "votes": 919,
+          "votes": 1080,
           "counties": [
             "Albany",
             "Hot Springs",
+            "Lincoln",
             "Natrona",
             "Park",
             "Platte",
             "Sheridan",
+            "Uinta",
             "Washakie"
           ],
           "is_fc": false
@@ -2975,7 +3077,7 @@
   "race_call_method": {
     "standard": "mathematical_clinch",
     "description": "WINNER only when the leader cannot be overtaken using explicit official remaining-ballot or complete-reporting data.",
-    "county_sources_evaluated": 7,
+    "county_sources_evaluated": 9,
     "all_counties_ready": false
   }
 }
