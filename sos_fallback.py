@@ -12,7 +12,13 @@ from pypdf import PdfReader
 ROOT=Path(__file__).resolve().parent
 TZ=ZoneInfo('America/Denver')
 SOS_RESULTS_PAGE='https://sos.wyo.gov/Elections/Docs/2026/2026PrimaryResults.aspx'
+SOS_SUMMARIES=(
+    'https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf',
+    'https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_House_Candidates_Summary.pdf',
+    'https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf',
+)
 UA={'User-Agent':'Mozilla/5.0 WyomingElectionDashboard/2.0 (+SOS-fallback)'}
+COUNTIES=('Albany','Big Horn','Campbell','Carbon','Converse','Crook','Fremont','Goshen','Hot Springs','Johnson','Laramie','Lincoln','Natrona','Niobrara','Park','Platte','Sheridan','Sublette','Sweetwater','Teton','Uinta','Washakie','Weston')
 
 
 def norm(s):
@@ -34,6 +40,15 @@ def candidate_names():
     return list(dict.fromkeys(names))
 
 
+def candidate_rows():
+    rows=[]
+    with open(ROOT/'candidates.csv',newline='',encoding='utf-8') as f:
+        rows.extend(csv.DictReader(f))
+    with open(ROOT/'statewide_candidates.csv',newline='',encoding='utf-8') as f:
+        rows.extend(csv.DictReader(f))
+    return rows
+
+
 def get(session,url,timeout=22):
     r=session.get(url,headers=UA,timeout=timeout,allow_redirects=True)
     r.raise_for_status(); return r
@@ -44,6 +59,87 @@ def pdf_text(content):
         return '\n'.join((p.extract_text() or '') for p in PdfReader(io.BytesIO(content)).pages)
     except Exception:
         return ''
+
+
+def candidate_key(row):
+    return (row.get('office') or row.get('chamber'),int(row.get('district') or 0))
+
+
+def candidate_surname(name):
+    parts=re.findall(r'[A-Za-z]+',name)
+    while parts and parts[-1].lower() in {'jr','sr','ii','iii','iv'}:
+        parts.pop()
+    return parts[-1] if parts else ''
+
+
+def page_contest(header):
+    for chamber in ('House','Senate'):
+        m=re.search(rf'{chamber}\s+District\s+(\d+)',header,re.I)
+        if m:
+            return chamber,int(m.group(1))
+    for office in ('United States Senator','United States Representative','Governor','Secretary of State','State Auditor','State Treasurer','Superintendent of Public Instruction'):
+        if office.lower() in header.lower():
+            return office,0
+    return None
+
+
+def parse_summary_rows(content,rows):
+    """Read county totals from the fixed-column tables in SOS statewide summaries."""
+    found={}
+    try:
+        pages=PdfReader(io.BytesIO(content)).pages
+    except Exception:
+        return found
+    by_contest={}
+    for row in rows:
+        by_contest.setdefault(candidate_key(row),[]).append(row['candidate'])
+    for page in pages:
+        try:
+            lines=page.extract_text(extraction_mode='layout').splitlines()
+            first_county=next(i for i,line in enumerate(lines) if line.startswith('Albany'))
+        except Exception:
+            continue
+        contest=page_contest('\n'.join(lines[:first_county]))
+        if not contest:
+            continue
+        anchors=[]
+        for name in by_contest.get(contest,[]):
+            surname=candidate_surname(name)
+            positions=[]
+            for line in lines[:first_county]:
+                positions.extend(m.start()+len(m.group())/2 for m in re.finditer(rf'\b{re.escape(surname)}\b',line,re.I))
+            if positions:
+                anchors.append((name,max(positions)))
+        for county in COUNTIES:
+            line=next((line for line in lines[first_county:] if line.startswith(county) and (len(line)==len(county) or line[len(county)].isspace())),None)
+            if not line:
+                continue
+            numbers=[(m.start()+len(m.group())/2,int(m.group().replace(',',''))) for m in re.finditer(r'\d[\d,]*',line)]
+            used=set()
+            for name,anchor in anchors:
+                choices=[(abs(center-(anchor+9)),index,value) for index,(center,value) in enumerate(numbers) if index not in used]
+                if not choices:
+                    continue
+                distance,index,value=min(choices)
+                if distance<=15:
+                    used.add(index)
+                    found.setdefault(county,{})[norm(name)]=value
+    return found
+
+
+def sos_summary_votes(session):
+    votes={}; used=[]; rows=candidate_rows()
+    for url in SOS_SUMMARIES:
+        try:
+            r=get(session,url)
+            parsed=parse_summary_rows(r.content,rows)
+            if parsed:
+                used.append(r.url)
+            for county,county_votes in parsed.items():
+                votes.setdefault(county,{}).update(county_votes)
+        except Exception as e:
+            print('SOS summary fallback failed for',url,repr(e))
+    return votes,used
 
 
 def sos_county_links(session):
@@ -116,10 +212,23 @@ def main():
     missing=[c for c,info in state.get('counties',{}).items() if not info.get('votes')]
     if not missing:
         print('All counties already have results; SOS fallback not needed'); return
-    s=requests.Session(); links,page=sos_county_links(s)
+    s=requests.Session(); changed=False; filled=[]
+    summary_votes,summary_urls=sos_summary_votes(s)
+    for county in missing:
+        votes=summary_votes.get(county,{})
+        if not votes:
+            continue
+        info=state['counties'][county]
+        info.update({'status':'Reporting via Wyoming SOS statewide summary','result_url':summary_urls[0] if summary_urls else SOS_RESULTS_PAGE,'votes':votes,'source':'Wyoming Secretary of State statewide summary','last_success':datetime.now(TZ).isoformat(timespec='seconds')})
+        filled.append(county); changed=True
+    state.setdefault('sos_validation',{})['summary_fallback_counties']=list(filled)
+    state['sos_validation']['summary_urls']=summary_urls
+
+    missing=[c for c in missing if not state['counties'][c].get('votes')]
+    links,page=sos_county_links(s)
     if not links:
-        print('No SOS county precinct links available yet'); return
-    names=candidate_names(); changed=False; filled=[]
+        print('No SOS county precinct links available yet')
+    names=candidate_names()
     lower_links={norm(k):v for k,v in links.items()}
     for county in missing:
         url=lower_links.get(norm(county))
