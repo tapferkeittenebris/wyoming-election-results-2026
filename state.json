@@ -1,144 +1,366 @@
 {
-  "last_checked": null,
-  "last_updated": null,
+  "last_checked": "2026-08-18T20:39:55-06:00",
+  "last_updated": "2026-08-18T20:39:55-06:00",
   "counties": {
     "Albany": {
       "source_url": "https://www.albanycountywy.gov/176/Results-of-Election",
-      "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "result_url": "https://www.albanycountywy.gov/DocumentCenter/View/547/2008---Primary-PDF",
+      "status": "Reporting",
+      "votes": {
+        "chris rothfuss": 1299,
+        "bill winney": 196
+      },
+      "errors": [],
+      "result_hash": "760a76d0f8469f63",
+      "last_success": "2026-08-18T20:39:55-06:00"
     },
     "Big Horn": {
       "source_url": "https://www.bighorncountywy.gov/departments/clerk/elections",
       "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Campbell": {
       "source_url": "https://www.campbellcountywy.gov/2077/Election-Results",
-      "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "result_url": "https://www.campbellcountywy.gov/DocumentCenter/View/27861/County---Primary-Summary---2026-TEST?bidId=",
+      "status": "Reporting",
+      "votes": {
+        "chip neiman": 162,
+        "ogden driskill": 216,
+        "abby angelos": 384,
+        "dwayne dillinger": 288,
+        "anne ziegenhorn": 216,
+        "earl collier": 270,
+        "douglas moore": 168,
+        "john w bear": 30,
+        "ken clouston": 126,
+        "bill fortner": 216,
+        "ronda boller": 270,
+        "christopher r knapp": 120,
+        "greg schreurs": 90,
+        "harriet hageman": 1110,
+        "jill m edwards": 1332,
+        "jimmy skovgard": 444,
+        "john holtz": 888,
+        "sam mead": 666,
+        "billy benavidez": 666,
+        "james byrd": 444,
+        "bo biteman": 2220,
+        "chuck gray": 666,
+        "david giralt": 1110,
+        "frank chapman": 1998,
+        "jillian balow": 2442,
+        "kevin christensen": 1776,
+        "reid rasner": 444,
+        "richard dodson": 1554,
+        "steve friess": 1332,
+        "elena del real": 888,
+        "lisa kinney": 666,
+        "brent bien": 888,
+        "curt blake": 666,
+        "eric barlow": 1110,
+        "megan degenfelder": 444,
+        "cj young": 666,
+        "qwenton eagle oviatt": 1332,
+        "rachel williams": 888,
+        "robert short": 1110,
+        "bryan mccarty": 666,
+        "kristi racines": 444,
+        "curt meier": 666,
+        "scott smith": 444,
+        "chad auer": 888,
+        "steve harshman": 666,
+        "tom kelly": 444,
+        "ana cordova": 1110
+      },
+      "errors": [],
+      "result_hash": "9ed3e19fb6acf794",
+      "last_success": "2026-08-18T20:39:55-06:00"
     },
     "Carbon": {
       "source_url": "https://www.carboncountywy.gov/997/Election-Results",
-      "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "result_url": "https://www.carboncountywy.gov/DocumentCenter/View/449/2008-Primary-OFFICIAL-Results?bidId=",
+      "status": "Reporting",
+      "votes": {
+        "chris rothfuss": 504,
+        "bill winney": 164
+      },
+      "errors": [],
+      "result_hash": "8eb29f1a6641dc43",
+      "last_success": "2026-08-18T20:39:55-06:00"
     },
     "Converse": {
       "source_url": "https://www.conversecountywy.gov/187/Elections",
-      "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "result_url": "https://www.conversecountywy.gov/DocumentCenter/View/6290/2026-Precinct-Committeeman-woman-Roster",
+      "status": "Reporting",
+      "votes": {
+        "jim willox": 451
+      },
+      "errors": [],
+      "result_hash": "c80f67b9bf5c7bad",
+      "last_success": "2026-08-18T20:39:55-06:00"
     },
     "Crook": {
       "source_url": "https://www.crookcounty.wy.gov/elected_officials/clerk/election/election_results.php",
       "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Fremont": {
       "source_url": "https://fremontcountywy.gov/government/elections___voting.php",
       "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Goshen": {
       "source_url": "https://www.goshencountywy.gov/198/Voter-Information",
-      "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "result_url": "https://www.goshencountywy.gov/DocumentCenter/View/1477/Goshen-County-Summary-Report-Logic--Accuracy-PDF",
+      "status": "Reporting",
+      "votes": {
+        "cheri e steinmetz": 42,
+        "jd williams": 16,
+        "joe speckner": 40,
+        "karen weber": 30,
+        "harriet hageman": 70,
+        "jill m edwards": 84,
+        "jimmy skovgard": 28,
+        "john holtz": 56,
+        "sam mead": 42,
+        "billy benavidez": 42,
+        "james byrd": 28,
+        "bo biteman": 140,
+        "chuck gray": 42,
+        "david giralt": 70,
+        "frank chapman": 125,
+        "jillian balow": 154,
+        "keith b goodenough": 56,
+        "kevin christensen": 113,
+        "reid rasner": 28,
+        "richard dodson": 98,
+        "steve friess": 84,
+        "elena del real": 56,
+        "lisa kinney": 42,
+        "brent bien": 56,
+        "curt blake": 42,
+        "eric barlow": 70,
+        "megan degenfelder": 28,
+        "kenneth r casner": 28,
+        "cj young": 42,
+        "qwenton eagle oviatt": 84,
+        "rachel williams": 56,
+        "robert short": 70,
+        "kristi racines": 28,
+        "curt meier": 42,
+        "scott smith": 28,
+        "chad auer": 56,
+        "steve harshman": 42,
+        "tom kelly": 28,
+        "ana cordova": 70,
+        "sergio a maldonado sr": 56
+      },
+      "errors": [],
+      "result_hash": "811a1a814186d88d",
+      "last_success": "2026-08-18T20:39:55-06:00"
     },
     "Hot Springs": {
       "source_url": "https://hscounty.com/component/edocman/election-results-archives/elections-2026?Itemid=100",
       "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Johnson": {
       "source_url": "https://www.johnsoncowy.gov/departments/elections",
       "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Laramie": {
       "source_url": "https://www.laramiecountywy.gov/County-Government/Elected-Officials/County-Clerk/Elections/Election-Results",
       "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Lincoln": {
       "source_url": "https://www.lincolncountywy.gov/government/clerk/elections_voting_information/election_results.php",
       "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Natrona": {
       "source_url": "https://www.natronacounty-wy.gov/128/Elections",
-      "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "result_url": "https://www.natronacounty-wy.gov/DocumentCenter/View/3184/2016-Primary-Election-Summary---EL45?bidId=",
+      "status": "Reporting",
+      "votes": {
+        "bob ide": 121,
+        "art washut": 113,
+        "catherine mcqueen": 51,
+        "laurie longtine": 312,
+        "chuck gray": 738,
+        "steve harshman": 1534
+      },
+      "errors": [],
+      "result_hash": "370e6bb6b822d8a5",
+      "last_success": "2026-08-18T20:39:55-06:00"
     },
     "Niobrara": {
       "source_url": "https://www.niobraracounty.org/_departments/_county_clerk/ElectionResults.asp",
       "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Park": {
       "source_url": "https://parkcounty-wy.gov/county-elections/results/",
-      "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "result_url": "https://parkcounty-wy.gov/wp-content/uploads/2026/08/Primary-8.27.pdf",
+      "status": "Reporting",
+      "votes": {
+        "paul hoeft": 414,
+        "nina webber": 951,
+        "quin blair": 1844,
+        "john wetzel": 448,
+        "matthew r legler": 329,
+        "dalton banks": 44,
+        "allen hogg": 241,
+        "carlin jones": 113,
+        "marshall keller": 43,
+        "roland luehne": 3,
+        "david hill": 1431,
+        "levi asay": 1156,
+        "harriet hageman": 4428,
+        "jill m edwards": 135,
+        "jimmy skovgard": 160,
+        "john holtz": 127,
+        "sam mead": 2076,
+        "billy benavidez": 58,
+        "james byrd": 202,
+        "bo biteman": 164,
+        "chuck gray": 1872,
+        "david giralt": 551,
+        "frank chapman": 64,
+        "jillian balow": 549,
+        "kevin christensen": 1175,
+        "reid rasner": 408,
+        "richard dodson": 79,
+        "steve friess": 1724,
+        "elena del real": 55,
+        "lisa kinney": 209,
+        "brent bien": 2276,
+        "curt blake": 66,
+        "eric barlow": 2924,
+        "megan degenfelder": 1723,
+        "cj young": 581,
+        "qwenton eagle oviatt": 240,
+        "rachel williams": 3053,
+        "robert short": 2676,
+        "bryan mccarty": 239,
+        "kristi racines": 5641,
+        "curt meier": 3901,
+        "scott smith": 2246,
+        "chad auer": 510,
+        "steve harshman": 3643,
+        "tom kelly": 2005,
+        "ana cordova": 160
+      },
+      "errors": [],
+      "result_hash": "920ec3bb8d6003ba",
+      "last_success": "2026-08-18T20:39:55-06:00"
     },
     "Platte": {
       "source_url": "https://www.plattecountywyoming.com/departments/Elections/ResultsofElection",
-      "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "result_url": "https://www.plattecountywyoming.com/media/Elections/2026/Primary%20Rosters/625%20Candidate%20Roster%20Final%20Includes%20withdrawn%20candidates.pdf",
+      "status": "Reporting",
+      "votes": {
+        "roy birt": 191
+      },
+      "errors": [],
+      "result_hash": "ae431872f89f91fa",
+      "last_success": "2026-08-18T20:39:55-06:00"
     },
     "Sheridan": {
       "source_url": "https://www.sheridancountywy.gov/departments/elections/election_results_archive.php",
       "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Sublette": {
       "source_url": "https://www.sublettecountywy.gov/110/Election-Information",
       "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Sweetwater": {
       "source_url": "https://www.sweetwatercountywy.gov/departments/county_clerk/election_returns/index.php",
       "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     },
     "Teton": {
       "source_url": "https://www.tetoncountywy.gov/271/Election-Results",
-      "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "result_url": "https://www.tetoncountywy.gov/DocumentCenter/View/41136/CANDIDATE-CONTACT-INFO-2026?bidId=",
+      "status": "Reporting",
+      "votes": {
+        "mike gierau": 1,
+        "lisa wilson": 1,
+        "mike yin": 1,
+        "andrew byron": 1
+      },
+      "errors": [],
+      "result_hash": "6198d515a4388ac4",
+      "last_success": "2026-08-18T20:39:55-06:00"
     },
     "Uinta": {
       "source_url": "https://uintacountywy.gov/DocumentCenter/View/8645/2026-Primary-Results-UNOFFICIAL",
-      "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "result_url": "https://uintacountywy.gov/DocumentCenter/View/9659/2026-Primary-Election-Candidates",
+      "status": "Reporting",
+      "votes": {
+        "chris katzl": 198,
+        "tina johnson": 425,
+        "wendy davis schuler": 200,
+        "robert wharff": 137
+      },
+      "errors": [],
+      "result_hash": "d6ff583aa2f617c8",
+      "last_success": "2026-08-18T20:39:55-06:00"
     },
     "Washakie": {
       "source_url": "https://www.washakiecountywy.gov/196/Elections",
-      "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "result_url": "https://www.washakiecountywy.gov/DocumentCenter/View/459/Washakie-County-2026-Primary-Candidate-Roster-PDF",
+      "status": "Reporting",
+      "votes": {
+        "martha lawley": 818,
+        "theresa livingston": 905
+      },
+      "errors": [],
+      "result_hash": "928fe268f019d1f7",
+      "last_success": "2026-08-18T20:39:55-06:00"
     },
     "Weston": {
       "source_url": "https://www.westongov.com/county-clerk/elections/election-results/",
       "result_url": null,
-      "status": "Waiting for election-night results",
-      "votes": {}
+      "status": "Waiting for county results \u00b7 SOS validation available",
+      "votes": {},
+      "errors": []
     }
+  },
+  "sos_validation": {
+    "available": true,
+    "page": "https://sos.wyo.gov/Elections/Docs/2026/2026PrimaryResults.aspx",
+    "summaries": [
+      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
+      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_House_Candidates_Summary.pdf",
+      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf"
+    ],
+    "candidate_matches": 0,
+    "status": "SOS 2026 results page available for validation"
   }
 }
