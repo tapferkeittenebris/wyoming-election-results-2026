@@ -1,7 +1,7 @@
 {
-  "last_checked": "2026-08-18T21:08:43-06:00",
-  "last_updated": "2026-08-18T21:08:43-06:00",
-  "reporting_counties": 1,
+  "last_checked": "2026-08-18T21:19:46-06:00",
+  "last_updated": "2026-08-18T21:19:46-06:00",
+  "reporting_counties": 2,
   "county_status": [
     {
       "county": "Albany",
@@ -89,9 +89,9 @@
     },
     {
       "county": "Natrona",
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "url": "https://www.natronacounty-wy.gov/128/Elections",
-      "reporting": false,
+      "status": "Reporting",
+      "url": "https://www.natronacounty-wy.gov/DocumentCenter/View/13851/2026-Primary---Federal-Contest-Summary---Unofficial-PDF",
+      "reporting": true,
       "errors": []
     },
     {
@@ -798,7 +798,7 @@
       "candidates": [
         {
           "candidate": "Ken Pendergraft",
-          "votes": 998,
+          "votes": 1028,
           "counties": [
             "Sheridan"
           ],
@@ -806,7 +806,7 @@
         },
         {
           "candidate": "Melissa Butcher",
-          "votes": 1506,
+          "votes": 1543,
           "counties": [
             "Sheridan"
           ],
@@ -1524,7 +1524,7 @@
       "candidates": [
         {
           "candidate": "James Temple",
-          "votes": 323,
+          "votes": 324,
           "counties": [
             "Sheridan"
           ],
@@ -1532,7 +1532,7 @@
         },
         {
           "candidate": "Myca Sturtevant",
-          "votes": 724,
+          "votes": 728,
           "counties": [
             "Sheridan"
           ],
@@ -1540,7 +1540,7 @@
         },
         {
           "candidate": "Noll Roberts",
-          "votes": 69,
+          "votes": 72,
           "counties": [
             "Sheridan"
           ],
@@ -1555,7 +1555,7 @@
       "candidates": [
         {
           "candidate": "Mark Jennings",
-          "votes": 729,
+          "votes": 755,
           "counties": [
             "Sheridan"
           ],
@@ -1563,7 +1563,7 @@
         },
         {
           "candidate": "Ryan Koltiska",
-          "votes": 1164,
+          "votes": 1198,
           "counties": [
             "Sheridan"
           ],
@@ -2271,40 +2271,45 @@
       "candidates": [
         {
           "candidate": "Harriet Hageman",
-          "votes": 3021,
+          "votes": 12856,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jill M Edwards",
-          "votes": 125,
+          "votes": 436,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jimmy Skovgard",
-          "votes": 108,
+          "votes": 730,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "John Holtz",
-          "votes": 91,
+          "votes": 320,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Sam Mead",
-          "votes": 1562,
+          "votes": 6253,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
@@ -2317,16 +2322,18 @@
       "candidates": [
         {
           "candidate": "Billy Benavidez",
-          "votes": 79,
+          "votes": 342,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "James Byrd",
-          "votes": 249,
+          "votes": 1253,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
@@ -2339,80 +2346,90 @@
       "candidates": [
         {
           "candidate": "Bo Biteman",
-          "votes": 954,
+          "votes": 1433,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Chuck Gray",
-          "votes": 1082,
+          "votes": 4764,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "David Giralt",
-          "votes": 309,
+          "votes": 2033,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Frank Chapman",
-          "votes": 56,
+          "votes": 442,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jillian Balow",
-          "votes": 343,
+          "votes": 1353,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Keith B. Goodenough",
-          "votes": 90,
+          "votes": 1045,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Kevin Christensen",
-          "votes": 1038,
+          "votes": 3994,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Reid Rasner",
-          "votes": 246,
+          "votes": 1370,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Richard Dodson",
-          "votes": 36,
+          "votes": 248,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Steve Friess",
-          "votes": 603,
+          "votes": 3457,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
@@ -2425,16 +2442,18 @@
       "candidates": [
         {
           "candidate": "Elena Del Real",
-          "votes": 72,
+          "votes": 343,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
         },
         {
           "candidate": "Lisa Kinney",
-          "votes": 248,
+          "votes": 1216,
           "counties": [
+            "Natrona",
             "Sheridan"
           ],
           "is_fc": false
@@ -2447,7 +2466,7 @@
       "candidates": [
         {
           "candidate": "Brent Bien",
-          "votes": 1629,
+          "votes": 1646,
           "counties": [
             "Sheridan"
           ],
@@ -2455,7 +2474,7 @@
         },
         {
           "candidate": "Curt Blake",
-          "votes": 39,
+          "votes": 40,
           "counties": [
             "Sheridan"
           ],
@@ -2463,7 +2482,7 @@
         },
         {
           "candidate": "Eric Barlow",
-          "votes": 2233,
+          "votes": 2260,
           "counties": [
             "Sheridan"
           ],
@@ -2471,7 +2490,7 @@
         },
         {
           "candidate": "Megan Degenfelder",
-          "votes": 1081,
+          "votes": 1104,
           "counties": [
             "Sheridan"
           ],
@@ -2485,7 +2504,7 @@
       "candidates": [
         {
           "candidate": "Kenneth R. Casner",
-          "votes": 271,
+          "votes": 272,
           "counties": [
             "Sheridan"
           ],
@@ -2499,7 +2518,7 @@
       "candidates": [
         {
           "candidate": "CJ Young",
-          "votes": 643,
+          "votes": 653,
           "counties": [
             "Sheridan"
           ],
@@ -2507,7 +2526,7 @@
         },
         {
           "candidate": "Qwenton Eagle Oviatt",
-          "votes": 326,
+          "votes": 335,
           "counties": [
             "Sheridan"
           ],
@@ -2515,7 +2534,7 @@
         },
         {
           "candidate": "Rachel Williams",
-          "votes": 1518,
+          "votes": 1529,
           "counties": [
             "Sheridan"
           ],
@@ -2523,7 +2542,7 @@
         },
         {
           "candidate": "Robert Short",
-          "votes": 1844,
+          "votes": 1868,
           "counties": [
             "Sheridan"
           ],
@@ -2537,7 +2556,7 @@
       "candidates": [
         {
           "candidate": "Bryan McCarty",
-          "votes": 297,
+          "votes": 298,
           "counties": [
             "Sheridan"
           ],
@@ -2551,7 +2570,7 @@
       "candidates": [
         {
           "candidate": "Kristi Racines",
-          "votes": 3961,
+          "votes": 4010,
           "counties": [
             "Sheridan"
           ],
@@ -2565,7 +2584,7 @@
       "candidates": [
         {
           "candidate": "Curt Meier",
-          "votes": 2998,
+          "votes": 3046,
           "counties": [
             "Sheridan"
           ],
@@ -2573,7 +2592,7 @@
         },
         {
           "candidate": "Scott Smith",
-          "votes": 1289,
+          "votes": 1300,
           "counties": [
             "Sheridan"
           ],
@@ -2587,7 +2606,7 @@
       "candidates": [
         {
           "candidate": "Chad Auer",
-          "votes": 427,
+          "votes": 430,
           "counties": [
             "Sheridan"
           ],
@@ -2595,7 +2614,7 @@
         },
         {
           "candidate": "Steve Harshman",
-          "votes": 2257,
+          "votes": 2285,
           "counties": [
             "Sheridan"
           ],
@@ -2603,7 +2622,7 @@
         },
         {
           "candidate": "Tom Kelly",
-          "votes": 1804,
+          "votes": 1833,
           "counties": [
             "Sheridan"
           ],
@@ -2625,7 +2644,7 @@
         },
         {
           "candidate": "Sergio A. Maldonado, Sr.",
-          "votes": 129,
+          "votes": 130,
           "counties": [
             "Sheridan"
           ],
@@ -2637,7 +2656,7 @@
   "race_call_method": {
     "standard": "mathematical_clinch",
     "description": "WINNER only when the leader cannot be overtaken using explicit official remaining-ballot or complete-reporting data.",
-    "county_sources_evaluated": 1,
+    "county_sources_evaluated": 2,
     "all_counties_ready": false
   }
 }

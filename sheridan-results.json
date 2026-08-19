@@ -1,6 +1,6 @@
 {
-  "last_checked": "2026-08-18T21:11:07-06:00",
-  "last_updated": "2026-08-18T21:11:07-06:00",
+  "last_checked": "2026-08-18T21:22:19-06:00",
+  "last_updated": "2026-08-18T21:22:19-06:00",
   "status": "Reporting",
   "source_url": "https://cms2.revize.com/revize/sheridan/Document%20Center/Departments/Elected%20Office/2026%20Election%20Documents/Primary/Election%20Summary.pdf?t=202608182211570",
   "errors": [],
@@ -13,39 +13,39 @@
       "candidates": [
         {
           "candidate": "Chuck Gray",
-          "votes": 1082
+          "votes": 1094
         },
         {
           "candidate": "Kevin Christensen",
-          "votes": 1038
+          "votes": 1056
         },
         {
           "candidate": "Bo Biteman",
-          "votes": 954
+          "votes": 971
         },
         {
           "candidate": "Steve Friess",
-          "votes": 603
+          "votes": 611
         },
         {
           "candidate": "Jillian Balow",
-          "votes": 343
+          "votes": 344
         },
         {
           "candidate": "David Giralt",
-          "votes": 309
+          "votes": 310
         },
         {
           "candidate": "Reid Rasner",
-          "votes": 246
+          "votes": 253
         },
         {
           "candidate": "Keith B. Goodenough",
-          "votes": 90
+          "votes": 91
         },
         {
           "candidate": "Frank Chapman",
-          "votes": 56
+          "votes": 57
         },
         {
           "candidate": "Richard Dodson",
@@ -65,7 +65,7 @@
         },
         {
           "candidate": "Elena Del Real",
-          "votes": 72
+          "votes": 73
         }
       ]
     },
@@ -77,23 +77,23 @@
       "candidates": [
         {
           "candidate": "Harriet Hageman",
-          "votes": 3021
+          "votes": 3062
         },
         {
           "candidate": "Sam Mead",
-          "votes": 1562
+          "votes": 1584
         },
         {
           "candidate": "Jill M Edwards",
-          "votes": 125
+          "votes": 127
         },
         {
           "candidate": "Jimmy Skovgard",
-          "votes": 108
+          "votes": 109
         },
         {
           "candidate": "John Holtz",
-          "votes": 91
+          "votes": 93
         }
       ]
     },
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "candidate": "James Byrd",
-          "votes": 249
+          "votes": 250
         },
         {
           "candidate": "Billy Benavidez",
@@ -121,19 +121,19 @@
       "candidates": [
         {
           "candidate": "Eric Barlow",
-          "votes": 2233
+          "votes": 2260
         },
         {
           "candidate": "Brent Bien",
-          "votes": 1629
+          "votes": 1646
         },
         {
           "candidate": "Megan Degenfelder",
-          "votes": 1081
+          "votes": 1104
         },
         {
           "candidate": "Curt Blake",
-          "votes": 39
+          "votes": 40
         }
       ]
     },
@@ -145,7 +145,7 @@
       "candidates": [
         {
           "candidate": "Kenneth R. Casner",
-          "votes": 271
+          "votes": 272
         }
       ]
     },
@@ -157,19 +157,19 @@
       "candidates": [
         {
           "candidate": "Robert Short",
-          "votes": 1844
+          "votes": 1868
         },
         {
           "candidate": "Rachel Williams",
-          "votes": 1518
+          "votes": 1529
         },
         {
           "candidate": "CJ Young",
-          "votes": 643
+          "votes": 653
         },
         {
           "candidate": "Qwenton Eagle Oviatt",
-          "votes": 326
+          "votes": 335
         }
       ]
     },
@@ -181,7 +181,7 @@
       "candidates": [
         {
           "candidate": "Bryan McCarty",
-          "votes": 297
+          "votes": 298
         }
       ]
     },
@@ -193,7 +193,7 @@
       "candidates": [
         {
           "candidate": "Kristi Racines",
-          "votes": 3961
+          "votes": 4010
         }
       ]
     },
@@ -205,11 +205,11 @@
       "candidates": [
         {
           "candidate": "Curt Meier",
-          "votes": 2998
+          "votes": 3046
         },
         {
           "candidate": "Scott Smith",
-          "votes": 1289
+          "votes": 1300
         }
       ]
     },
@@ -221,15 +221,15 @@
       "candidates": [
         {
           "candidate": "Steve Harshman",
-          "votes": 2257
+          "votes": 2285
         },
         {
           "candidate": "Tom Kelly",
-          "votes": 1804
+          "votes": 1833
         },
         {
           "candidate": "Chad Auer",
-          "votes": 427
+          "votes": 430
         }
       ]
     },
@@ -245,7 +245,7 @@
         },
         {
           "candidate": "Sergio A. Maldonado, Sr.",
-          "votes": 129
+          "votes": 130
         }
       ]
     },
@@ -257,15 +257,15 @@
       "candidates": [
         {
           "candidate": "Myca Sturtevant",
-          "votes": 724
+          "votes": 728
         },
         {
           "candidate": "James Temple",
-          "votes": 323
+          "votes": 324
         },
         {
           "candidate": "Noll Roberts",
-          "votes": 69
+          "votes": 72
         }
       ]
     },
@@ -277,11 +277,11 @@
       "candidates": [
         {
           "candidate": "Ryan Koltiska",
-          "votes": 1164
+          "votes": 1198
         },
         {
           "candidate": "Mark Jennings",
-          "votes": 729
+          "votes": 755
         }
       ]
     },
@@ -325,11 +325,11 @@
       "candidates": [
         {
           "candidate": "Melissa Butcher",
-          "votes": 1506
+          "votes": 1543
         },
         {
           "candidate": "Ken Pendergraft",
-          "votes": 998
+          "votes": 1028
         }
       ]
     },
@@ -341,7 +341,7 @@
       "candidates": [
         {
           "candidate": "Rene Botten",
-          "votes": 3875
+          "votes": 3924
         }
       ]
     },
@@ -377,15 +377,15 @@
       "candidates": [
         {
           "candidate": "Eda Schunk Thompson",
-          "votes": 2973
+          "votes": 3012
         },
         {
           "candidate": "Christine Temple",
-          "votes": 1330
+          "votes": 1353
         },
         {
           "candidate": "Dylan Dalton",
-          "votes": 294
+          "votes": 297
         }
       ]
     },
@@ -397,39 +397,39 @@
       "candidates": [
         {
           "candidate": "James R. Schellinger",
-          "votes": 2468
+          "votes": 2505
         },
         {
           "candidate": "Christi Haswell",
-          "votes": 2237
+          "votes": 2271
         },
         {
           "candidate": "Holly Jennings",
-          "votes": 2044
+          "votes": 2077
         },
         {
           "candidate": "Glenn Drummond",
-          "votes": 1766
+          "votes": 1788
         },
         {
           "candidate": "Dennis Fox",
-          "votes": 1594
+          "votes": 1614
         },
         {
           "candidate": "Karla Kaley",
-          "votes": 1361
+          "votes": 1377
         },
         {
           "candidate": "Harley Shuck",
-          "votes": 395
+          "votes": 402
         },
         {
           "candidate": "Dustin Bates",
-          "votes": 393
+          "votes": 397
         },
         {
           "candidate": "Lee Ackerley",
-          "votes": 243
+          "votes": 250
         }
       ]
     },
@@ -441,11 +441,11 @@
       "candidates": [
         {
           "candidate": "Robert C. Byrd",
-          "votes": 2539
+          "votes": 2567
         },
         {
           "candidate": "Kevin Sessions",
-          "votes": 2164
+          "votes": 2202
         }
       ]
     },
@@ -457,11 +457,11 @@
       "candidates": [
         {
           "candidate": "William Levi Dominguez",
-          "votes": 3082
+          "votes": 3128
         },
         {
           "candidate": "Kenneth Howard Fitzpatrick",
-          "votes": 1813
+          "votes": 1836
         }
       ]
     },
@@ -473,7 +473,7 @@
       "candidates": [
         {
           "candidate": "Katie Araas",
-          "votes": 4096
+          "votes": 4150
         }
       ]
     },
