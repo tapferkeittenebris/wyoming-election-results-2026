@@ -8,10 +8,10 @@ export default async function handler(request, response) {
 
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 7000);
-  const cacheBucket = Math.floor(Date.now() / 60000);
+  const cacheBuster = Date.now();
 
   try {
-    const upstream = await fetch(`${UPSTREAM}?v=${cacheBucket}`, {
+    const upstream = await fetch(`${UPSTREAM}?v=${cacheBuster}`, {
       signal: controller.signal,
       cache: 'no-store',
       headers: {
@@ -28,9 +28,9 @@ export default async function handler(request, response) {
     JSON.parse(body);
 
     response.setHeader('Content-Type', 'application/json; charset=utf-8');
-    response.setHeader('Cache-Control', 'public, max-age=15');
-    response.setHeader('Vercel-CDN-Cache-Control', 'max-age=60, stale-while-revalidate=300, stale-if-error=3600');
-    response.setHeader('X-Results-Proxy', 'vercel-cdn');
+    response.setHeader('Cache-Control', 'no-store, max-age=0, must-revalidate');
+    response.setHeader('Vercel-CDN-Cache-Control', 'no-store');
+    response.setHeader('X-Results-Proxy', 'live-upstream');
     return response.status(200).send(request.method === 'HEAD' ? '' : body);
   } catch (error) {
     response.setHeader('Cache-Control', 'no-store');
