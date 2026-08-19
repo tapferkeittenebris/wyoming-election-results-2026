@@ -1,7 +1,7 @@
 {
-  "last_checked": "2026-08-18T21:19:46-06:00",
-  "last_updated": "2026-08-18T21:19:46-06:00",
-  "reporting_counties": 2,
+  "last_checked": "2026-08-18T21:32:44-06:00",
+  "last_updated": "2026-08-18T21:34:53-06:00",
+  "reporting_counties": 5,
   "county_status": [
     {
       "county": "Albany",
@@ -61,9 +61,9 @@
     },
     {
       "county": "Hot Springs",
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "url": "https://hscounty.com/component/edocman/election-results-archives/elections-2026?Itemid=100",
-      "reporting": false,
+      "status": "Reporting",
+      "url": "https://hscounty.com/component/edocman/2026-hot-springs-co-primary-election-unofficial-results-2/download?Itemid=100",
+      "reporting": true,
       "errors": []
     },
     {
@@ -110,9 +110,9 @@
     },
     {
       "county": "Platte",
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "url": "https://www.plattecountywyoming.com/departments/Elections/ResultsofElection",
-      "reporting": false,
+      "status": "Reporting via Wyoming SOS statewide summary",
+      "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
+      "reporting": true,
       "errors": []
     },
     {
@@ -152,9 +152,9 @@
     },
     {
       "county": "Washakie",
-      "status": "Waiting for county results \u00b7 SOS validation available",
-      "url": "https://www.washakiecountywy.gov/196/Elections",
-      "reporting": false,
+      "status": "Reporting via Wyoming SOS statewide summary",
+      "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
+      "reporting": true,
       "errors": []
     },
     {
@@ -174,7 +174,21 @@
       "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf"
     ],
     "candidate_matches": 18,
-    "status": "SOS 2026 results page available for validation"
+    "status": "SOS 2026 results page available for validation",
+    "summary_fallback_counties": [
+      "Platte",
+      "Washakie"
+    ],
+    "summary_urls": [
+      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Candidates_Summary.pdf",
+      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_House_Candidates_Summary.pdf",
+      "https://sos.wyo.gov/Elections/Docs/2026/Results/Primary/2026_Statewide_Senate_Candidates_Summary.pdf"
+    ],
+    "fallback_counties": [
+      "Platte",
+      "Washakie"
+    ],
+    "fallback_page": "https://sos.wyo.gov/Elections/Docs/2026/2026PrimaryResults.aspx"
   },
   "incumbents": {
     "House": {
@@ -638,14 +652,18 @@
       "candidates": [
         {
           "candidate": "Roy Birt",
-          "votes": 0,
-          "counties": [],
+          "votes": 1394,
+          "counties": [
+            "Platte"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Taft Love",
-          "votes": 0,
-          "counties": [],
+          "votes": 1156,
+          "counties": [
+            "Platte"
+          ],
           "is_fc": false
         }
       ]
@@ -798,7 +816,7 @@
       "candidates": [
         {
           "candidate": "Ken Pendergraft",
-          "votes": 1028,
+          "votes": 1638,
           "counties": [
             "Sheridan"
           ],
@@ -806,7 +824,7 @@
         },
         {
           "candidate": "Melissa Butcher",
-          "votes": 1543,
+          "votes": 2424,
           "counties": [
             "Sheridan"
           ],
@@ -986,8 +1004,10 @@
       "candidates": [
         {
           "candidate": "Jeremy Haroldson",
-          "votes": 0,
-          "counties": [],
+          "votes": 1853,
+          "counties": [
+            "Platte"
+          ],
           "is_fc": true
         }
       ]
@@ -1467,8 +1487,10 @@
       "candidates": [
         {
           "candidate": "Martha Lawley",
-          "votes": 0,
-          "counties": [],
+          "votes": 1750,
+          "counties": [
+            "Washakie"
+          ],
           "is_fc": false
         }
       ]
@@ -1480,8 +1502,10 @@
       "candidates": [
         {
           "candidate": "Theresa Livingston",
-          "votes": 0,
-          "counties": [],
+          "votes": 108,
+          "counties": [
+            "Washakie"
+          ],
           "is_fc": false
         }
       ]
@@ -1493,26 +1517,34 @@
       "candidates": [
         {
           "candidate": "Allen Hogg",
-          "votes": 0,
-          "counties": [],
+          "votes": 549,
+          "counties": [
+            "Hot Springs"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Carlin Jones",
-          "votes": 0,
-          "counties": [],
+          "votes": 296,
+          "counties": [
+            "Hot Springs"
+          ],
           "is_fc": true
         },
         {
           "candidate": "Marshall Keller",
-          "votes": 0,
-          "counties": [],
+          "votes": 637,
+          "counties": [
+            "Hot Springs"
+          ],
           "is_fc": false
         },
         {
           "candidate": "Roland Luehne",
-          "votes": 0,
-          "counties": [],
+          "votes": 119,
+          "counties": [
+            "Hot Springs"
+          ],
           "is_fc": false
         }
       ]
@@ -1524,7 +1556,7 @@
       "candidates": [
         {
           "candidate": "James Temple",
-          "votes": 324,
+          "votes": 551,
           "counties": [
             "Sheridan"
           ],
@@ -1532,7 +1564,7 @@
         },
         {
           "candidate": "Myca Sturtevant",
-          "votes": 728,
+          "votes": 1167,
           "counties": [
             "Sheridan"
           ],
@@ -1540,7 +1572,7 @@
         },
         {
           "candidate": "Noll Roberts",
-          "votes": 72,
+          "votes": 142,
           "counties": [
             "Sheridan"
           ],
@@ -1555,7 +1587,7 @@
       "candidates": [
         {
           "candidate": "Mark Jennings",
-          "votes": 755,
+          "votes": 888,
           "counties": [
             "Sheridan"
           ],
@@ -1563,7 +1595,7 @@
         },
         {
           "candidate": "Ryan Koltiska",
-          "votes": 1198,
+          "votes": 1458,
           "counties": [
             "Sheridan"
           ],
@@ -2005,7 +2037,7 @@
       "candidates": [
         {
           "candidate": "Laurie Bratten",
-          "votes": 671,
+          "votes": 1029,
           "counties": [
             "Sheridan"
           ],
@@ -2013,7 +2045,7 @@
         },
         {
           "candidate": "Susan Bigelow",
-          "votes": 657,
+          "votes": 1023,
           "counties": [
             "Sheridan"
           ],
@@ -2271,46 +2303,61 @@
       "candidates": [
         {
           "candidate": "Harriet Hageman",
-          "votes": 12856,
+          "votes": 18688,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jill M Edwards",
-          "votes": 436,
+          "votes": 606,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Jimmy Skovgard",
-          "votes": 730,
+          "votes": 944,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "John Holtz",
-          "votes": 320,
+          "votes": 471,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Sam Mead",
-          "votes": 6253,
+          "votes": 8053,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         }
@@ -2322,19 +2369,25 @@
       "candidates": [
         {
           "candidate": "Billy Benavidez",
-          "votes": 342,
+          "votes": 458,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "James Byrd",
-          "votes": 1253,
+          "votes": 1662,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         }
@@ -2346,35 +2399,45 @@
       "candidates": [
         {
           "candidate": "Bo Biteman",
-          "votes": 1433,
+          "votes": 2062,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Chuck Gray",
-          "votes": 4764,
+          "votes": 6725,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "David Giralt",
-          "votes": 2033,
+          "votes": 2843,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Frank Chapman",
-          "votes": 442,
+          "votes": 491,
           "counties": [
+            "Hot Springs",
             "Natrona",
             "Sheridan"
           ],
@@ -2382,55 +2445,73 @@
         },
         {
           "candidate": "Jillian Balow",
-          "votes": 1353,
+          "votes": 2223,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Keith B. Goodenough",
-          "votes": 1045,
+          "votes": 1199,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Kevin Christensen",
-          "votes": 3994,
+          "votes": 5010,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Reid Rasner",
-          "votes": 1370,
+          "votes": 2088,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Richard Dodson",
-          "votes": 248,
+          "votes": 339,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Steve Friess",
-          "votes": 3457,
+          "votes": 4954,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         }
@@ -2442,19 +2523,25 @@
       "candidates": [
         {
           "candidate": "Elena Del Real",
-          "votes": 343,
+          "votes": 463,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Lisa Kinney",
-          "votes": 1216,
+          "votes": 1608,
           "counties": [
+            "Hot Springs",
             "Natrona",
-            "Sheridan"
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         }
@@ -2466,33 +2553,45 @@
       "candidates": [
         {
           "candidate": "Brent Bien",
-          "votes": 1646,
+          "votes": 4004,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Curt Blake",
-          "votes": 40,
+          "votes": 154,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Eric Barlow",
-          "votes": 2260,
+          "votes": 5508,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Megan Degenfelder",
-          "votes": 1104,
+          "votes": 3646,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         }
@@ -2504,9 +2603,12 @@
       "candidates": [
         {
           "candidate": "Kenneth R. Casner",
-          "votes": 272,
+          "votes": 732,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         }
@@ -2518,33 +2620,45 @@
       "candidates": [
         {
           "candidate": "CJ Young",
-          "votes": 653,
+          "votes": 1592,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Qwenton Eagle Oviatt",
-          "votes": 335,
+          "votes": 773,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Rachel Williams",
-          "votes": 1529,
+          "votes": 3960,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": true
         },
         {
           "candidate": "Robert Short",
-          "votes": 1868,
+          "votes": 5330,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         }
@@ -2556,9 +2670,12 @@
       "candidates": [
         {
           "candidate": "Bryan McCarty",
-          "votes": 298,
+          "votes": 780,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         }
@@ -2570,9 +2687,12 @@
       "candidates": [
         {
           "candidate": "Kristi Racines",
-          "votes": 4010,
+          "votes": 10841,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         }
@@ -2584,16 +2704,20 @@
       "candidates": [
         {
           "candidate": "Curt Meier",
-          "votes": 3046,
+          "votes": 8321,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Scott Smith",
-          "votes": 1300,
+          "votes": 2149,
           "counties": [
+            "Hot Springs",
             "Sheridan"
           ],
           "is_fc": true
@@ -2606,25 +2730,34 @@
       "candidates": [
         {
           "candidate": "Chad Auer",
-          "votes": 430,
+          "votes": 1113,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Steve Harshman",
-          "votes": 2285,
+          "votes": 6303,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Tom Kelly",
-          "votes": 1833,
+          "votes": 4442,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": true
         }
@@ -2636,17 +2769,23 @@
       "candidates": [
         {
           "candidate": "Ana Cordova",
-          "votes": 178,
+          "votes": 454,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         },
         {
           "candidate": "Sergio A. Maldonado, Sr.",
-          "votes": 130,
+          "votes": 355,
           "counties": [
-            "Sheridan"
+            "Hot Springs",
+            "Platte",
+            "Sheridan",
+            "Washakie"
           ],
           "is_fc": false
         }
@@ -2656,7 +2795,7 @@
   "race_call_method": {
     "standard": "mathematical_clinch",
     "description": "WINNER only when the leader cannot be overtaken using explicit official remaining-ballot or complete-reporting data.",
-    "county_sources_evaluated": 2,
+    "county_sources_evaluated": 5,
     "all_counties_ready": false
   }
 }
