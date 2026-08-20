@@ -1,0 +1,17 @@
+{
+  "name": "wyoming-election-results-2026",
+  "version": "1.0.0",
+  "description": "Wyoming 2026 Primary Election Tracker",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:speed-insights",
+    "build:speed-insights": "esbuild speed-insights.js --bundle --format=iife --outfile=speed-insights-bundle.js",
+    "lint": "echo 'No linter configured'"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
